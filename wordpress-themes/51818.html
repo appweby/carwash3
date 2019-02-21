@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<title>
+        Car Wash Responsive WordPress Theme #51818    </title>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta property="fb:admins" content="720898483" />
+<meta property="fb:admins" content="1129631948" />
+<meta property="fb:admins" content="100001777951090" />
+<link rel="publisher" href="https://plus.google.com/116173187155256042113" />
+<meta name="description" content="Web Design Software. 【Car Wash WordPress theme #51818】 - enjoy clean, professional and straightforward... ✅【Before You Buy】 - learn technical specifications, read reviews, ask a question.... ✅【Quality Control】 - this premium WordPress theme has passed QC by professional... ✅【24/7 Pro Support】 - Online Help Center, Live Chat Support"/>
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-310x150.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-310x310.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-150x150.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-144x144.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-70x70.png?d=900f612" />
+<meta name="msapplication-config" content="https://s.tmimgcdn.com/img/logo-touch/browserconfig.xml?d=900f612" />
+<link rel="icon" href="https://s.tmimgcdn.com/img/favicon.ico?d=900f612" type="image/x-icon"/>
+<link rel="shortcut icon" href="https://s.tmimgcdn.com/img/favicon.ico?d=900f612" type="image/x-icon"/>
+<link rel="icon" type="image/png" href="https://s.tmimgcdn.com/img/logo-touch/favicon-16x16.png?d=900f612" sizes="16x16">
+<link rel="icon" type="image/png" href="https://s.tmimgcdn.com/img/logo-touch/favicon-32x32.png?d=900f612" sizes="32x32">
+<link rel="icon" type="image/png" href="https://s.tmimgcdn.com/img/logo-touch/favicon-96x96.png?d=900f612" sizes="96x96">
+<link rel="icon" type="image/png" sizes="36x36" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-36.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="48x48" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-48.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="72x72" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-72.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="96x96" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-96.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="144x144" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-144.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="192x192" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-192.png?d=900f612" />
+<link rel="mask-icon" href="https://s.tmimgcdn.com/img/logo-touch/safari-pinned-tab.svg?d=900f612">
+<link rel="apple-touch-icon" sizes="180x180" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-precomposed.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-180.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-152.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-144.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-120.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-114.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-76.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-72.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="60x60" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-60.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-57.png?d=900f612" />
+<meta name="monster_page_type" content="Product" />
+<meta name="monster_product_category" content="Cars &amp; Motorcycles" />
+<meta name="monster_product_subcategory" content="Car Wash Templates" />
+<meta name="monster_product_type" content="WordPress Themes" />
+<meta name="monster_template_id" content="51818" />
+<meta name="monster_template_author" content="WT" />
+<meta name="monster_template_categories" content="Car Wash Templates / Car Templates / Cars &amp; Motorcycles" />
+<meta name="monster_template_download_count" content="78" />
+<meta name="monster_template_price" content="75" />
+<script>
+  !function(){var e=function(e){return!!document.head.querySelector("[name="+e+"]")&&document.head.querySelector("[name="+e+"]").content};window.dataLayer=window.dataLayer||[];var t,o,a,r={pageType:e("monster_page_type")};e("monster_product_type")&&-1===["Product","Demo","SearchNoResult"].indexOf(r.pageType)&&(r.pageType="Portal"),e("monster_product_category")&&-1===["Product","Demo","SearchNoResult"].indexOf(r.pageType)&&(r.pageType="Category"),-1!==["Product","Demo","Portal","Category"].indexOf(r.pageType)&&(r.portalContent=e("monster_product_type")?e("monster_product_type"):"All Themes",r.portalName=e("monster_product_portal")?e("monster_product_portal"):(t=r.portalContent,o={"CMS Templates":["WordPress Themes","Drupal Themes","Joomla Templates","Moto CMS 3 Templates","Moto CMS HTML Templates","Flash CMS Templates"],"Web templates":["Responsive Templates","Landing Page Templates","Bootstrap Themes","HTML5 Site Templates","PSD Templates","Unbounce Templates","Photo Gallery Templates","Newsletter Templates","Muse Templates","Weblium Website Concepts","eBay Templates","Admin Templates"],"E-commerce templates":["Magento Themes","VirtueMart Templates","ZenCart Templates","PrestaShop Themes","OpenCart Templates","Shopify Themes","X-Cart Templates","WooCommerce Themes","MotoCMS Ecommerce"],"Plugins & Assets":["WordPress Plugins","PrestaShop Modules","Magento 2 Extensions","Fonts and Icon Fonts","UI Elements","After Effects Templates","PowerPoint Templates","Keynote Templates","Resume Templates","App Templates","Corporate Design"]},a="All portals",Object.keys(o).forEach(function(e){o[e].forEach(function(o){o.toLowerCase()===t.toLowerCase()&&(a=e)})}),a),r.categoryName=e("monster_product_category")?e("monster_product_category"):"All categories",r.subCategoryName=e("monster_product_subcategory")?e("monster_product_subcategory"):"All categories"),"Product"!==r.pageType&&"Demo"!==r.pageType||(r.vendor=e("monster_template_author"),r.productID=e("monster_template_id"),r.productPrice=e("monster_template_price"),r.productSales=e("monster_template_download_count"),r.productCategory=e("monster_template_categories")),"SearchNoResult"===r.pageType&&(r.pageType="Search"),window.dataLayer.push(r)}();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MS2BNB');</script>
+        		<link rel="canonical" href="https://www.templatemonster.com/wordpress-themes/51818.html" />
+    			<link rel="alternate" hreflang="en" href="https://www.templatemonster.com/wordpress-themes/51818.html"/>
+			<link rel="alternate" hreflang="de" href="../de/wordpress-themen-tipo-51818.html"/>
+			<link rel="alternate" hreflang="ru" href="../ru/wordpress-themes-type/51818.html"/>
+			<link rel="alternate" hreflang="es" href="../es/temas-wordpress-tipo-51818.html"/>
+			<link rel="alternate" hreflang="fr" href="../fr/themes-wordpress-tipo-51818.html"/>
+			<link rel="alternate" hreflang="it" href="../it/temi-wordpress-tipo-51818.html"/>
+			<link rel="alternate" hreflang="pl" href="../pl/szablony-wordpress-51818.html"/>
+			<link rel="alternate" hreflang="tr" href="../tr/wordpress-temalar-51818.html"/>
+			<link rel="alternate" hreflang="pt" href="../pt-br/temas-wordpress/51818.html"/>
+			<link rel="alternate" hreflang="uk" href="../ua/wordpress-templates/51818.html"/>
+			<link rel="alternate" hreflang="zh" href="../cn/wordpress-themes/51818.html"/>
+			<link rel="alternate" hreflang="hu" href="../hu/wordpress-sablonok/51818.html"/>
+			<link rel="alternate" hreflang="cs" href="../cz/wordpress-templates/51818.html"/>
+			<link rel="alternate" hreflang="nl" href="../nl/wordpress-themes/51818.html"/>
+			<link rel="alternate" hreflang="sv" href="../sv/wordpress-themes/51818.html"/>
+    <meta property="og:url" content="https://www.templatemonster.com/wordpress-themes/51818.html" />
+<meta property="og:title" content="Car Wash Responsive WordPress Theme #51818" />
+    <meta property="og:description" content="Web Design Software. 【Car Wash WordPress theme #51818】 - enjoy clean, professional and straightforward... ✅【Before You Buy】 - learn technical specifications, read reviews, ask a question.... ✅【Quality Control】 - this premium WordPress theme has passed QC by professional... ✅【24/7 Pro Support】 - Online Help Center, Live Chat Support" />
+    <meta property="og:image" content="https://s.tmimgcdn.com/scr/51800/car-wash-responsive-wordpress-theme_51818-big.jpg" />
+    <meta name="twitter:image" content="https://s.tmimgcdn.com/scr/51800/car-wash-responsive-wordpress-theme_51818-big.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:locale:alternate" content="nl_NL" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="cs_CZ" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:type" content="product" />
+<meta property="og:site_name" content="TemplateMonster" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="templatemonster" />
+<meta name="twitter:creator" content="templatemonster" />
+			<script>document.cookie = "chat_presales=1; expires=03 Jul 2036 21:44:38 GMT; domain=.templatemonster.com; path=/";</script>
+<script>document.cookie = "callback_notice=closed; expires=03 Jul 2036 21:44:38 GMT; domain=.templatemonster.com; path=/";</script>
+<script>
+window.defaultPriceVariationExperiment = 0;
+</script>
+        <style>:root{content:"Thu Feb 07 2019 10:17:29 GMT-0500 (EST)---itemold"}html:not(.js) body .navigation [class*=sub-menu-],html:not(.js) body .sub-menu__additional{display:none}header,section{display:block}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}b,strong{font-weight:700}img{border:0}button,input{font-size:100%;margin:0;line-height:normal}button{text-transform:none;-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}html{font-size:62.5%;-webkit-tap-highlight-color:transparent}body{font-size:14px;line-height:1.42857143;background-color:#f1f1f1}button,input{font-size:inherit;line-height:inherit;background-image:none}a{color:#2196f3;text-decoration:none}img{vertical-align:middle}p{margin:0 0 10px}.text-right{text-align:right}.text-center{text-align:center}.h2,h1{font-weight:400;line-height:1.1}h1{margin-top:20px;font-size:36px}h1,ul{margin-bottom:10px}ul{margin-top:0}ul ul{margin-bottom:0}.container{margin-right:auto;margin-left:auto;padding-left:10px;padding-right:10px}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}@media (min-width:100px){.container{max-width:1004px}}@media (min-width:1310px){.container{max-width:1080px}}@media (min-width:1600px){.container{max-width:1316px}}.form-control{display:block;width:100%;height:34px;line-height:1.42857143;vertical-align:middle;background-color:#fff;border-radius:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav:after,.nav:before{content:" ";display:table}.nav:after{clear:both}.nav>li,.nav>li>a{position:relative;display:block}.nav>li>a{padding:10px 15px}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}@-ms-viewport{width:device-width}@media screen and (max-width:400px){@-ms-viewport{width:320px}}.hidden{display:none!important;visibility:hidden!important}[class*=icon-]:before{content:attr(data-icon);speak:none;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arrow-right,.icon-arrow-small-down,.icon-cart,.icon-monster_dark,.icon-psd,.icon-zencart{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}.icon-cart:before{content:"\e046"}.icon-arrow-right:before{content:"\e021"}.icon-arrow-small-down:before{content:"\e022"}.tm-icon:before{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:0 0!important}.tm-icon.icon-cart:before{content:"\e901"}.tm-icon.icon-download:before{content:"\e904"}.tm-icon.icon-magic:before{content:"\e907"}.tm-icon.icon-magnifier:before{content:"\e963"}.tm-icon.icon-success:before{content:"\e912"}.tm-icon.icon-arrow:before{content:"\e915"}.tm-icon.icon-heart:before{content:"\e919"}.tm-icon.icon-heart-empty:before{content:"\e924"}.tm-icon.icon-bell:before{content:"\e934"}.tm-icon.icon-help-circle:before{content:"\e937"}.tm-icon.icon-profile-circle:before{content:"\e93a"}.tm-icon.icon-money:before{content:"\e93b"}.tm-icon.icon-logout:before{content:"\e93c"}.tm-icon.icon-arrow-right:before{content:"\e94d"}.tm-icon.icon-home:before{content:"\e979"}.square-icon{width:25px;height:25px;float:left}.flex-row{display:flex!important;flex-flow:row nowrap}.vertical-center{align-items:center}.flex-wrap{flex-wrap:wrap}#header{background:#fff;z-index:11;position:relative;border-bottom:1px solid rgba(36,50,56,.2)}#header .navigation{background:#243238;overflow:hidden}#header>.header{z-index:16}#header>.header,#header>.sub-menu{position:relative}#header>.sub-menu .sub-menu__additional{display:none}.header{padding:20px;display:flex}.logo{height:40px;margin:0}.logo-icon{max-width:inherit;width:248px}.user-menu,.user-menu-element,.user-menu-element .menu-element-inner{display:flex}.user-menu{align-items:center;font-size:14px;position:relative;z-index:13}.user-menu .user-menu-element{align-items:center;height:40px;display:inline-block;position:relative}@media (max-width:1599px){.user-menu .user-menu-element{width:auto}}.user-menu .user-menu-element .account-menu-li{cursor:pointer}.user-menu .user-menu-element .menu-element-inner{cursor:pointer;padding:0 20px;align-items:center;border-radius:3px;color:#243238;height:100%}.user-menu .user-menu-element .menu-element-inner.has-notification .tm-icon{position:relative;display:inline}.user-menu .user-menu-element .menu-element-inner.has-notification .tm-icon:after{content:"";width:10px;height:10px;border-radius:50%;background:#ff6f00;border:1px solid #fff;position:absolute;right:-3px;top:-2px}.user-menu .user-menu-element .tm-icon{font-size:20px;line-height:1;height:20px}.user-menu .user-menu-element .menu-element-text{margin-left:10px}.user-menu .icon-arrow-small-down{font-size:10px;display:inline-block;position:relative;font-weight:400;margin-left:10px}.block-search{display:inline-block;margin-left:40px;margin-right:20px;display:flex;flex-basis:1px;flex-grow:1}.block-search .form-search{width:100%}.block-search .form-search .icon-placeholder{left:20px;top:10px;line-height:1;color:#b0bec5;z-index:15;font-size:20px}.block-search .form-search .keyword-search-field{z-index:14}.block-search .form-search .btn-unique{position:absolute;padding:0 10px;right:0;top:0;z-index:15}.block-search .tm-rd-input{margin-bottom:0!important;display:flex}.rd-dropdown-list{width:100%}.rd-dropdown-list>li:last-child .item-link{border-radius:0 0 3px 3px}.header-notifications{position:relative}.header-notifications .notification-menu{border-radius:0 0 3px 3px;box-shadow:0 5px 10px 0 rgba(35,50,56,.2)}.header-notifications .notification-menu-li .notification{height:auto}.header-notifications .tm-icon{-webkit-transition:all .5s cubic-bezier(.86,0,.07,1)}.notification{align-items:flex-start}.notification__icon{margin-right:20px}.notification__body{width:100%;max-width:calc(100% - 40px)}.account-pick .profile-img-wrap{width:20px;height:20px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}.account-menu,.notification-menu{display:block;width:180px;position:absolute;right:0}.account-menu .account-menu-li:first-child:after,.account-menu .account-menu-li:first-child:before,.notification-menu .notification-menu-li:first-child:after,.notification-menu .notification-menu-li:first-child:before{content:"";width:80px;height:3px;position:absolute;bottom:100%}.account-menu .account-menu-li:first-child:after,.notification-menu .notification-menu-li:first-child:after{border-radius:0 0 3px 0;background:#fff;right:80px}.account-menu .account-menu-li:first-child:before,.notification-menu .notification-menu-li:first-child:before{background:#546e7a;right:3px;width:80px}.account-menu .account-menu-li:first-child .item-link,.notification-menu .notification-menu-li:first-child .notification{border-top:0;border-radius:3px 0 0 0}.account-menu .account-menu-icon,.notification-menu .notification__icon{height:20px!important}.notification-menu{width:300px}.notification-menu .notification-menu-li:first-child:after,.notification-menu .notification-menu-li:first-child:before{width:56px}.notification-menu .notification-menu-li:first-child:after{right:57px}.account-menu,.languages-menu,.notification-menu,.shop-cart .cart-count{display:none}.button{height:40px;line-height:40px;border-radius:3px;padding:0 20px;color:#fff;font-size:14px;font-weight:400!important;position:relative;display:inline-block;vertical-align:top;text-decoration:none!important;text-align:center;border:0;outline:0!important;box-shadow:none!important;cursor:pointer;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.button.btn-important{background:#f4511e;background:linear-gradient(180deg,#f4511e 0,#d84315)}.button.btn-main{background:#42a5f5;background:linear-gradient(180deg,#42a5f5 0,#2196f3)}.button.btn-big-height{height:60px!important;line-height:60px;font-size:16px}.button.btn-full-width{width:100%}.button.btn-unique{width:40px;padding:0}.button.btn-unique.tm-icon:before{margin-right:0}.button.tm-icon:before{width:20px;height:20px;margin-right:10px;display:inline-block;position:relative;top:-2px;font-size:20px;vertical-align:middle}.button:empty:before{margin:0}.rd-notice{opacity:0;position:relative;padding:0;border:0;text-align:left;box-shadow:0 5px 10px 0 rgba(36,50,56,.2)}.rd-notice,.rd-notice .rd-notice-content,.rd-notice:after{background-color:#546e7a}.rd-notice:after{box-shadow:0 5px 10px 0 rgba(36,50,56,.2)}.rd-notice:not(.rd-notice-position-static) .rd-notice-content{color:#fff!important}.rd-notice-tooltip{box-shadow:0 2px 2px rgba(0,0,0,.2);font-size:14px;border-radius:3px;line-height:1.25;position:absolute;z-index:10;opacity:1}.rd-notice-tooltip:after{position:absolute;display:block;content:"";height:20px;width:20px;box-shadow:none;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);border-radius:3px;z-index:7}.rd-notice-tooltip .rd-notice-content{background:0;border-radius:3px;width:100%;color:#fff;position:relative;z-index:8;padding:20px;font-weight:400;line-height:1.45}.rd-notice-tooltip.single-line .rd-notice-content{height:40px;padding:0 20px;line-height:40px;white-space:nowrap}.rd-notice-position-left{margin-left:-20px}.rd-notice-position-left:after{right:-6px;top:50%;margin-top:-10px}.rd-notice-type-success{box-shadow:0 5px 10px 0 rgba(0,96,35,.2)}.rd-notice-type-success,.rd-notice-type-success .rd-notice-content{background-color:#1ab744}.rd-notice-type-success:after{background-color:#1ab744;box-shadow:0 5px 10px 0 rgba(0,96,35,.2)}.highlighted-important{color:#90caf9!important}.without-top-bd-radius{border-top-right-radius:0;border-top-left-radius:0}.cursor-pointer{cursor:pointer}body{min-width:1024px;color:#243238;background:#eceff1;-webkit-font-smoothing:antialiased}body a{color:#2196f3}a{cursor:pointer}.container{position:relative}img{max-width:100%}.hide-price{color:#fff!important}ul{list-style:none;margin:0;padding:0}.overflowed-hidden{overflow:hidden}input[type=text]{width:100%;box-sizing:border-box;padding:5px 0 5px 10px;border:1px solid #90a4ae;outline:0;color:#243238;font-size:14px;line-height:19px;-webkit-appearance:none;border-radius:0;-webkit-transition:all .1s linear}input[type=text]::-ms-clear{display:none}.form-control:-moz-placeholder,.form-control::-moz-placeholder{color:#999}.form-control:-ms-input-placeholder{color:#999}.form-control::-webkit-input-placeholder{color:#999}.form-control:-moz-placeholder,.form-control::-moz-placeholder{color:#90a4ae}.form-control:-ms-input-placeholder{color:#90a4ae}.form-control::-webkit-input-placeholder{color:#90a4ae}.js-none{display:none!important}.link-click{text-decoration:none;color:#2196f3}div.navigation{position:relative;z-index:12}.nav.main-menu{width:100%;position:relative;z-index:1;background:#fff}.nav.main-menu:before{position:absolute;width:101%;height:35px;background:#243238;left:-1px;bottom:0}.nav.main-menu>li{padding-top:0;position:static;border-top:1px solid #243238;border-radius:6px 6px 0 0;background:#243238;flex-basis:1px;flex-grow:1}.nav.main-menu>li>a{padding:9px 10px;border:1px solid transparent;text-align:center;color:#fff;font-size:12px;white-space:nowrap;line-height:1.8;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;border-radius:6px 6px 0 0;height:40px;position:relative;z-index:1}.nav.main-menu>li>a .tm-icon.icon-arrow{width:6px;height:10px;display:inline-block;font-size:10px;transform:rotate(90deg);margin-left:10px;vertical-align:middle;position:relative;top:-1px}.nav.main-menu>li>a .tm-icon.icon-arrow:before{left:0;position:relative;top:-2px}@media screen and (-webkit-min-device-pixel-ratio:0){.nav.main-menu>li>a:after{right:-1px}}.nav.main-menu>li:nth-child(2):after{border-left:3px solid #455a64;left:-3px}.nav.main-menu>li:last-child:after,.nav.main-menu>li:nth-child(2):after{border-top:3px solid #fff;position:absolute;top:0;overflow:hidden;height:0;content:""}.nav.main-menu>li:last-child:after{border-right:3px solid #455a64;right:-3px}.sub-menu-1{background:#fff}.sub-menu-1 ul{overflow:hidden;display:flex;align-items:center}.sub-menu-1 li{float:left;margin:0;width:100%;line-height:14px;padding:0}.sub-menu-1 li a{color:#243238;font-size:13px;line-height:1.5;font-weight:400;min-height:30px;display:flex;align-items:center;padding:10px 20px 10px 0}.sub-menu-1 li a b{width:30px;height:30px;border-radius:3px;overflow:hidden;margin-right:10px;flex-basis:1px;max-width:30px;flex-grow:2}.sub-menu-1 li a span{flex-basis:1px;flex-grow:1}div[class*=sub-menu-] .template-count{width:auto;padding:0 5px;height:18px;border-radius:3px;border:1px solid #2196f3;font-size:12px;line-height:16px;color:#2196f3;vertical-align:middle;margin-left:6px;position:relative;z-index:4}div[class*=sub-menu-] .title_text{display:inline-block;vertical-align:top;max-width:174px;overflow:hidden;position:relative}@media screen and (max-width:1580px){div[class*=sub-menu-] .title_text{max-width:200px}}@media screen and (max-width:1309px){div[class*=sub-menu-] .title_text{max-width:172px}}div[class*=sub-menu-] a.text-faded{position:relative}div[class*=sub-menu-] a.text-faded:after{width:15px;height:50px;content:"";position:absolute;right:70px;top:0;z-index:3;background:linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff)}div[class*=sub-menu-] a.text-faded.item_title:after{right:50px}div[class*=sub-menu-] .title-holder{display:inline-block;vertical-align:top;overflow:hidden;max-width:174px;white-space:nowrap;margin-left:50px}@media screen and (max-width:1580px){div[class*=sub-menu-] .title-holder{max-width:200px}}@media screen and (max-width:1309px){div[class*=sub-menu-] .title-holder{max-width:172px}}div[class*=sub-menu-] b{border-radius:3px;overflow:hidden}.sub-menu-2 .maxheight1{height:auto}.sub-menu-2 .maxheight1 p{min-height:17px;margin:0}.sub-menu-2 li{padding:20px;width:314px;font-size:12px;line-height:16px}.sub-menu-2 li a{color:#243238;overflow:hidden;position:relative;display:inline;vertical-align:middle;margin-bottom:20px;font-size:12px;color:#4b4441;white-space:nowrap}.sub-menu-2 li a.item_title{font-size:16px;line-height:30px;font-weight:700;margin-bottom:20px;padding-left:50px;display:block;position:relative}.sub-menu-2 li a b{display:inline-block;position:absolute;left:0;top:0;width:30px;height:30px}.sub-menu-2 li a .template-count{width:auto;padding:0 5px;height:18px;border-radius:3px;border:1px solid #2196f3;font-size:12px;line-height:16px;color:#2196f3;vertical-align:middle;margin-left:6px;position:relative;z-index:4}@media (max-width:1580px){.sub-menu-2 ul li{width:340px}}@media (max-width:1309px){.sub-menu-2 ul li{width:313px}}body #content{padding-top:40px}#product-preview .slides .slides-item{position:relative}#product-preview .slides .slides-item .magnifier{display:inline-block;max-height:600px;overflow:hidden;border:1px solid #d7d7d7;width:100%;max-width:100%}#product-preview .slides .slides-item .magnifier img{height:auto;width:100%}#product-preview .slides .slides-item .magnifier span{opacity:0}@media (max-width:1599px){#product-preview .slides .slides-item .magnifier{max-height:403px}}.owl-slides:not(.owl-theme) .slides-item{visibility:hidden}.owl-slides:not(.owl-theme) .slides-item:first-child{visibility:visible}#product-preview{text-align:center}.rating-stars-block{position:relative}.rating-stars-block .stars{color:#fff;width:96px;height:20px;content:"";float:left;margin:0 7px 0 0}.rating-stars-block .stars [class*=star]{display:inline-block!important;width:15px;height:15px}.rating-stars-block .stars [class*=star]:before{display:block;content:"";width:100%;height:100%;background-size:contain}.heart-wrapper .tm-icon.icon-heart-empty{font-size:20px;position:absolute;top:20px;right:20px;margin-right:0;cursor:pointer;width:20px;padding-left:0;z-index:9;overflow:visible;position:relative;right:auto;left:auto;bottom:auto;top:2px;padding:0}.heart-wrapper .tm-icon.icon-heart-empty:before{-webkit-transition:color .5s ease;-moz-transition:color .5s ease;-ms-transition:color .5s ease;-o-transition:color .5s ease;color:#90a4ae}.heart-wrapper .tm-icon.icon-heart-empty span{font-size:13px;color:#90a4ae;font-weight:400;display:inline-block;vertical-align:top;padding-top:0;margin-left:7px;margin-top:-1px}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.magnifier{position:relative;display:block;height:auto}.magnifier span{width:100%;height:100%;opacity:0;z-index:2;background:#243238;position:absolute;top:0;left:0;display:block}.header-collection-link{position:relative;-webkit-transition:all .5s cubic-bezier(.86,0,.07,1)}.header-collection-link .icon-heart-empty.favorite-btn:before{content:"\e919"}.header-collection-link .favorite-btn{position:relative}.header-collection-link .favorite-btn:before{content:"\e919";color:#243238;-webkit-transition:all .5s cubic-bezier(.86,0,.07,1)}.header-collection-link .favorite-btn:after{position:absolute;display:block;content:"";width:10px;height:10px;background-color:#ff6f00;border:1px solid #fff;top:-3px;right:-3px;border-radius:50%;opacity:0}.blurred{-webkit-filter:blur(20px);-moz-filter:blur(20px)}.link-click{cursor:pointer}.bold{font-weight:700}.h2{font-size:30px;line-height:39px}.h2,.t3,.t6{color:#243238}.t3{font-size:14px;line-height:21px}.t6{font-size:11px;line-height:16px}.iti-flag{width:43px;height:32px;background-image:none;background-repeat:no-repeat;display:block}.language-pick .iti-flag{margin:-1px -10px 0 0;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}.iti-flag.br{background-position:-181px -69px}.iti-flag.cn{background-position:-361px -103px}.iti-flag.cz{background-position:-136px -137px}.iti-flag.de{background-position:-181px -137px}.iti-flag.es{background-position:-91px -171px}.iti-flag.fr{background-position:-406px -171px}.iti-flag.hu{background-position:-361px -239px}.iti-flag.it{background-position:-226px -273px}.iti-flag.nl{background-position:-406px -409px}.iti-flag.pl{background-position:-406px -443px}.iti-flag.ru{background-position:-361px -477px}.iti-flag.se{background-position:-46px -511px}.iti-flag.tr{background-position:-136px -579px}.iti-flag.ua{background-position:-361px -579px}.iti-flag.us{background-position:-496px -579px}.rd-form{position:relative}.rd-form .icon-placeholder{pointer-events:none}.tm-rd-input [type=text]{background:#eceff1;box-shadow:inset 0 1px 0 0 #cfd8dc;font-weight:400;font-size:16px;line-height:1.25;color:#243238;box-sizing:border-box;border:1px solid transparent;border-top-width:0;border-radius:3px;-webkit-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease;-moz-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease;-ms-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease;-o-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease}.tm-rd-input [type=text]::-ms-clear{display:none}.tm-rd-input .icon-placeholder{position:absolute;z-index:5;left:20px;top:9px;font-size:18px;color:#b0bec5}.tm-rd-input-f2{margin-bottom:20px!important}.tm-rd-input-f2 [type=text]{height:40px;padding:0 45px 0 20px;font-size:14px}.tm-rd-input-f2 [type=text]::-webkit-input-placeholder{line-height:1.39}.tm-rd-input-f2 [type=text]{padding-left:50px}.livechat-girl{position:fixed;bottom:0;right:40px;opacity:0;z-index:17;transform:translateY(0);-webkit-transform:translateY(0);-ms-transform:translateY(0);cursor:pointer;-webkit-transition:all 1s cubic-bezier(.86,0,.07,1)}.livechat-girl .livechat-control{border-radius:50px 50px;background-color:hsla(0,0%,100%,.85);box-shadow:0 5px 10px 0 rgba(35,50,56,.3);font-size:0}.livechat-girl .livechat-control__element{cursor:pointer;height:100%;vertical-align:top}.livechat-girl .livechat-control__element .tm-icon{padding:0;margin-top:10px;width:40px;height:40px;border-radius:50%;border:0;outline:0;color:#fff;font-size:20px;text-align:center;-webkit-transition:all .3s cubic-bezier(.86,0,.07,1)}.livechat-girl .livechat-control__element .tm-icon:before{line-height:40px}.livechat-girl .livechat-control__element_chat{display:inline-block}.livechat-girl .livechat-control__element_chat:after{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background-image:linear-gradient(180deg,#38dc79,#1ab744);position:absolute;left:46px;top:1px;z-index:7}.livechat-girl .livechat-control__element_chat .tm-icon{display:none;margin-left:20px;background-color:#1ab744}.livechat-girl .livechat-control__element_callback{display:none}.livechat-girl .livechat-control__element_callback .tm-icon{display:inline-block;margin-right:20px;margin-bottom:10px;background-color:#2196f3}.livechat-girl .livechat-control__link{display:inline-block}.livechat-girl .livechat-control .girl-holder{position:relative;display:inline-block;width:60px;height:60px;vertical-align:top;z-index:7}.livechat-girl .animated-circles{position:absolute;top:0}.livechat-girl .animated-circles .circle{background:rgba(26,183,68,.25);width:60px;height:60px;border-radius:50%;position:absolute;z-index:6;transform:scale(1);-webkit-transform:scale(1)}.livechat-girl .livechat-hint{position:absolute;right:40px;top:50%;margin-top:-20px;opacity:0;z-index:0;-webkit-transition:all .3s cubic-bezier(.86,0,.07,1)}.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:1296px!important}.livechat-girl .livechat-hint.rd-notice-tooltip .rd-notice-content{width:auto;overflow:hidden;text-overflow:ellipsis}@media only screen and (max-width:1599px){.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:1060px!important}}@media only screen and (max-width:1309px){.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:984px!important}}@media only screen and (max-width:1124px){.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:600px!important}}.live-chat-board .lc-board-body .tab-pane{flex:1 1 auto;display:inline-block}.live-chat-board .lc-board-body .tab-pane:after{position:absolute;content:"";display:block;bottom:-7px;right:40px;width:20px;height:20px;border-radius:3px;-webkit-transform:rotate(45deg);transform:rotate(45deg);z-index:3;background:#fff}.live-chat-board .lc-board-body .tab-pane.call-back-tab{white-space:nowrap;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.live-chat-board .lc-board-body .tab-pane:not(.active){-webkit-transform:translateX(1000%);transform:translateX(1000%);visibility:hidden}.live-chat-board .lc-board-body .tab-pane:not(.active) .lc-board-call-back{display:none}.live-chat-board .lc-board-call-back{display:inline-block;padding:20px 40px 0;position:relative;width:480px;vertical-align:top;white-space:normal;-webkit-transition:all .3s cubic-bezier(.86,0,.07,1)}.live-chat-board .lc-board-call-back-success{opacity:0;text-align:center;-webkit-transform:scale(.8);transform:scale(.8)}.live-chat-board .lc-board-call-back-success .icon-success{font-size:80px;color:#1ab744}.live-chat-board .lc-board-call-back-success .success-title{font-size:30px;color:#1ab744}.live-chat-board .lc-board-call-back-success .success-description{margin-top:20px}.live-chat-board .lc-board-call-back-content{text-align:center;margin-bottom:40px;padding-top:20px}.live-chat-board .lc-board-call-back-description{margin-top:20px}button::-moz-focus-inner{padding:0;border:0}html:not(.js) body{font-family:Helvetica,Arial,sans-serif}html:not(.js) body .nav.main-menu>li>a{letter-spacing:-.4px}.sub-menu-1 li a b{background-color:#f0f0f0}.sub-menu-1 li:first-child a b{background-color:#1a1e23}.sub-menu-1 li:nth-child(2) a b{background-color:#dce1e6}.sub-menu-1 li:nth-child(3) a b{background-color:#ef9145}.sub-menu-1 li:nth-child(4) a b{background-color:#aad8e5}.sub-menu-1 li:nth-child(5) a b{background-color:#e06f40}.sub-menu-1 li:nth-child(6) a b{background-color:#9b6896}.sub-menu-1 li:nth-child(7) a b{background-color:#665387}</style>
+<script>
+    !function(e){"use strict"
+        var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+            return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+                setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s};
+        "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+    function isLocalStorageExists() {
+        try {
+            localStorage.setItem('t*',1);
+            localStorage.removeItem('t*');
+            return true;
+        } catch(e) {
+            return false;
+        }
+    }
+</script>
+<script>
+        loadCSS("https://s.tmimgcdn.com/css/varnish.application.minified.css?d=1a63017");
+    </script>    	<script type="text/javascript">
+	window.template = {'id':51818 , 'price':1}
+</script>
+	<link rel="prefetch" href="https://s.tmimgcdn.com/js/varnish.compiled.application.en.js?d=abd0f20">
+<link rel="prefetch" href="https://s.tmimgcdn.com/css/varnish.application.minified.css?d=1a63017">
+<link rel="prefetch" href="https://s.tmimgcdn.com/img/line-bg.gif?d=900f612">
+<link rel="prefetch" href="https://s.tmimgcdn.com/img/sprite.svg?d=900f612"></head>
+<body itemscope itemtype="http://schema.org/WebPage"  id="preview-page"	  class="js-frontend ">
+<noscript><iframe src="../index.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="Page js-page-wrapper">
+	<!--============================== HEADER =================================-->
+	<header id="header">
+														    <script type="text/javascript" id="zone_14">
+  window.banner_zone = window.banner_zone || [];
+  window.banner_zone.push({
+    id: 14,
+    zone: "<div class='js-revive-banner-container'><ins data-revive-zoneid='14' data-revive-id='5dba4d01a92de7101be5c5e6e1630dfe'></ins></div>"
+  });
+</script>
+<div class="container header">
+	<!-- Logo -->
+	<a id="logo-brand" class="logo" href="../index.html" title="Website Templates & Themes">
+	<img class="logo-icon svg" alt="Website Templates & Themes" src="../s-tmimgcdn-com/wp-content/uploads/2016/05/logo_tm_new.svg">
+</a>
+	<!-- Search form -->
+			<div class="block-search" >
+                    <form id="js-searchForm" name="searchForm" class="form-search rd-form" action="templates.html" >
+            <div class="input-append control-group tm-rd-input tm-rd-input-f2">
+                                <input name="keywords" type="text"                        placeholder="What do you want to find"
+                       class="js-typeahead2 keyword-search-field js-placeholder rd-field form-control"
+                       value=""/>
+                <span class="tm-icon icon-placeholder icon-magnifier"></span>
+                <span id="searchFormSubmit" class="button btn-unique btn-important tm-icon icon-magnifier hidden js-hint-tooltip"
+                      data-title="Search"
+                      data-placement="bottom"
+                      data-html-class="header-search-btn"
+                ></span>
+            </div>
+        </form>
+    </div>
+	<ul class="user-menu">
+		<!-- Language picker -->
+		<li class="user-menu-element language-pick user-menu-dropdown">
+    <span class="menu-element-inner"><i class="iti-flag us"></i>
+		US<b class="icon-arrow-small-down"></b>
+	</span>
+    <ul class="languages-menu rd-dropdown-list js-languages-menu">
+	    		    <li>
+			    <a id="menu-ES-locale" href="../es/temas-wordpress-tipo-51818.html"						title="Plantillas Web - TemplateMonster en Espanol"
+						class="item-link es-language">
+					<i class="iti-flag es"></i>
+					<span class="lang-name">ES</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-RU-locale" href="../ru/wordpress-themes-type/51818.html"						title="TemplateMonster Russia: создать сайт так просто"
+						class="item-link ru-language">
+					<i class="iti-flag ru"></i>
+					<span class="lang-name">RU</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-DE-locale" href="../de/wordpress-themen-tipo-51818.html"						title="TemplateMonster auf Deutsch"
+						class="item-link de-language">
+					<i class="iti-flag de"></i>
+					<span class="lang-name">DE</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-PL-locale" href="../pl/szablony-wordpress-51818.html"						title="TemplateMonster Polska"
+						class="item-link pl-language">
+					<i class="iti-flag pl"></i>
+					<span class="lang-name">PL</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-IT-locale" href="../it/temi-wordpress-tipo-51818.html"						title=""
+						class="item-link it-language">
+					<i class="iti-flag it"></i>
+					<span class="lang-name">IT</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-TR-locale" href="../tr/wordpress-temalar-51818.html"						title=""
+						class="item-link tr-language">
+					<i class="iti-flag tr"></i>
+					<span class="lang-name">TR</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-FR-locale" href="../fr/themes-wordpress-tipo-51818.html"						title=""
+						class="item-link fr-language">
+					<i class="iti-flag fr"></i>
+					<span class="lang-name">FR</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-BR-locale" href="../pt-br/temas-wordpress/51818.html"						title=""
+						class="item-link br-language">
+					<i class="iti-flag br"></i>
+					<span class="lang-name">BR</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-NL-locale" href="../nl/wordpress-themes/51818.html"						title=""
+						class="item-link nl-language">
+					<i class="iti-flag nl"></i>
+					<span class="lang-name">NL</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-CN-locale" href="../cn/wordpress-themes/51818.html"						title=""
+						class="item-link cn-language">
+					<i class="iti-flag cn"></i>
+					<span class="lang-name">CN</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-CZ-locale" href="../cz/wordpress-templates/51818.html"						title=""
+						class="item-link cz-language">
+					<i class="iti-flag cz"></i>
+					<span class="lang-name">CZ</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-UA-locale" href="../ua/wordpress-templates/51818.html"						title=""
+						class="item-link ua-language">
+					<i class="iti-flag ua"></i>
+					<span class="lang-name">UA</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-HU-locale" href="../hu/wordpress-sablonok/51818.html"						title=""
+						class="item-link hu-language">
+					<i class="iti-flag hu"></i>
+					<span class="lang-name">HU</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-SE-locale" href="../sv/wordpress-themes/51818.html"						title=""
+						class="item-link sv-language">
+					<i class="iti-flag se"></i>
+					<span class="lang-name">SE</span>
+			    </a>
+		    </li>
+	        </ul>
+</li>
+		<!-- Help -->
+		<li class="user-menu-element">
+			<span
+					id="menu-hlp-center"
+					data-target="_blank"
+					data-href="https://helpdesk.templatemonster.com/hc/en"
+					class="js-btn menu-element-inner  js-hint-tooltip"
+					data-title="Help"
+					data-placement="bottom"
+					data-html-class="header-tooltip"
+			>
+				<span class="tm-icon icon-help-circle"></span>
+			</span>
+		</li>
+		<!-- Favorites -->
+		<li class="user-menu-element">
+			<span id="menu-favorites" data-href="https://www.templatemonster.com/collection/"
+				  class="js-collection-url js-none header-collection-link js-btn menu-element-inner js-hint-tooltip"
+				  data-title="View your Collection"
+				  data-placement="bottom"
+				  data-html-class="header-tooltip"
+			>
+				<b class="tm-icon icon-heart-empty favorite-btn js-url-favorite"></b>
+			</span>
+		</li>
+		<!-- Notifications -->
+<li class="user-menu-element header-notifications user-menu-dropdown js-notifications">
+	<span id="menu-notification"  class="menu-element-inner has-notification js-hint-tooltip js-menu-notification"
+		  data-title="View your Notifications"
+		  data-placement="bottom"
+		  data-html-class="header-tooltip"
+	>
+		<span class="tm-icon icon-bell"></span>
+	</span>
+	<div class="notification-menu overflowed-hidden">
+		<ul class="rd-dropdown-list js-dropdown">
+			<li class="notification-menu-li">
+				<div class="notification">
+					<span class="notification__icon tm-icon icon-pencil"></span>
+					<div class="notification__body">
+						<div class="notification__content">
+						<span id="notification-signup-link" data-href="https://account.templatemonster.com/auth/" data-target="_blank" class="js-btn bold cursor-pointer">
+																					 Please, <span class="t3 highlighted-important bold">Sign Up</span>
+						</span>
+							<br>
+							Make your shopping much easier
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<button id="notification-load-btn" class="button btn-main btn-full-width without-top-bd-radius js-notification-load-btn hidden">View more</button>
+	</div>
+</li>
+		<!-- Account -->
+				<li id="menu-signin-block" class="user-menu-element js-signin-menu">
+			<div
+					id="header-signin-link"
+					data-target="_blank"
+					class="menu-element-inner js-btn link-click js-hint-tooltip"
+					data-href="https://account.templatemonster.com/auth/"
+					data-title="Account"
+					data-placement="bottom"
+					data-html-class="header-tooltip"
+			>
+				<span class="tm-icon icon-profile-circle"></span>
+			</div>
+		</li>
+<li id="menu-account-block" class="user-menu-element account-pick js-account-dropdown user-menu-dropdown hidden">
+	<span class="menu-element-inner">
+		<span id='user-avatar' class="profile-img-wrap js-avatar" >
+			<span class="tm-icon icon-profile-circle"></span>
+		</span>
+		<b class="icon-arrow-small-down"></b>
+	</span>
+	<ul class="account-menu rd-dropdown-list">
+					<li class="account-menu-li">
+				<span id="header-downloads-link" data-href="https://account.templatemonster.com/?lang=en#/downloads" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-download"></i>
+					<span>Downloads</span>
+				</span>
+			</li>
+					<li class="account-menu-li">
+				<span id="header-collection-link" data-href="https://www.templatemonster.com/collection/" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-heart"></i>
+					<span>Collection</span>
+				</span>
+			</li>
+					<li class="account-menu-li">
+				<span id="header-billing-link" data-href="https://account.templatemonster.com/?lang=en#/billing" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-money"></i>
+					<span>Billing</span>
+				</span>
+			</li>
+					<li class="account-menu-li">
+				<span id="header-profile-link" data-href="https://account.templatemonster.com/?lang=en#/profile" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-profile-circle"></i>
+					<span>User Profile</span>
+				</span>
+			</li>
+					<li class="account-menu-li js-signout-link">
+				<span id="header-signOut-link" data-href="" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-logout"></i>
+					<span>Sign Out</span>
+				</span>
+			</li>
+			</ul>
+</li>
+		<script type="application/javascript">
+			(function () {
+				function isLocalStorageExists() {
+					try {
+						localStorage.setItem('t*',1);
+						localStorage.removeItem('t*');
+						return true;
+					} catch(e) {
+						return false;
+					}
+				}
+				function getCookie(key) {
+					var ca = document.cookie.match( '(^|;) ?'+key+'=([^;]*)(;|$)' );
+					var c=null;
+					if ( ca ) {if (typeof(ca[2]) != "undefined") { c=ca[2];}}
+					return c;
+				}
+				if (!getCookie('access_token')) {
+                    document.querySelector('.js-notifications').style.display='none';
+				}
+				if (isLocalStorageExists()) {
+					var avatarData = JSON.parse( localStorage.getItem('avatar') );
+					if (avatarData && avatarData.cid === getCookie('cid') && getCookie('access_token')) {
+						var avatar = avatarData.html,
+								signinMenu = document.getElementById('menu-signin-block'),
+								accountMenu = document.getElementById('menu-account-block'),
+								avatarElement = document.getElementById('user-avatar');
+						if (signinMenu && accountMenu) {
+							if (avatarElement && avatar) {
+								avatarElement.outerHTML = avatar;
+							}
+							accountMenu.className = accountMenu.className.replace('hidden', '');
+							signinMenu.className = signinMenu.className + ' hidden';
+						}
+					} else {
+                        localStorage.removeItem('avatar');
+					}
+				}
+			})();
+		</script>
+				<!-- Cart -->
+		<li class="user-menu-element">
+			<span id="shp-cart" data-target="_blank" data-href="../cart.html" class="shop-cart menu-element-inner js-btn link-click">
+				<span class="tm-icon icon-cart"></span>
+				<span class="menu-element-text">Cart</span>
+				<span class="cart-count js-cart-count" id="cart-count">
+					<span></span>
+				</span>
+			</span>
+		</li>
+			</ul>
+</div>
+				<!-- Main menu -->
+	<div class="navigation">
+		<div class="container">
+				<ul class="nav main-menu flex-row flex-wrap">
+																																																		<li class="sub-menu">
+	<a href="../index.html#" id="nm-websites"><span>WEBSITES</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../landings/websites.html"  id="nm-websites-websites">
+						<b class="icon-weblium svg square-icon"></b><span class="title-holder">Ready-made Websites</span>
+																					<p class="sub-menu-padding" >Ready-made Websites based on Weblium platform: setup, hosting and domain name included.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../landings/saas-websites.html"  id="nm-websites-saas-websites">
+						<b class="icon-moto3 svg square-icon"></b><span class="title-holder">MotoCMS Site Builder</span>
+																					<p class="sub-menu-padding" >Drag-n-drop website builder by MotoCMS with hosting, free domain name and 24/7 support.</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../cms-blog-templates.html" id="nm-cms"><span>CMS</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../wordpress-themes.html"  id="nm-cms-wordpress-themes">
+						<b class="icon-wordpress svg square-icon"></b><span class="title-holder">WordPress <br>Themes</span>
+						<span  class="template-count">2135</span>
+																					<p class="sub-menu-padding" >Three reasons to use WordPress: no time, no skills, no headache</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../elementor-marketplace.html"  id="nm-cms-elementor-marketplace">
+						<b class="icon-elementor svg square-icon"></b><span class="title-holder">Elementor <br>Marketplace</span>
+						<span  class="template-count">601</span>
+																					<p class="sub-menu-padding" >NEW!!! Templates, Plugins and Тhemes for true Elementor-lovers</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../joomla-templates.html"  id="nm-cms-joomla-templates">
+						<b class="icon-joomla svg square-icon"></b><span class="title-holder">Joomla <br>Templates</span>
+						<span  class="template-count">1160</span>
+																					<p class="sub-menu-padding" >Best for users with prior technical or website experience</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../moto-cms-3-templates.html"  id="nm-cms-moto-cms-3-templates">
+						<b class="icon-moto3 svg square-icon"></b><span class="title-holder">Moto CMS 3 <br>Templates</span>
+						<span  class="template-count">803</span>
+																					<p class="sub-menu-padding" >Templates with beginner-friendly CMS allowing users to quickly build fast and responsive websites.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../drupal-themes.html"  id="nm-cms-drupal-themes">
+						<b class="icon-drupal svg square-icon"></b><span class="title-holder">Drupal <br>Themes</span>
+						<span  class="template-count">357</span>
+																					<p class="sub-menu-padding" >In the hands of a knowledgeable, Drupal theme is a glove that fits all sizes</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../moto-cms-html-templates.html"  id="nm-cms-moto-cms-html-templates">
+						<b class="icon-moto svg square-icon"></b><span class="title-holder">Moto CMS HTML <br>Templates</span>
+						<span  class="template-count">1771</span>
+																					<p class="sub-menu-padding" >Powerful templates with feature-rich editing tools for less technically skilled</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../site-templates.html" id="nm-web"><span>Web Templates</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../properties/features/responsive-design.html"  id="nm-web-responsive-design">
+						<b class="icon-responsive svg square-icon"></b><span class="title-holder">Responsive <br>Templates</span>
+						<span  class="template-count">10472</span>
+																					<p class="sub-menu-padding" >Make website fully responsive for all devices and screen resolutions. Startlingly adaptive designs done right</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../landing-page-templates.html"  id="nm-web-landing-page-templates">
+						<b class="icon-landing svg square-icon"></b><span class="title-holder">Landing Page <br>Templates</span>
+						<span  class="template-count">635</span>
+																					<p class="sub-menu-padding" >Convert visits into leads with customized content that will speak to your visitors</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../bootstrap-website-templates.html"  id="nm-web-bootstrap-website-templates">
+						<b class="icon-bootstrap svg square-icon"></b><span class="title-holder">Bootstrap <br>Themes</span>
+						<span  class="template-count">2505</span>
+																					<p class="sub-menu-padding" >Have everything in place to be a real contender: Bootstrap functionality, responsive design, unique add-ons</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../website-templates.html"  id="nm-web-website-templates">
+						<b class="icon-html5-2 svg square-icon"></b><span class="title-holder">HTML5 Site <br>Templates</span>
+						<span  class="template-count">2505</span>
+																					<p class="sub-menu-padding" >Super customizable themes built on intelligent HTML5, with a clean look to design and coding</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../unbounce-templates.html "  id="nm-web-unbounce-templates">
+						<b class="icon-unbounce svg square-icon"></b><span class="title-holder">Unbounce <br>Templates </span>
+						<span  class="template-count">44</span>
+																					<p class="sub-menu-padding" >Lead generating Unbounce templates for your online marketing campaigns</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../photo-gallery-templates.html"  id="nm-web-photo-gallery-templates">
+						<b class="icon-moto3 svg square-icon"></b><span class="title-holder">Photo Gallery  <br>Templates</span>
+						<span  class="template-count">217</span>
+																					<p class="sub-menu-padding" >Perfect combination of the drag-n-drop ability of site builder, the cataloging of photos, and the editing power of MotoCMS</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../newsletter-email-templates.html"  id="nm-web-newsletter-email-templates">
+						<b class="icon-email svg square-icon"></b><span class="title-holder">Newsletter Templates</span>
+						<span  class="template-count">203</span>
+																					<p class="sub-menu-padding" >Responsive email templates with a modern design you could use to get more people to sign up for your newsletter</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../adobe-muse-templates.html"  id="nm-web-adobe-muse-templates">
+						<b class="icon-muse svg square-icon"></b><span class="title-holder">Muse <br>Templates</span>
+						<span  class="template-count">172</span>
+																					<p class="sub-menu-padding" >Create fully functonal cross-browser sites with new Adobe product, no coding skills required</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../ready-made-websites.html"  id="nm-web-ready-made-websites">
+						<b class="icon-weblium svg square-icon"></b><span class="title-holder">Ready-made Websites</span>
+						<span  class="template-count">2</span>
+																					<p class="sub-menu-padding" >Ready-made Websites based on Weblium platform: setup, hosting and domain name included.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../specialty-pages.html"  id="nm-web-specialty-pages">
+						<b class="icon-specialty-page svg square-icon"></b><span class="title-holder">Specialty Pages</span>
+						<span  class="template-count">21</span>
+																					<p class="sub-menu-padding" >Best Specialty pages at TemplateMonster.com! Now, you won't need to hire professional developers to design and create specialty pages like 404, coming soon etc.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../ebay-templates.html"  id="nm-web-ebay-templates">
+						<b class="icon-ebay svg square-icon"></b><span class="title-holder">eBay Templates</span>
+						<span  class="template-count">7</span>
+																					<p class="sub-menu-padding" >eFind the best eBay templates to drive the growth of your eBay based online store</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../admin-templates.html"  id="nm-web-admin-templates">
+						<b class="icon-admin svg square-icon"></b><span class="title-holder">Admin  <br>Templates</span>
+						<span  class="template-count">55</span>
+																					<p class="sub-menu-padding" >Back-end doesn't equal ugly, wrap-up your admin with a stylish Bootstrap templates.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../app-templates.html"  id="nm-web-app-templates">
+						<b class="icon-application svg square-icon"></b><span class="title-holder">App <br>Templates</span>
+						<span  class="template-count">12</span>
+																					<p class="sub-menu-padding" >Best Application Templates at TemplateMonster.com! Now, you won't need to hire professional developers to build a mobile app for your website</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../ecommerce-templates.html" id="nm-ecommerce"><span>E-commerce</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../woocommerce-themes.html"  id="nm-ecommerce-woocommerce-themes">
+						<b class="icon-woo svg square-icon"></b><span class="title-holder">WooCommerce <br>Themes</span>
+						<span  class="template-count">606</span>
+																					<p class="sub-menu-padding" >Predesigned templates to handle e-commerce store on your WordPress based website</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../shopify-themes.html"  id="nm-ecommerce-shopify-themes">
+						<b class="icon-shopify svg square-icon"></b><span class="title-holder">Shopify <br>Themes</span>
+						<span  class="template-count">605</span>
+																					<p class="sub-menu-padding" >Instant e-commerce platform with simple customization, great for entrepreneurs who want a hosted store</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../prestashop-themes.html"  id="nm-ecommerce-prestashop-themes">
+						<b class="icon-prestashop svg square-icon"></b><span class="title-holder">PrestaShop <br>Themes</span>
+						<span  class="template-count">690</span>
+																					<p class="sub-menu-padding" >User-friendly platform good in its quick set up and simple managing</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../magento-themes.html"  id="nm-ecommerce-magento-themes">
+						<b class="icon-magento svg square-icon"></b><span class="title-holder">Magento <br>Themes</span>
+						<span  class="template-count">494</span>
+																					<p class="sub-menu-padding" >Robustly featured and scalable shopping cart for tech-savvy web developers</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../opencart-templates.html"  id="nm-ecommerce-opencart-templates">
+						<b class="icon-opencart svg square-icon"></b><span class="title-holder">OpenCart <br>Templates</span>
+						<span  class="template-count">739</span>
+																					<p class="sub-menu-padding" >For small-to-mid merchants who need simple, highly extensible platform</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../motocms-ecommerce-templates.html"  id="nm-ecommerce-motocms-ecommerce-templates">
+						<b class="icon-moto-3-ecommerce svg square-icon"></b><span class="title-holder">MotoCMS <br>Ecommerce</span>
+						<span  class="template-count">129</span>
+																					<p class="sub-menu-padding" >Responsive templates with Drag&Drop CMS allowing users to build fast and robust online stores.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../bigcommerce-themes.html"  id="nm-ecommerce-bigcommerce-themes">
+						<b class="icon-bigcommerce svg square-icon"></b><span class="title-holder">BigCommerce Themes</span>
+						<span  class="template-count">8</span>
+																					<p class="sub-menu-padding" >Get a Premium BigCommerce templates for the instant e-commerce platform. Enjoy high performance and flexible templates</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../virtuemart-templates.html"  id="nm-ecommerce-virtuemart-templates">
+						<b class="icon-virtuemart svg square-icon"></b><span class="title-holder">VirtueMart <br>Templates</span>
+						<span  class="template-count">220</span>
+																					<p class="sub-menu-padding" >Flexible e-commerce plugin for Joomla, optimal for small to mid-sized stores</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../zencart-templates.html"  id="nm-ecommerce-zencart-templates">
+						<b class="icon-zencart svg square-icon"></b><span class="title-holder">ZenCart <br>Templates</span>
+						<span  class="template-count">224</span>
+																					<p class="sub-menu-padding" >Shopping cart with great merchandising features to run a bigger web store</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../x-cart-templates.html"  id="nm-ecommerce-x-cart-templates">
+						<b class="icon-x-cart svg square-icon"></b><span class="title-holder">X-Cart Templates</span>
+						<span  class="template-count">17</span>
+																					<p class="sub-menu-padding" >Get premium X-Cart Themes to create a solid eCommerce project fast & easy! Enjoy 100% responsive design + high-performance templates</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../category.html" id="nm-cat"><span>Categories</span><i class="tm-icon icon-arrow"></i></a>
+	<div class="sub-menu-2  clearfix">
+		<ul class="flex-row flex-wrap">
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/art-culture.html" id="nm-cat-art-culture">
+						<b class="svg icon-art-culture"></b>
+						<span class="title_text">Art & Culture</span>
+						<span class="template-count">589</span>					</a>
+					<p>
+											<a href="../category/art-templates.html" id="nm-cat-art-culture-art-templates">Art</a>,											<a href="../category/music.html" id="nm-cat-art-culture-music">Music</a>,											<a href="../category/museum-templates.html" id="nm-cat-art-culture-museum-templates">Museum</a>,											<a href="../category/movie-templates.html" id="nm-cat-art-culture-movie-templates">Movie</a>,											<a href="../category/theater-templates.html" id="nm-cat-art-culture-theater-templates">Theatre</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/animals-pets.html" id="nm-cat-animals-pets">
+						<b class="svg icon-animal-pets"></b>
+						<span class="title_text">Animals & Pets</span>
+						<span class="template-count">343</span>					</a>
+					<p>
+											<a href="../category/pet-shop-templates.html" id="nm-cat-animals-pets-pet-shop-templates">Pets</a>,											<a href="../category/wild-life-templates.html" id="nm-cat-animals-pets-wild-life-templates">Wild Life</a>,											<a href="../category/zoo-templates.html" id="nm-cat-animals-pets-zoo-templates">Zoo</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/design-photography.html" id="nm-cat-design-photography">
+						<b class="svg icon-design-photography"></b>
+						<span class="title_text">Design & Photography</span>
+						<span class="template-count">2851</span>					</a>
+					<p>
+											<a href="../category/design.html" id="nm-cat-design-photography-design">Design</a>,											<a href="../category/art-photography.html" id="nm-cat-design-photography-art-photography">Photography</a>,											<a href="../category/architecture.html" id="nm-cat-design-photography-architecture">Architecture</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/electronics.html" id="nm-cat-electronics">
+						<b class="svg icon-electronics"></b>
+						<span class="title_text">Electronics</span>
+						<span class="template-count">504</span>					</a>
+					<p>
+											<a href="../category/mobile-store-templates.html" id="nm-cat-electronics-mobile-store-templates">Mobile Store</a>,											<a href="../category/electronics-store-templates.html" id="nm-cat-electronics-electronics-store-templates">Electronics Store</a>,											<a href="../category/video-store-templates.html" id="nm-cat-electronics-video-store-templates">Video</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/holidays-gifts-flowers.html" id="nm-cat-holidays-gifts-flowers">
+						<b class="svg icon-holidays-gifts-flowers"></b>
+						<span class="title_text">Holidays, Gifts & Flowers</span>
+						<span class="template-count">297</span>					</a>
+					<p>
+											<a href="../category/flowers.html" id="nm-cat-holidays-gifts-flowers-flowers">Flowers</a>,											<a href="../category/holiday-templates.html" id="nm-cat-holidays-gifts-flowers-holiday-templates">Holidays</a>,											<a href="../category/gifts.html" id="nm-cat-holidays-gifts-flowers-gifts">Gifts</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/education-books.html" id="nm-cat-education-books">
+						<b class="svg icon-education-books"></b>
+						<span class="title_text">Education & Books</span>
+						<span class="template-count">730</span>					</a>
+					<p>
+											<a href="../category/books.html" id="nm-cat-education-books-books">Books</a>,											<a href="../category/education.html" id="nm-cat-education-books-education">Education</a>,											<a href="../category/science.html" id="nm-cat-education-books-science">Science</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/business.html" id="nm-cat-business">
+						<b class="svg icon-business-services"></b>
+						<span class="title_text">Business & Services</span>
+						<span class="template-count">6290</span>					</a>
+					<p>
+											<a href="../category/consulting-templates.html" id="nm-cat-business-consulting-templates">Consulting</a>,											<a href="../category/industrial.html" id="nm-cat-business-industrial">Industrial</a>,											<a href="../category/law.html" id="nm-cat-business-law">Law</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/cars-motorcycles.html" id="nm-cat-cars-motorcycles">
+						<b class="svg icon-cars-motorcycles"></b>
+						<span class="title_text">Cars & Motorcycles</span>
+						<span class="template-count">641</span>					</a>
+					<p>
+											<a href="../category/cars.html" id="nm-cat-cars-motorcycles-cars">Cars</a>,											<a href="../category/motor-sports-templates.html" id="nm-cat-cars-motorcycles-motor-sports-templates">Motorcycles</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/sports-outdoors-travel.html" id="nm-cat-sports-outdoors-travel">
+						<b class="svg icon-sports-outdoors-travel"></b>
+						<span class="title_text">Sports, Outdoors & Travel</span>
+						<span class="template-count">1823</span>					</a>
+					<p>
+											<a href="../category/sport.html" id="nm-cat-sports-outdoors-travel-sport">Sports</a>,											<a href="../category/travel.html" id="nm-cat-sports-outdoors-travel-travel">Travel</a>,											<a href="../category/hotels.html" id="nm-cat-sports-outdoors-travel-hotels">Hotels</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/fashion-beauty.html" id="nm-cat-fashion-beauty">
+						<b class="svg icon-fashion-beauty"></b>
+						<span class="title_text">Fashion & Beauty</span>
+						<span class="template-count">2522</span>					</a>
+					<p>
+											<a href="../category/fashion.html" id="nm-cat-fashion-beauty-fashion">Fashion</a>,											<a href="../category/jewelry.html" id="nm-cat-fashion-beauty-jewelry">Jewelry</a>,											<a href="../category/beauty.html" id="nm-cat-fashion-beauty-beauty">Beauty</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/computers-internet.html" id="nm-cat-computers-internet">
+						<b class="svg icon-computers-internet"></b>
+						<span class="title_text">Computers & Internet</span>
+						<span class="template-count">996</span>					</a>
+					<p>
+											<a href="../category/hosting.html" id="nm-cat-computers-internet-hosting">Hosting</a>,											<a href="../category/software.html" id="nm-cat-computers-internet-software">Software</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/food-restaurant.html" id="nm-cat-food-restaurant">
+						<b class="svg icon-food-restaurant"></b>
+						<span class="title_text">Food & Restaurant</span>
+						<span class="template-count">1323</span>					</a>
+					<p>
+											<a href="../category/cafe-and-restaurant.html" id="nm-cat-food-restaurant-cafe-and-restaurant">Restaurant</a>,											<a href="../category/food-drink.html" id="nm-cat-food-restaurant-food-drink">Food & Drinks</a>,											<a href="../category/cafe-templates.html" id="nm-cat-food-restaurant-cafe-templates">Cafe</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/society-people.html" id="nm-cat-society-people">
+						<b class="svg icon-society-people"></b>
+						<span class="title_text">Society & People</span>
+						<span class="template-count">1267</span>					</a>
+					<p>
+											<a href="../category/personal-pages.html" id="nm-cat-society-people-personal-pages">Personal Pages</a>,											<a href="../category/dating.html" id="nm-cat-society-people-dating">Dating</a>,											<a href="../category/religious.html" id="nm-cat-society-people-religious">Religion</a>,											<a href="../category/charity.html" id="nm-cat-society-people-charity">Charity</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/home-family.html" id="nm-cat-home-family">
+						<b class="svg icon-home-family"></b>
+						<span class="title_text">Home & Family</span>
+						<span class="template-count">1939</span>					</a>
+					<p>
+											<a href="../category/wedding.html" id="nm-cat-home-family-wedding">Wedding</a>,											<a href="../category/interior-furniture.html" id="nm-cat-home-family-interior-furniture">Interior & Furniture</a>,											<a href="../category/kids-children.html" id="nm-cat-home-family-kids-children">Kids & Children</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/entertainment-games-nightlife.html" id="nm-cat-entertainment-games-nightlife">
+						<b class="svg icon-entertainment-games-nightlife"></b>
+						<span class="title_text">Entertainment, Games & Nightlife</span>
+						<span class="template-count">726</span>					</a>
+					<p>
+											<a href="../category/games.html" id="nm-cat-entertainment-games-nightlife-games">Games</a>,											<a href="../category/night-club.html" id="nm-cat-entertainment-games-nightlife-night-club">Night Club</a>,											<a href="../category/online-casino.html" id="nm-cat-entertainment-games-nightlife-online-casino">Online Casino</a>,											<a href="../category/radio-website-templates.html" id="nm-cat-entertainment-games-nightlife-radio-website-templates">Radio</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/real-estate.html" id="nm-cat-real-estate">
+						<b class="svg icon-real-estate"></b>
+						<span class="title_text">Real Estate</span>
+						<span class="template-count">389</span>					</a>
+					<p>
+											<a href="../category/real-estate-agency-templates.html" id="nm-cat-real-estate-real-estate-agency-templates">Real Estate Agency</a>,											<a href="../category/mortgage-templates.html" id="nm-cat-real-estate-mortgage-templates">Mortgage</a>,											<a href="../category/land-broker-templates.html" id="nm-cat-real-estate-land-broker-templates">Land Broker</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../category/medical.html" id="nm-cat-medical">
+						<b class="svg icon-medical"></b>
+						<span class="title_text">Medical (Healthcare)</span>
+						<span class="template-count">693</span>					</a>
+					<p>
+											<a href="../category/drug-store-templates.html" id="nm-cat-medical-drug-store-templates">Drug Store</a>,											<a href="../category/dentistry-templates.html" id="nm-cat-medical-dentistry-templates">Dentistry</a>,											<a href="../category/herbal-templates.html" id="nm-cat-medical-herbal-templates">Herbal</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../graphics.html" id="nm-cat-graphics">
+						<b class="svg icon-graphics"></b>
+						<span class="title_text">Graphics</span>
+						<span class="template-count">7845</span>					</a>
+					<p>
+											<a href="../resume-templates.html" id="nm-cat-graphics-resume-templates">Resume</a>,											<a href="../certificate-templates.html" id="nm-cat-graphics-certificate-templates">Certificates</a>,											<a href="../fonts.html" id="nm-cat-graphics-fonts">Fonts</a>,											<a href="../illustrations.html" id="nm-cat-graphics-illustrations">Illustrations</a>										</p>
+				</li>
+				</ul>
+	</div>
+</li>
+																									<li class="sub-menu">
+	<a href="../plugins-extensions.html" id="nm-plugins"><span>Plugins</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../wordpress-plugins.html"  id="nm-plugins-wordpress-plugins">
+						<b class="icon-wordpress svg square-icon"></b><span class="title-holder">WordPress <br>Plugins</span>
+						<span  class="template-count">41</span>
+																					<p class="sub-menu-padding" >A bulletproof way to make your WordPress site even more awesome.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../prestashop-extensions.html"  id="nm-plugins-prestashop-extensions">
+						<b class="icon-prestashop svg square-icon"></b><span class="title-holder">PrestaShop  <br>Modules</span>
+						<span  class="template-count">30</span>
+																					<p class="sub-menu-padding" >Give your store some extra power with our premium PrestaShop extensions.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../javascript.html"  id="nm-plugins-javascript">
+						<b class="icon-js svg square-icon"></b><span class="title-holder">JavaScript</span>
+						<span  class="template-count">3</span>
+																					<p class="sub-menu-padding" >Best JavaScript and jQuery plugins at TemplateMonster. Make your site more interactive with the help of additional plugins.</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../graphics.html" id="nm-flash"><span>Graphics</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../powerpoint-templates.html"  id="nm-flash-powerpoint-templates">
+						<b class="icon-powerpoint svg square-icon"></b><span class="title-holder">PowerPoint <br>Templates</span>
+						<span  class="template-count">1208</span>
+																					<p class="sub-menu-padding" >Bold and captivating templates that combine quality visuals with clear message</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../keynote-templates.html"  id="nm-flash-keynote-templates">
+						<b class="icon-keynote svg square-icon"></b><span class="title-holder">Keynote <br>Templates</span>
+						<span  class="template-count">297</span>
+																					<p class="sub-menu-padding" >Keynote Templates are the professionally designed templates that you can base your actual presentation on</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../logo-templates.html"  id="nm-flash-logo-templates">
+						<b class="icon-icons svg square-icon"></b><span class="title-holder">Logo Templates</span>
+						<span  class="template-count">3352</span>
+																					<p class="sub-menu-padding" >Logo Templates are pre-made logo design products in Adobe Photoshop, Adobe Illustrator, or Corel Draw format</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../psd-templates.html"  id="nm-flash-psd-templates">
+						<b class="icon-psd svg square-icon"></b><span class="title-holder">PSD <br>Templates</span>
+						<span  class="template-count">3304</span>
+																					<p class="sub-menu-padding" >Multipurpose themes that have only graphic design source files, very flexible with a variety of custom options</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../resume-templates.html"  id="nm-flash-resume-templates">
+						<b class="icon-resume svg square-icon"></b><span class="title-holder">Resume <br>Templates</span>
+						<span  class="template-count">548</span>
+																					<p class="sub-menu-padding" >Best Printable Resume Templates at TemplateMonster.com! Choose one of a kind resume for your career and make it unique with our best resumes</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../certificate-templates.html"  id="nm-flash-certificate-templates">
+						<b class="icon-certificate svg square-icon"></b><span class="title-holder">Certificate Templates</span>
+						<span  class="template-count">81</span>
+																					<p class="sub-menu-padding" >Best Certificate Templates at TemplateMonster. You will find lots of certificate designs for any niche</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../illustrations.html"  id="nm-flash-illustrations">
+						<b class="icon-illustrations svg square-icon"></b><span class="title-holder">Illustrations</span>
+						<span  class="template-count">426</span>
+																					<p class="sub-menu-padding" >Best illustrations from various artists. Enhance your project, website, cards, documents etc with the help of illustrations packages.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../infographic-elements.html"  id="nm-flash-infographic-elements">
+						<b class="icon-infographics svg square-icon"></b><span class="title-holder">Infographic Elements</span>
+						<span  class="template-count">22</span>
+																					<p class="sub-menu-padding" >Best infographic elements at TemplateMonster. Enhance your project, statistic, blog posts etc using infographic elements.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../fonts.html"  id="nm-flash-fonts">
+						<b class="icon-fonts svg square-icon"></b><span class="title-holder">Fonts and Icon Fonts</span>
+						<span  class="template-count">295</span>
+																					<p class="sub-menu-padding" >Versatile Fonts and Font Packs.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../product-mockups.html"  id="nm-flash-product-mockups">
+						<b class="icon-product-mockup svg square-icon"></b><span class="title-holder">Product Mockups</span>
+						<span  class="template-count">77</span>
+																					<p class="sub-menu-padding" >Best Product Mockups at TemplateMonster. You will find lots of devices, apparel, furniture, branding etc ready to use mockup sets for designing stores, websites, promo materials and social networks.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../bundles.html"  id="nm-flash-bundles">
+						<b class="icon-bundles svg square-icon"></b><span class="title-holder">Bundles</span>
+						<span  class="template-count">129</span>
+																					<p class="sub-menu-padding" >Best Bundles from various authors at TemplateMonster. This is the category you were waiting for. You will be able to choose from templates, images, psd, icons, fonts, social media bundled products etc</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../ui-elements.html"  id="nm-flash-ui-elements">
+						<b class="icon-ui svg square-icon"></b><span class="title-holder">UI Elements</span>
+						<span  class="template-count">25</span>
+																					<p class="sub-menu-padding" >Buy UI kits at TemplateMonster.com to jazz up your website.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../social-media.html"  id="nm-flash-social-media">
+						<b class="icon-social svg square-icon"></b><span class="title-holder">Social Media</span>
+						<span  class="template-count">84</span>
+																					<p class="sub-menu-padding" >Best Social Media packs from various at TemplateMonster. Find more social media templates for Instagram posts, Facebook covers, YouTube channels, Pinterest and more</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../video-templates.html"  id="nm-flash-video-templates">
+						<b class="icon-ae svg square-icon"></b><span class="title-holder">After Effects <br>Templates</span>
+						<span  class="template-count">240</span>
+																					<p class="sub-menu-padding" >Hollywood-quality video products and digital motion graphics for any taste</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../animated-banners.html"  id="nm-flash-animated-banners">
+						<b class="icon-anim-bnr svg square-icon"></b><span class="title-holder">Animated Banners</span>
+						<span  class="template-count">61</span>
+																					<p class="sub-menu-padding" >Best Animated Banners at TemplateMonster. Promote your website or earn money from advertising. Select the most suitable ones from our collection.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../corporate-identity.html"  id="nm-flash-corporate-identity">
+						<b class="icon-corporate svg square-icon"></b><span class="title-holder">Corporate Identity</span>
+						<span  class="template-count">1177</span>
+																					<p class="sub-menu-padding" >Here you can find Logos, Icons, Logosets and Corporate Identities.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../iconsets.html"  id="nm-flash-iconsets">
+						<b class="icon-monster_dark svg square-icon"></b><span class="title-holder">Icon Sets</span>
+						<span  class="template-count">170</span>
+																					<p class="sub-menu-padding" >An Icon set is a set of 10 icons designed with the same theme. Icons are supplied and can be edited with Adobe Photoshop, Adobe Illustrator, or Corel Draw</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../patterns.html"  id="nm-flash-patterns">
+						<b class="icon-product-mockup svg square-icon"></b><span class="title-holder">Patterns</span>
+						<span  class="template-count">53</span>
+																					<p class="sub-menu-padding" >Best patterns collection only at TemplateMonster</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../sketch-templates.html"  id="nm-flash-sketch-templates">
+						<b class="icon-sketch svg square-icon"></b><span class="title-holder">Sketch Templates</span>
+																					<p class="sub-menu-padding" >Get a Premium Sketch Templates only at TemplateMonster</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../service-center.html" id="nm-service-hub"><span>SERVICES</span>
+        </a>
+    </li>
+													</ul>
+		</div>
+	</div>
+	<div class="sub-menu container">
+	<div class="sub-menu-1 js-sub-menu-1 sub-menu-1_dropdown">
+		<ul>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../wordpress-themes.html" id="nm-top-wordpress-themes">
+						<b class="icon-wordpress svg square-icon "></b>
+						<span>WordPress</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-wordpress-themes.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-wordpress-themes.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../wordpress-plugins.html"
+									   class="item-link" >
+										WordPress Plugins
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/business-wordpress-themes.html"
+									   class="item-link" >
+										Business & Services
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/real-estate-wordpress-themes.html"
+									   class="item-link" >
+										Real Estate
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/design-photography-wordpress-themes.html"
+									   class="item-link" >
+										Design & Photography
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/cars-motorcycles-wordpress-themes.html"
+									   class="item-link" >
+										Cars & Motorcycles
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/medical-wordpress-themes.html"
+									   class="item-link" >
+										Medical
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/food-restaurant-wordpress-themes.html"
+									   class="item-link" >
+										Food & Restaurant
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/news-portal-wordpress-themes.html"
+									   class="item-link" >
+										Magazine & News
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/travel-wordpress-themes.html"
+									   class="item-link" >
+										Travel
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/education-wordpress-themes.html"
+									   class="item-link" >
+										Education
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/consulting-wordpress-themes.html"
+									   class="item-link" >
+										Consulting
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/sport-wordpress-themes.html"
+									   class="item-link" >
+										Sports
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/it-wordpress-themes.html"
+									   class="item-link" >
+										IT & Software
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/construction-company-wordpress-themes.html"
+									   class="item-link" >
+										Construction
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/movie-wordpress-themes.html"
+									   class="item-link" >
+										Movie
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/fashion-wordpress-themes.html"
+									   class="item-link" >
+										Fashion
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/finance-wordpress-themes.html"
+									   class="item-link" >
+										Finance
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/charity-wordpress-themes.html"
+									   class="item-link" >
+										Charity
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/wedding-wordpress-themes.html"
+									   class="item-link" >
+										Wedding
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../website-templates.html" id="nm-top-website-templates">
+						<b class="icon-html5-2 svg square-icon "></b>
+						<span>HTML</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-website-templates.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-website-templates.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../admin-templates.html"
+									   class="item-link" >
+										Admin Templates
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/business-website-templates.html"
+									   class="item-link" >
+										Business & Services
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/design-photography-website-templates.html"
+									   class="item-link" >
+										Design & Photography
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/medical-website-templates.html"
+									   class="item-link" >
+										Medical
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/real-estate-website-templates.html"
+									   class="item-link" >
+										Real Estate
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/computers-internet-website-templates.html"
+									   class="item-link" >
+										Computers & Internet
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../shopify-themes.html" id="nm-top-shopify-themes">
+						<b class="icon-shopify2 svg square-icon "></b>
+						<span>Shopify</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-shopify-themes.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-shopify-themes.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/fashion-beauty-shopify-themes.html"
+									   class="item-link" >
+										Fashion & Beauty
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/cars-motorcycles-shopify-themes.html"
+									   class="item-link" >
+										Cars & Motorcycles
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/food-restaurant-shopify-themes.html"
+									   class="item-link" >
+										Food & Restaurant
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/sports-outdoors-travel-shopify-themes.html"
+									   class="item-link" >
+										Sports, Outdoors & Travel
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/electronics-shopify-themes.html"
+									   class="item-link" >
+										Electronics Templates
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/interior-shopify-themes.html"
+									   class="item-link" >
+										Interior & Furniture Templates
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/medical-shopify-themes.html"
+									   class="item-link" >
+										Medical Templates
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../woocommerce-themes.html" id="nm-top-woocommerce-themes">
+						<b class="icon-woo svg square-icon "></b>
+						<span>WooCommerce</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-woocommerce-themes.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-woocommerce-themes.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/food-restaurant-woocommerce-themes.html"
+									   class="item-link" >
+										Food & Restaurant
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/cars-motorcycles-woocommerce-themes.html"
+									   class="item-link" >
+										Cars & Motorcycles
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/electronics-woocommerce-themes.html"
+									   class="item-link" >
+										Electronics
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/fashion-beauty-woocommerce-themes.html"
+									   class="item-link" >
+										Fashion & Beauty
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/computers-internet-woocommerce-themes.html"
+									   class="item-link" >
+										Computers & Internet
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../prestashop-themes.html" id="nm-top-prestashop-themes">
+						<b class="icon-prestashop svg square-icon "></b>
+						<span>PrestaShop</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-prestashop-themes.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-prestashop-themes.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../prestashop-extensions.html"
+									   class="item-link" >
+										PrestaShop Modules
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/fashion-beauty-prestashop-themes.html"
+									   class="item-link" >
+										Fashion & Beauty
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/design-photography-prestashop-themes.html"
+									   class="item-link" >
+										Design & Photography
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/home-family-prestashop-themes.html"
+									   class="item-link" >
+										Home & Family
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/business-prestashop-themes.html"
+									   class="item-link" >
+										Business & Services
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/electronics-prestashop-themes.html"
+									   class="item-link" >
+										Electronics
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../magento-themes.html" id="nm-top-magento-themes">
+						<b class="icon-magento svg square-icon "></b>
+						<span>Magento</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-magento-themes.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-magento-themes.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/fashion-beauty-magento-themes.html"
+									   class="item-link" >
+										Fashion & Beauty
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/electronics-magento-themes.html"
+									   class="item-link" >
+										Electronics
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/business-magento-themes.html"
+									   class="item-link" >
+										Business & Services
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/design-photography-magento-themes.html"
+									   class="item-link" >
+										Design & Photography
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/home-family-magento-themes.html"
+									   class="item-link" >
+										Home & Family
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/computers-internet-magento-themes.html"
+									   class="item-link" >
+										Computers & Internet
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../joomla-templates.html" id="nm-top-joomla-templates">
+						<b class="icon-joomla svg square-icon "></b>
+						<span>Joomla</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-joomla-templates.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-joomla-templates.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../virtuemart-templates.html"
+									   class="item-link" >
+										Virtuemart
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/business-joomla-templates.html"
+									   class="item-link" >
+										Business & Services
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/design-photography-joomla-templates.html"
+									   class="item-link" >
+										Design & Photography
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/education-books-joomla-templates.html"
+									   class="item-link" >
+										Education & Books
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/real-estate-joomla-templates.html"
+									   class="item-link" >
+										Real Estate
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/cars-motorcycles-joomla-templates.html"
+									   class="item-link" >
+										Cars & Motorcycles
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../moto-cms-3-templates.html" id="nm-top-moto-cms-3-templates">
+						<b class="icon-moto3 svg square-icon "></b>
+						<span>MotoCMS</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../best-selling-moto-cms-30-templates.html"
+									   class="item-link" >
+										Popular Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../top-rated-moto-cms-30-templates.html"
+									   class="item-link" >
+										Featured Items
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/business-moto-cms-30-templates.html"
+									   class="item-link" >
+										Business & Services
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/design-photography-moto-cms-30-templates.html"
+									   class="item-link" >
+										Design & Photography
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/education-books-moto-cms-30-templates.html"
+									   class="item-link" >
+										Education & Books
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/real-estate-moto-cms-30-templates.html"
+									   class="item-link" >
+										Real Estate
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/cars-motorcycles-moto-cms-30-templates.html"
+									   class="item-link" >
+										Cars & Motorcycles
+									</a>
+								</li>
+													</ul>
+									</li>
+					</ul>
+	</div>
+</div>
+				<script type="text/javascript" id="zone_20">
+  window.banner_zone = window.banner_zone || [];
+  window.banner_zone.push({
+    id: 20,
+    zone: "<div class='js-revive-banner-container'><ins data-revive-zoneid='20' data-revive-id='5dba4d01a92de7101be5c5e6e1630dfe'></ins></div>"
+  });
+</script>
+	</header>
+	<!--============================== CONTENT =================================-->
+	<div id="content">
+		<div class="container" style="min-height: inherit;">
+												<div id="breadcrumbs">
+  <ul class="breadcrumbs br-new">
+    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="../index.html" itemprop="url" id ="br-home">
+			<span itemprop="title">Home</span>
+		</a>
+		<span class="divider"></span>
+	</li>
+    					<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../templates.html" itemprop="url" id="br-templates"><span itemprop="title">Web Design Software</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../cms-blog-templates.html" itemprop="url" id="br-cms-blog-templates"><span itemprop="title">CMS & Blog Templates</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../wordpress-themes.html" itemprop="url" id="br-wordpress-themes"><span itemprop="title">WordPress Themes</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../category/cars-motorcycles-wordpress-themes.html" itemprop="url" id="br-cars-motorcycles-wordpress-themes"><span itemprop="title">Cars & Motorcycles</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../category/cars-wordpress-themes.html" itemprop="url" id="br-cars-wordpress-themes"><span itemprop="title">Car Templates</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../category/car-wash-wordpress-themes.html" itemprop="url" id="br-car-wash-wordpress-themes"><span itemprop="title">Car Wash Templates</span></a><span class="divider"></span>
+									</li>
+						<li>
+										<span class="br-last">Car Wash Responsive WordPress Theme</span><span class="divider"></span>
+						</li>
+	  </ul>
+</div>
+					<!-- Search Listing -->
+		<div class="page preview-page js-template-id" itemscope="itemscope" itemtype="http://schema.org/Product"
+			 data-template_id="51818" data-brand="WordPress"
+			 data-template_author="WT"
+			 data-property-type-id="50125"
+			 data-categories="Cars &amp; Motorcycles / Car Templates / Car Wash Templates"
+			 data-variant="premium"
+			 			 data-trial-popup="motocms"
+			 			 data-product_name="WordPress Themes"
+			 data-template_name="Car Wash"
+			 data-experimental=""
+			 data-experimental=""
+			 data-download-count="78"
+					>
+			<div class="page-heading">
+                <h1 class="preview-heading overflowed-hidden" itemprop="name">Car Wash Responsive WordPress Theme</h1>
+                    <!-- Item Info -->
+				<ul class="list-item-info clearfix">
+					<li class="list-item-rating">
+						<div class="rating-stars-block" >
+                            <ul class="stars rating-style_0">
+                    <li class="svg icon-star-empty star" data-number="1"></li>
+                    <li class="svg icon-star-empty star" data-number="2"></li>
+                    <li class="svg icon-star-empty star" data-number="3"></li>
+                    <li class="svg icon-star-empty star" data-number="4"></li>
+                    <li class="svg icon-star-empty star" data-number="5"></li>
+</ul>                                                                                                                                                						</div>
+					</li>
+                    <li class="template-brand">Type: <strong>WordPress</strong></li>
+					<li>Item number: <strong itemprop="productID" content="sku:51818">51818</strong> </li>
+					<li>Author: <strong><span id="preview-vendor-link"></span></strong> </li>
+					<li> Downloads: <strong>78</strong> </li>
+					<li class="list-item-share">
+						<span class="list-item-label">Share:</span>
+						<ul class="share-list js-share-list" data-type="square-icons">
+							<li class="facebook"></li>
+							<li class="twitter"></li>
+							<li class="googlePlus" data-custom-icon="icon-google-plus"></li>
+					    </ul>
+					</li>
+											<li class="heart-wrapper">
+							<b id="preview-favourite-51818" class="tm-icon icon-heart-empty js-favorite js-favorite-btn favorite-btn js-none"
+								data-tid="51818" data-item_name="template-51818"
+								data-added="In your Collection"
+								data-not-added="Add to Collection"><span>Add to Collection</span>
+							</b>
+						</li>
+				</ul>
+			</div>
+            				<div class="row">
+					<div class="col-lg-9 col-mb-8 col-sm-8">
+                        <!-- Product preview slider -->
+<div id="product-preview" class="clearfix">
+            <div class="slides slides_single">
+                                                            <div class="slides-item">
+<!-- Slides for carousel in Product preview slider -->
+<a
+            id="magnifier-livedemo-51818"
+        class="js-magnifier magnifier"
+        href="../demo/51818.html"
+        target="_blank"
+            title="Car Wash Responsive WordPress Theme New Screenshots BIG" >
+    <img class="slides-item__single js-preview-scr blurred"
+         itemprop="image"
+         src="../s-tmimgcdn-com/scr/51800/car-wash-responsive-wordpress-theme_51818-big.jpeg"
+         data-original="https://s.tmimgcdn.com/scr/51800/car-wash-responsive-wordpress-theme_51818-big.jpg?width=965&height=598"
+         data-crop="https://s.tmimgcdn.com/scr/51800/car-wash-responsive-wordpress-theme_51818-big.jpg?width=965&height=598"
+         alt="Car Wash Responsive WordPress Theme New Screenshots BIG"
+         title="Car Wash Bootstrap WordPress Theme Big Screenshot"
+         width="965"
+         height="598"
+                      data-full="../s-tmimgcdn-com/scr/51800/car-wash-responsive-wordpress-theme_51818-original.jpg"
+             data-original-width="965"
+             data-original-height="1690"
+                  />
+    <span class="js-view-product"          id="demo_screenshot-51818"
+          data-tid="51818">
+    </span>
+    </a>
+    <div class="flex-wrapper js-button-wrapper">
+        <div class="buttons-wrapper flex-row-wrap">
+            <a id="magnifier-livedemo-button-51818"
+               onclick="return false;"
+               href="../s-tmimgcdn-com/scr/51800/car-wash-responsive-wordpress-theme_51818-original.jpg"
+               title="Car Wash Responsive WordPress Theme"
+               class="button view btn-trivial tm-icon icon-zoom-in">Zoom In
+            </a>
+                            <a href="../demo/51818.html"
+                    target="_blank"
+                    class="button btn-main tm-icon icon-magic js-view-product"
+                    data-tid="51818"
+                    id="demo_overlay-51818">Live Demo</a>
+                            			<span class="button btn-trivial "
+			  data-tid="51818"
+			  id="trial_overlay"
+			  data-toggle="modal"
+			  data-target="#rd-trial-popup-wrapper"
+			  data-demo-url="">
+										Control Panel Demo
+					</span>
+                    </div>
+    </div>                        </div>
+                                                                                                                                                            </div>
+    </div>
+                        <!-- Live demo link -->
+                                                    <div class="live-demo-link live-demo-link-bottom">
+                                			<span class="button btn-trivial btn-big-height"
+			  data-tid="51818"
+			  id="trial_bottom"
+			  data-toggle="modal"
+			  data-target="#rd-trial-popup-wrapper"
+			  data-demo-url="">
+										Control Panel Demo
+					</span>
+                                    <button type="button"
+            role="link"
+            data-href="../demo/51818.html"
+            data-target="_blank"
+            class="button btn-main tm-icon icon-magic js-view-product js-btn link-click btn-big-height"
+            id="demo_bottom"
+            data-tid="51818"
+            data-demourl="https://livedemo00.template-help.com/wordpress_51818"    >View Live Demo</button>
+                            </div>
+                        <!-- Tabs -->
+<div class="preview-tabs">
+    <ul class="nav nav-tabs tab-nav" id="previewTab">
+        			<li><span data-href="#tab-overview" id="link-tab-overview" data-toggle="tab">Overview</span></li>
+                <li><span data-href="#tab-reviews" id="link-tab-reviews" data-toggle="tab">
+                Reviews <span class="js-count-reviews count-reviews"></span>
+            </span>
+        </li>
+					<li><span data-href="#tab-details" id="link-tab-details" data-toggle="tab" data-template-id="51818">Details</span></li>
+				<li><span data-href="#tab-questions" id="link-tab-questions" data-toggle="tab">
+                 Comments <span class="js-count-comments count-reviews"></span>
+            </span></li>
+                <li><span data-href="#tab-support" id="link-tab-support" data-toggle="tab">Support</span></li>
+        <li><span data-href="#tab-changelog" id="link-tab-changelog" data-toggle="tab">Changelog</span></li>
+            </ul>
+    <div class="tab-content">
+                <!-- Overview tab -->
+        <div class="tab-pane" id="tab-overview">
+			<div class="container">
+                                                    <div class="list-features row">
+	        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="wr_feature row">
+                <div class="col-lg-3 col-md-4 col-sm-4 icon-holder clearfix">
+                    <i class="icon-trust-one trust-icon svg"></i>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 clearfix">
+                    <div class="feature-description">
+                        <div class="Previews__description">24/7 Free Support</div>
+                        <p>Your questions will be handled promptly by our support team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="wr_feature row">
+                <div class="col-lg-3 col-md-4 col-sm-4 icon-holder clearfix">
+                    <i class="icon-trust-three trust-icon svg"></i>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 clearfix">
+                    <div class="feature-description">
+                        <div class="Previews__description">Stock Photos Included</div>
+                        <p>You get 7-15 hi-res stock photos & images for free life-time usage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="wr_feature row">
+                <div class="col-lg-3 col-md-4 col-sm-4 icon-holder clearfix">
+                    <i class="icon-trust-two trust-icon svg"></i>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 clearfix">
+                    <div class="feature-description">
+                        <div class="Previews__description">Satisfaction Guarantee</div>
+                        <p>You will be completely happy with our products and services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+                                                                                                                                        <span class="key-feature overflowed-hidden">
+            <img class="preview-image js-preview-lazy lazy blurred" data-original="../s-tmimgcdn-com/scr/51800/51818-responsive-layout.jpeg" src="../s-tmimgcdn-com/scr/51800/51818-responsive-layout.jpeg" alt=""/>
+    </span>                                                                                                                                                <span class="key-feature overflowed-hidden">
+            <img class="preview-image js-preview-lazy lazy blurred" data-original="../s-tmimgcdn-com/images/library/cherry-features.jpeg" src="../s-tmimgcdn-com/images/library/cherry-features.jpeg" alt=""/>
+    </span>                                                                                                                                                <span class="key-feature overflowed-hidden">
+            <img class="js-preview-lazy lazy blurred" data-original="https://s.tmimgcdn.com/images/library/parallax-features.jpg?width=100" src="" alt=""/>
+    </span>                                                                                                                <div class="short-description" itemprop="description">
+                        <div class="clear"></div><div class="row "><div class="col-sm-12 col-md-12 col-lg-12"><div class="box-content default-set "><div class="content_wrap "> <h3>This Cars & Motorcycles WordPress theme is WPML ready</h3> <p><b>What is it?</b></p><p>WordPress Multilingual digital products may be converted in various different languages simply, and so so that you can develop a multi-lingual web page. </p> <p><b>Why is it Good?</b></p><p>WPML ready themes are the types that can be translated and made use of in several languages. </p><p>Click for more <a href="../wpml-ready-wordpress-themes.html">WPML ready WordPress templates</a> here</p> <h3>This is a Bootstrap Car Company WordPress design theme</h3> <p><b>What is it?</b></p><p>Bootstrap is a totally free grid-based framework that enables the development of responsive websites. </p> <p><b>Why is it Good?</b></p><p>Bootstrap is a helpful instrument and that is the cause it is so well-liked. With this particular framework, it's possible to create responsive design, appropriate for any sort of display screen size, prototype fresh new layouts without any problems and ensure your site is without a doubt cross-browser compatible.</p><p>View more <a href="../bootstrap-wordpress-themes.html">Bootstrap WordPress templates</a> here</p> <h3>This Car Cleaners WordPress design is Responsive</h3> <p><b>What is it?</b></p><p>Responsive designs adapt to little along with much larger display sizes mechanically.</p> <p><b>Why is it Good?</b></p><p>Responsive design provides a much better user experience for people that surf a webpage on a mobile phone or any other gadget, plus helps to increase rankings of a website in Google results. </p><p>View latest <a href="../responsive-wordpress-themes.html">Responsive WordPress design themes</a> here</p> <h3>This is Cars WordPress design with Parallax</h3> <p><b>What is it?</b></p><p>A parallax scrolling effect is a method in webdesign where background picture shifts at a slower pace than a front content, forming the optical illusion of multi-level effect. </p> <p><b>Why is it Good?</b></p><p>By the use of the parallax scrolling effect, you might add the impression of interesting depth to your web site, this way showing your data in a more captivating style.</p><p>Find fresh <a href="../parallax-wordpress-themes.html">Parallax WordPress templates</a> here</p> <h3>This Car Cleaning Company WordPress template is Search Engine Friendly</h3> <p><b>What is it?</b></p><p>Search Engine Ready is the type of web design that allows search engine robots to examine and index its pages.</p> <p><b>Why is it Good?</b></p><p>Using it, you are able to attract lots of targeted customers to the internet site from search engines.</p><p>View latest <a href="../seo-wordpress-themes.html">Search Engine Friendly WP templates</a> here</p> <h3>This is Cars News WP template with Portfolio</h3> <p><b>What is it?</b></p><p>The portfolio is some sort of an album, displaying samples of your jobs. For an household designer that might be photos of rooms he styled, for site-developer, it can be a listing of webpages he crafted. The portfolio is really a demonstration of your abilities.</p> <p><b>Why is it Good?</b></p><p>It can serve as a self-sufficient way of promotion. Any site visitor is able to see your works and projects. You are able to catch the attention of new clients and operate without intermediaries - consumers on their own will come to you.</p><p>Find latest <a href="../portfolio-wordpress-themes.html">Portfolio WordPress templates</a> here</p> <br /><h2> Car Wash Responsive WordPress Theme  FAQ</h2> <h3>What is the price for acquiring the extended license for Car Wash WordPress design theme?</h3><p>There is no set price for acquiring the extended license. The price is based on the Car Wash WordPress design theme's unique price for those templates you would like to use for the integration. The price for purchasing license for a single template is half of the template unique price.</p><h3>Are your WP themes for Cars Newscompatible with any CMS?</h3><p>We do not guarantee compatibility with any CMS. Please make sure to check the product description in order to find out if this product is compatible with certain CMS.</p><h3>Can I integrate the Motorcycles News WordPress template with third-party software or applications for development of my new products?</h3><p>No, you cannot get the developers license for development of Motorcycles News WordPress template or other products.</p><h3>What is a unique purchase license for WordPress theme for Portable Car Wash?</h3><p>If you purchase the product at a â€˜Unique price' it guarantees that you are the first and the last person to buy this WordPress theme for Portable Car Wash from us. It means that this template has not been sold before and you become an owner of a unique design. After this kind of purchase the template is being permanently removed from our sales directory and is never available to other customers again. The unique purchase license allows you to develop the unlimited number of projects based on this template, but the template should be customized differently for every project.</p><h3>What am I allowed and not allowed to do with the Car Cleaning WP themes?</h3><p>You may: Build a website using the WordPress theme for Car Cleaning Company in any way you like.You may not:Resell or redistribute templates (like we do).Claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals.Make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p><h3>Are there any discounts if I'm buying over 10, 20, 30 or more WordPress theme for Car Corporation?</h3><p>Please email to marketing@templatemonster.com with your inquiries about WP templates for Cars Blog.</p><h3>I would like to purchase Car WordPress theme, but it is not available on the site anymore.</h3><p>The Car WordPress theme has been sold out for exclusive price or discontinued.As technology inevitably develops, TemplateMonster may discontinue the production of certain products. It can be no longer available for sale because of being outdated.</p><h3>Can I apply a discount code to a discounted Cars & Motorcycles WP theme or combine several discount codes together to get better price?</h3><p>Unfortunately, you cannot do this.</p><h3>In what cases I don't need the extended license for WordPress themes for Car Company?</h3><p>In case you would like to customize our WordPress themes for Car Company for your customers, you don't need any license since your customer will be the final owner of the template files. The only thing you should keep in mind is when you start on the projects based on the same template, you have to purchase this template over again for every project it is used for. If you would like to display templates on your website to show them to your customers, please join our affiliate program at www.mytemplatestorage.com</p><h3>I have customized the Car Company WordPress theme and would like to protect my content by copyright, can I place Copyright, Mycompanyname.com?</h3><p>Yes, you can add your copyright to protect your content.<br /><br />After Car Company WordPress theme purchase you can put your copyright to the template. But you cannot place a line at the bottom (or any other spot) of the customized project saying "Website design by Company name". Nevertheless, you can place "Customized by Company name".</p><h3>Can I put low resolution thumbnails of WordPress design themes for Motorcycles Company on my website for my clients to choose designs?</h3><p>Yes, of course.</p><h3>Can I resell WP themes for Dry Car Wash I bought the developers license for?</h3><p>You cannot resell the customized WP template for Car Wash Supplies as a template, but you may sell it as a project to your client.</p><h3>Will the WP theme for Auto Reviews be deleted from TemplateMonster database?</h3><p>No, the WP theme for Auto Reviews will not be deleted from TemplateMonster database.</p><h3>Can I customize the WP theme for Automobiles?</h3><p>Yes, you can customize the WP theme for Automobiles to any extent needed. You cannot use a header of the template for one project though, and images from the template for the other project.</p><h3>Is it possible that Template Monster will contact my client which website I made from Template Monster's website WordPress template for Car Company?</h3><p>Yes, our legal department checks licenses regularly. In case we won't find designer's contact information on the site which was made from the WordPress template for Car Company of ours we will contact the owner of the site directly.</p><h3>Are there any restrictions for using imagery, cliparts and fonts from the WP template for Eco Car Wash I purchased?</h3><p>All imagery, clipart and fonts used in WP template for Eco Car Wash are royalty-free, if not stated otherwise on the product page, and are the integral part of our products. One Time Usage License and Developers License give you the right to use images, clipart and fonts only as a part of the website you build using your template. You can use imagery, clipart and fonts to develop one project only. Any kind of separate usage or distribution is strictly prohibited.</p><h3>Can I contact the WP template for Cars News author?</h3><p>Yes. You can contact this WP template for Cars News author/author's team directly using your personal account under the Support tab.</p><h3>I like the image from the WordPress theme for Car Cleaning Company and would like to use it for my advertising campaign, can you send me this image in a higher resolution?</h3><p>No, we can't provide image in higher size or resolution rather than it is on the WordPress theme for Car Cleaning Company. We recommend looking for professional images on online photo resources.</p><h3>What do I receive when I order a WP theme for Dry Car Wash from TemplateMonster.com?</h3><p>After you complete the payment via our secure form you will receive the instructions for downloading the WP theme for Dry Car Wash. The source files in the download package can vary based on the type of the product you have purchased.If you need unzipping software to open the .zip archive, Windows users may visit www.WinZip.com, Mac users may visit www.StuffIt.com.</p><h3>I would like to make payment for WordPress design for Vip Car Wash by company check. Is that possible?</h3><p>Please use Skrill payment option. They accept payments by check.You can place an order for WordPress design for Vip Car Wash on the site under the name of the company and choose Skrill merchant system for making payment from the company's account. To initiate bank transfer, please create an account here - www.skrill.com, add the number of your bank account and verify it. After that, you can place an order on our website and choose Skrill on checkout page. When the payment is made, the product will be sent to your e-mail along with the invoice under the name of your company.</p><h3>How can I modify WordPress template for Automated Car Wash to suit my particular website?</h3><p>Please visit our Online Help Center to obtain detailed instructions on editing WordPress template for Automated Car Wash.</p><h3>I was billed for WordPress theme for Car Wash Accessories twice â€“ I received 2 emails from merchant</h3><p>Make sure that these charges for WordPress theme for Car Wash Accessories have different order IDs. If it is so, contact our billing department.</p><h3>Is it possible to reactivate my download link for WordPress design for Car Wash Equipment Retailer if it was deactivated after 3 days?</h3><p>Yes. Please re-activate the download link for WordPress design for Car Wash Equipment Retailer within your account under the Downloads tab or contact our billing department directly regarding that.</p><h3>Can I put a line at the bottom (or any other spot) of my new product "Website development by Company name" after purchasing WP template for Luxury Car Wash?</h3><p>Yes, you can place a note at the bottom (or any other spot) of my product "Website development by Company name". Nevertheless, you cannot place "Website design by Company name"while using one of WP template for Luxury Car Wash.</p><h3>Can I put a line at the bottom ( or any other spot) of the customized WP theme for Dry Car Wash "Website design by Company name"?</h3><p>No, you cannot place a line at the bottom ( or any other spot) of the customized WP theme for Dry Car Wash saying "Website design by Company name". Nevertheless, you can place "Customized by Company name".</p><h3>Can I resell the WordPress designs for Vip Car Wash I bought the extended license for?</h3><p>No, you cannot resell the WordPress designs for Vip Car Wash as is. You can only sell them as the integral part of your new product.</p><h3>Are there any limitations on selling the WP template for Luxury Car Wash as the integral part of my new product?</h3><p>No, there are no limitations on our side. The WP template for Luxury Car Wash as the integral part of new products is the property of the company that developed it, thus the company gains the full rights to distribute the product based on the company policy and terms of use.</p><h3>I ordered a WP template for Car Wash Supplies but haven't received the download information.</h3><p>In case of not receiving the download information of a WP template for Car Wash Supplies, please contact our Billing Department via support chat by phone or e-mail.</p> </div></div></div></div>
+                    </div>
+            </div><!-- .container -->
+        </div><!-- #tab-overview -->
+        <!-- Review tabs -->
+        <div class="tab-pane" id="tab-reviews">
+            <h2>Reviews</h2>
+            <div id="review-item-page">
+</div>
+        </div>
+                <!-- Tech details tab -->
+        <div class="tab-pane" id="tab-details" data-tab-type="type_details">
+            <h2>Details</h2>
+            <div class="tab-inner-indent">
+                <dl class="tech-details">
+		<!-- Features -->
+		<dt class="features">Features</dt>
+		<dd>
+			<table class="table table-features">
+				<tbody>
+					<tr>
+						<td class="DocumentationLinkOld__wrap" colspan="2">
+							<div id="documentation-link-old"></div>
+						</td>
+					</tr>
+											<tr>
+							<th>Cherry Framework Version:</th>
+							<td>	                    <a
+        id="preview-feature-cherry-framework-314-wordpress-themes"        href="../cherry-framework-314-wordpress-themes.html"                    >3.1.4</a>            </td>
+						</tr>
+											<tr>
+							<th>WordPress Compatibility:</th>
+							<td>	                    <a
+        id="preview-feature-3-6-x-4-1-x"        href="../properties/wordpress-compatibility/3-6-x-4-1-x.html"                    >3.6.x-4.2.x</a>            </td>
+						</tr>
+											<tr>
+							<th>WordPress Engine:</th>
+							<td>	                    <a
+        id="preview-feature-wordpress-39-themes"        href="../wordpress-39-themes.html"                    >3.9.x</a>            </td>
+						</tr>
+											<tr>
+							<th>Additional Features:</th>
+							<td>	                    <a
+        id="preview-feature-advanced-wordpress-themes-options"        href="../advanced-wordpress-themes-options.html"                    >Advanced Theme Options</a>,                                <a
+        id="preview-feature-sliced-psd-wordpress-themes"        href="../sliced-psd-wordpress-themes.html"                title="Template package includes sliced source PSD files. Number of available PSD files may vary depending on initial design concept and type of a template."    >Sliced PSD</a>,                                <a
+        id="preview-feature-back-to-top-button-wordpress-themes"        href="../back-to-top-button-wordpress-themes.html"                title="Templates that have &#039;Back To Top&#039; button design incorporated."    >Back To Top Button</a>,                                <a
+        id="preview-feature-crossbrowser-compatibility-wordpress-themes"        href="../crossbrowser-compatibility-wordpress-themes.html"                title="Crossbrowser compatibility - at the time of template production!"    >Crossbrowser Compatibility</a>,                                <a
+        id="preview-feature-custom-page-wordpress-themes"        href="../custom-page-wordpress-themes.html"                    >Custom Page Templates</a>,                                <a
+        id="preview-feature-favicon-wordpress-themes"        href="../favicon-wordpress-themes.html"                title="Templates with Favicon design included"    >Favicon</a>,                                <a
+        id="preview-feature-google-map-wordpress-themes"        href="../google-map-wordpress-themes.html"                title="Templates with a slot designed for Google map"    >Google map</a>,                                <a
+        id="preview-feature-google-web-fonts-wordpress-themes"        href="../google-web-fonts-wordpress-themes.html"                title="Templates that utilize Google Web Fonts to display fonts."    >Google Web Fonts</a>,                                <a
+        id="preview-feature-tabs-wordpress-themes"        href="../tabs-wordpress-themes.html"                title="Templates that include tabbed menus or tabbed layout elements."    >Tabs</a>,                                <a
+        id="preview-feature-tag-cloud-wordpress-themes"        href="../tag-cloud-wordpress-themes.html"                title="Templates that include design for Tag Cloud"    >Tag Cloud</a>,                                <a
+        id="preview-feature-wordpress-tooltips-themes"        href="../wordpress-tooltips-themes.html"                title="Templates that include design for Tooltips"    >Tooltips</a>            </td>
+						</tr>
+											<tr>
+							<th>Animation:</th>
+							<td>	                    <a
+        id="preview-feature-html-javascript-wordpress-themes"        href="../html-javascript-wordpress-themes.html"                title="Some elements of these templates - such as header or menu buttons - are animated by the means of JS scripts."    >HTML plus JS</a>,                                <a
+        id="preview-feature-parallax-wordpress-themes"        href="../parallax-wordpress-themes.html"                title="Some elements of these templates are animated by the parallax effect."    >Parallax</a>            </td>
+						</tr>
+											<tr>
+							<th>Bootstrap Version:</th>
+							<td>	                    <a
+        id="preview-feature-wordpress-themes-bootstrap-2-3-1"        href="../wordpress-themes-bootstrap-2-3-1.html"                    >2.3.1</a>            </td>
+						</tr>
+											<tr>
+							<th>Coding:</th>
+							<td>	                    <a
+        id="preview-feature-css3-wordpress-themes"        href="../css3-wordpress-themes.html"                title="Templates that utilize CSS3 standard or some elements of it."    >CSS 3</a>,                                <a
+        id="preview-feature-html5-wordpress-themes"        href="../html5-wordpress-themes.html"                title="Templates coded according to the newest HTML5 standards."    >HTML 5</a>,                                <a
+        id="preview-feature-jquery-wordpress-themes"        href="../jquery-wordpress-themes.html"                title="Templates that utilize jQuery - a cross-browser JavaScript library designed to simplify the client-side scripting of HTML"    >JQuery</a>,                                <a
+        id="preview-feature-less-coding-wordpress-themes"        href="../less-coding-wordpress-themes.html"                title="These are templates for which LESS was used as the dynamic stylesheet language. LESS runs on both the server-side (with Node.js and Rhino) or client-side (modern browsers only)."    >LESS</a>            </td>
+						</tr>
+											<tr>
+							<th>Features:</th>
+							<td>	                    <a
+        id="preview-feature-admin-panel-wordpress-themes"        href="../admin-panel-wordpress-themes.html"                title="Templates that allow you to manage the content via the use of admin panel."    >Admin Panel</a>,                                <a
+        id="preview-feature-bootstrap-wordpress-themes"        href="../bootstrap-wordpress-themes.html"                title="Sleek, intuitive, and powerful front-end framework for faster and easier web development."    >Bootstrap</a>,                                <a
+        id="preview-feature-cherry-wordpress-themes"        href="../cherry-wordpress-themes.html"                    >Cherry Framework</a>,                                <a
+        id="preview-feature-ecwid-ready-wordpress-themes"        href="../ecwid-ready-wordpress-themes.html"                    >Ecwid Ready</a>,                                <a
+        id="preview-feature-responsive-wordpress-themes"        href="../responsive-wordpress-themes.html"                    >Responsive</a>,                                <a
+        id="preview-feature-seo-wordpress-themes"        href="../seo-wordpress-themes.html"                title="CMS or Ecommerce Templates that give the user an option to optimize titles and page meta data, generate a sitemap, etc."    >Search Engine Friendly</a>,                                <a
+        id="preview-feature-wpml-ready-wordpress-themes"        href="../wpml-ready-wordpress-themes.html"                    >WPML ready</a>            </td>
+						</tr>
+											<tr>
+							<th>Functionality:</th>
+							<td>	                    <a
+        id="preview-feature-blog-wordpress-themes"        href="../blog-wordpress-themes.html"                    >Blog</a>,                                <a
+        id="preview-feature-portfolio-wordpress-themes"        href="../portfolio-wordpress-themes.html"                title="Templates that have a page with a specifically constructed layout that enables to showcase the artist&#039;s, photographer&#039;s or designer&#039;s portfolio items."    >Portfolio</a>            </td>
+						</tr>
+											<tr>
+							<th>Gallery Script:</th>
+							<td>	                    <a
+        id="preview-feature-accordion-wordpress-themes"        href="../accordion-wordpress-themes.html"                title="Templates that utilize JS scripts or plugin to display content or images on panels that expand or collapse on a click event."    >Accordion</a>,                                <a
+        id="preview-feature-carousel-wordpress-themes"        href="../carousel-wordpress-themes.html"                title="Templates that utilize Flash, JS scripts or plugins to display a list of items in a specific manner that is called &#039;carousel&#039; and allows user to easily browse through the list."    >Carousel</a>,                                <a
+        id="preview-feature-isotope-wordpress-themes"        href="../isotope-wordpress-themes.html"                    >Isotope</a>,                                <a
+        id="preview-feature-slider-wordpress-themes"        href="../slider-wordpress-themes.html"                title="Templates that utilize Flash, JS scripts or plugins to display content or images in a slider."    >Slider</a>            </td>
+						</tr>
+											<tr>
+							<th>Installation:</th>
+							<td>	                    <span  >Installation and set up instructions are attached (look for Documentation folder).</span>            </td>
+						</tr>
+											<tr>
+							<th>Layout:</th>
+							<td>	                    <a
+        id="preview-feature-2-columns-wordpress-themes"        href="../2-columns-wordpress-themes.html"                    >2 columns</a>            </td>
+						</tr>
+											<tr>
+							<th>Media:</th>
+							<td>	                    <a
+        id="preview-feature-audio-player-wordpress-themes"        href="../audio-player-wordpress-themes.html"                title="Usually a non-CMS template that comes with a built-in audio player - best for music band, night club or singer&#039;s websites."    >Audio Player</a>,                                <a
+        id="preview-feature-video-integration-wordpress-themes"        href="../video-integration-wordpress-themes.html"                title="Templates designed to flawlessly integrate video content from Youtube and other online video libraries."    >Video Integration</a>            </td>
+						</tr>
+											<tr>
+							<th>Web Forms:</th>
+							<td>	                    <a
+        id="preview-feature-contact-form-wordpress-themes"        href="../contact-form-wordpress-themes.html"                title="Templates that include design for contact form - either scripted or not."    >Contact Form</a>            </td>
+						</tr>
+											<tr>
+							<th>Width:</th>
+							<td>	                    <span  >1600px</span>            </td>
+						</tr>
+									</tbody>
+			</table>
+		</dd>
+	<!-- Sources available -->
+			<dt>Sources Available</dt>
+		<dd>
+												<span class="btn btn-blue btn-sm">PSD</span>
+									<span class="btn btn-blue btn-sm">PHP</span>
+														<span class="sourcef-file-text">
+											This theme is widgetized.									</span>
+					</dd>
+	<!-- Hosting requirements -->
+			<dt>Hosting Requirements</dt>
+		<dd>
+			<ul class="requirements">
+									<li><i class="icon-success svg square-icon"></i>MySQL 5.0+</li>
+									<li><i class="icon-success svg square-icon"></i>The mod_rewrite Apache module</li>
+									<li><i class="icon-success svg square-icon"></i>PHP 5.3+</li>
+							</ul>
+		</dd>
+	</dl>
+    <!-- Technical Details -->
+        <!-- Technical Details links -->
+        <div class="technical-details-links">
+	    		<a id="preview-help-center" class="details_overview" target="_blank" href="../help/quick-start-guide/wordpress-themes/master/index_en.html"><b class="icon-arrow-small-right"></b>WordPress Themes Help Center</a>
+	                        </div>
+        <!-- end Technical Details -->
+	<!-- Software required -->
+	<dl class="tech-details">
+		<dt>Software Required</dt>
+		<dd>
+			<ul class="requirements">
+									<li><i class="icon-success svg square-icon"></i>Adobe Photoshop CC+</li>
+									<li><i class="icon-success svg square-icon"></i>ZIP unarchiver</li>
+									<li><i class="icon-success svg square-icon"></i>Apache Server</li>
+									<li><i class="icon-success svg square-icon"></i>WordPress 3.9.x</li>
+							</ul>
+		</dd>
+</dl>
+	            </div>
+                    </div>
+        <!-- Questions tab -->
+        <div class="tab-pane" id="tab-questions">
+            <h2>Questions</h2>
+            <div id="comments-item-page">
+            </div>
+        </div>
+        <!-- Support tab -->
+        <div class="tab-pane" id="tab-support">
+          <section id="vendor-info-item-old"></section>
+        </div>
+                <!-- Changelog tab -->
+        <div class="tab-pane" id="tab-changelog" data-tab-type="type_changelog">
+            <dl class="tech-details tech-changelog">
+                <!-- Latest Update -->
+                <dt class="features">Latest Update</dt>
+                <dd>
+                    <table class="table table-features">
+                        <tbody>
+                                                    <tr>
+                                <th>Changelog:</th>
+                                <td>	                    <span  ><ul>
+<li>- 3 minor CSS issues fixed</li>
+<li>- 2 minor font bugs fixed</li>
+<li>- 2 minor database bugs fixed</li>
+<li>- 2 front-end issues fixed</li>
+<li>- 1 minor styles bugs fixed</li>
+</ul></span>            </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </dd>
+            </dl>
+        </div>
+            </div>
+</div>
+                        <!-- Also Avaliable As -->
+                        <!-- Similar categories -->
+                                                    <div class="block similar-categories">
+    <h3 class="block-heading">Looking for Similar Templates? Browse These Categories:</h3>
+    <div class="block-content">
+        <ul class="list">
+                                                            <li><a href="../category/car-wash-templates.html" id="preview-similar-topic-car-wash-templates">Car Wash Templates</a></li>
+                                                            <li><a href="../category/cars.html" id="preview-similar-topic-cars">Car Templates</a></li>
+                                                            <li><a href="../category/cars-motorcycles.html" id="preview-similar-topic-cars-motorcycles">Cars & Motorcycles</a></li>
+                    </ul>
+    </div>
+</div>
+                        <!-- Similar templates -->
+                        <script>
+    var previewEngineSearchParams = {'similar-to':51818};
+</script>
+<div class="block similar-templates block-style-2" id="similar-block">
+    <div class="block-heading">View Similar Templates</div>
+    <div class="block-content">
+        <div id="similar_templates" class="js_product_slides">
+            <ul id="similar-templates" class="slides thumbnails" data-list="similar templates">
+                <li class="thumbnail"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+					</div>
+					<aside class="col-lg-3 col-mb-4 col-sm-4">
+                        <!-- Purchase options -->
+<div class="block purchase-options">
+    <div class="block-content">
+        <form action="../cart.html" method="post" class="form_services clearfix js-form_services">
+            <input type="hidden" name="add" value="51818"/>
+            <input type="hidden" name="channel" value="preview"/>
+            <input type="hidden" name="price_variant" value="regular"/>
+            <div class="panel-group count-down-anchor js-count-down-anchor" id="purchase_options">
+                                    <!--========accordion-group ========-->
+                    <div class="panel panel-default js-preview-accordion-panel js-preview-price-block active"
+    		data-default-variant="regular"
+    	 data-variant="regular"
+	 data-template_id="51818">
+	<div class="panel-heading js-panel-heading" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+			<a id="preview-license-regular" class="panel-title" data-toggle="collapse" data-parent="#purchase_options" href="#collapse0" >
+				<span class="Single__license">Single Site License</span>
+				<span class="price js-price hide-price"
+                      						  itemprop="price"
+						  content="75"
+					  					  data-price="75"
+					  data-full_price="75"
+				>
+					$75
+				</span>
+                					<meta itemprop="priceCurrency" content="USD" />
+								<span data-placement='left' class="question-icon svg icon-question">
+				<span class="question-content">Single Site License for the template grants you a non-exclusive permission to use the template on a single domain/project.</span>
+			  </span>
+			</a>
+	</div>
+	<div id="collapse0" class="panel-collapse collapse  expanded in" style="height: auto;">
+        <div class="services-container"></div>
+		<div class="subtotal-price clearfix">
+			<div class="price-block discount hide-price">
+				<div class="template-price js-template-price"><span class="dollar-icon">$75</span>
+									</div>
+				<div class="price-corner-right"></div>
+				<div class="price-corner-left">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+						<polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "/>
+					</svg>
+				</div>
+			</div>
+			<span >Subtotal Price:</span>
+		</div>
+			<div class="add-to-cart">
+				<button id="preview-add-to-cart-goto-checkout-regular-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-wallet js-add-to-cart-goto-checkout btn-full-width"
+						data-href=" https://www.templatemonster.com/checkout.php"
+						>Get Now & You'll Love It</button>
+				<button id="preview-add-to-cart-delayed-regular-51818"
+						class="js-none button btn-trivial tm-icon icon-cart js-add-to-cart-delayed btn-full-width"
+						>Add to Cart & Buy Later</button>
+				<button id="preview-add-to-cart-regular-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-cart js-button-add-to-cart btn-full-width"
+						data-toggle="modal" data-target="#cart-popup">Add to Cart</button>
+			</div>
+            				<div class="LoyaltyPictogram"><i class="tm-icon icon-loyalty-program"></i>   Product is the part of the
+                      <a class="LoyaltyProgramLink" href="../cashback.html" target="_blank">   loyalty program.</a>				</div>
+							<div class="trial-link js-trial-link js-none">
+					<a href="#" data-toggle="modal" data-target="#trial-popup-wrapper">Launch FREE 7-Day Trial</a>
+				</div>
+			<div class="payment-methods">
+				<ul class="payment-list flex-row">
+                    <li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+				</ul>
+			</div>
+			</div>
+</div>
+                                    <!--========accordion-group ========-->
+                    <div class="panel panel-default js-preview-accordion-panel js-preview-price-block "
+    	 data-variant="installation"
+	 data-template_id="51818">
+	<div class="panel-heading js-panel-heading" >
+			<a id="preview-license-installation" class="panel-title" data-toggle="collapse" data-parent="#purchase_options" href="#collapse1" >
+				<span class="Single__license">Developer's License</span>
+				<span class="price js-price hide-price"
+                      					  data-price="144"
+					  data-full_price="144"
+				>
+					$144
+				</span>
+                				<span data-placement='left' class="question-icon svg icon-question">
+				<span class="question-content">Under Developer's License you are granted a non-exclusive permission to use the template on up to 5 domains.</span>
+			  </span>
+			</a>
+	</div>
+	<div id="collapse1" class="panel-collapse collapse " style="height: 0px;">
+        <div class="services-container"></div>
+		<div class="subtotal-price clearfix">
+			<div class="price-block discount hide-price">
+				<div class="template-price js-template-price"><span class="dollar-icon">$144</span>
+									</div>
+				<div class="price-corner-right"></div>
+				<div class="price-corner-left">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+						<polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "/>
+					</svg>
+				</div>
+			</div>
+			<span >Subtotal Price:</span>
+		</div>
+			<div class="add-to-cart">
+				<button id="preview-add-to-cart-goto-checkout-installation-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-wallet js-add-to-cart-goto-checkout btn-full-width"
+						data-href=" https://www.templatemonster.com/checkout.php"
+						>Get Now & You'll Love It</button>
+				<button id="preview-add-to-cart-delayed-installation-51818"
+						class="js-none button btn-trivial tm-icon icon-cart js-add-to-cart-delayed btn-full-width"
+						>Add to Cart & Buy Later</button>
+				<button id="preview-add-to-cart-installation-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-cart js-button-add-to-cart btn-full-width"
+						data-toggle="modal" data-target="#cart-popup">Add to Cart</button>
+			</div>
+            				<div class="LoyaltyPictogram"><i class="tm-icon icon-loyalty-program"></i>   Product is the part of the
+                      <a class="LoyaltyProgramLink" href="../cashback.html" target="_blank">   loyalty program.</a>				</div>
+							<div class="trial-link js-trial-link js-none">
+					<a href="#" data-toggle="modal" data-target="#trial-popup-wrapper">Launch FREE 7-Day Trial</a>
+				</div>
+			<div class="payment-methods">
+				<ul class="payment-list flex-row">
+                    <li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+				</ul>
+			</div>
+			</div>
+</div>
+                                    <!--========accordion-group ========-->
+                    <div class="panel panel-default js-preview-accordion-panel js-preview-price-block "
+    	 data-variant="exclusive"
+	 data-template_id="51818">
+	<div class="panel-heading js-panel-heading" >
+			<a id="preview-license-exclusive" class="panel-title" data-toggle="collapse" data-parent="#purchase_options" href="#collapse2" >
+				<span class="Single__license">Buyout License</span>
+				<span class="price js-price hide-price"
+                      					  data-price="4500"
+					  data-full_price="4500"
+				>
+					$4,500
+				</span>
+                				<span data-placement='left' class="question-icon svg icon-question">
+				<span class="question-content">A Buyout License ensures that you are the last buyer/licensee of the template. You are granted a non-exclusive non-transferable permission to use the template on multiple domains.</span>
+			  </span>
+			</a>
+	</div>
+	<div id="collapse2" class="panel-collapse collapse " style="height: 0px;">
+        <div class="services-container"></div>
+		<div class="subtotal-price clearfix">
+			<div class="price-block discount hide-price">
+				<div class="template-price js-template-price"><span class="dollar-icon">$4,500</span>
+									</div>
+				<div class="price-corner-right"></div>
+				<div class="price-corner-left">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+						<polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "/>
+					</svg>
+				</div>
+			</div>
+			<span >Subtotal Price:</span>
+		</div>
+			<div class="add-to-cart">
+				<button id="preview-add-to-cart-goto-checkout-exclusive-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-wallet js-add-to-cart-goto-checkout btn-full-width"
+						data-href=" https://www.templatemonster.com/checkout.php"
+						>Get Now & You'll Love It</button>
+				<button id="preview-add-to-cart-delayed-exclusive-51818"
+						class="js-none button btn-trivial tm-icon icon-cart js-add-to-cart-delayed btn-full-width"
+						>Add to Cart & Buy Later</button>
+				<button id="preview-add-to-cart-exclusive-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-cart js-button-add-to-cart btn-full-width"
+						data-toggle="modal" data-target="#cart-popup">Add to Cart</button>
+			</div>
+            				<div class="LoyaltyPictogram"><i class="tm-icon icon-loyalty-program"></i>   Product is the part of the
+                      <a class="LoyaltyProgramLink" href="../cashback.html" target="_blank">   loyalty program.</a>				</div>
+							<div class="trial-link js-trial-link js-none">
+					<a href="#" data-toggle="modal" data-target="#trial-popup-wrapper">Launch FREE 7-Day Trial</a>
+				</div>
+			<div class="payment-methods">
+				<ul class="payment-list flex-row">
+                    <li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+				</ul>
+			</div>
+			</div>
+</div>
+                                <!--========end accordion-group ========-->
+            </div>
+            <div class="recommended-services js-recommended-services hidden">
+<div class="RecommendedServices">Recommended Services:</div>
+<ul class="checkbox-list">
+	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-362">
+	<input type="hidden" name="p_51818_362" value="1"/>
+	<input type="hidden" name="sc_51818_362" value="646"/>
+	<input type="hidden" name="pr_51818_362" value="3669"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="362"
+		   data-full_price="79"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="79"/>
+	<a id="preview-offer-362" href="javascript:;" class="title js-service-name" >Must-Have Plugins</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">   Service is the part of the loyalty program</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="362"/>
+    <span class="price">
+      $79
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							<strong>Essential Plugins for Your Website:</strong>
+<br><br>
+1) Onpage SEO plugin to help you with SEO Optimization of your pages<br />
+2) Google Analytics plugin to track your visitors<br />
+3) Advanced editor for posts and pages to make editing easier<br />
+4) Image Optimizer to reduce sizes of your images for web without losing quality<br />
+5) Sitemap plugin to generate sitemap.xml for your website and automatically update it after any change you make (vital for search engines)<br />
+6) Plugin to change login page URL in order to secure it from hackers attacks<br />
+7) Plugin for customization of admin panel 
+ <br><br>
+<strong>Note:</strong> Installation and configuration of the plugins are included.<br>
+Installation of the template with demo content is not included.<br>
+<span style='color: red;'>Bonus:</span> 1 year of hosting is included for free.
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-888">
+	<input type="hidden" name="p_51818_888" value="2"/>
+	<input type="hidden" name="sc_51818_888" value="646"/>
+	<input type="hidden" name="pr_51818_888" value="11162"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="888"
+		   data-full_price="199"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="199"/>
+	<a id="preview-offer-888" href="javascript:;" class="title js-service-name" >Ready-to-Use Website Premium</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">   Service is the part of the loyalty program</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="888"/>
+    <span class="price">
+      $199
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							Limited-time offer! Get your <strong>fully functional website within 5 business days</strong> at astounding price!
+<br><br>
+Only Deluxe Edition pack includes all you need:<br>
+- Unique domain name for a brand new website<br>
+- Fast, stable and industry-leading Web Hosting<br>
+- Installation Service<br>
+- SSL Certificate for advanced online security<br>
+- Logo and Color changes<br>
+- Images and texts replacement on basic template pages<br>
+- Contact form activation<br>
+<br>
+We build a beautiful new website in line with your wishes.
+<br><br>
+<span style="color: red;">Note.</span> Any style or layout changes will require additional charge. 
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-13">
+	<input type="hidden" name="p_51818_13" value="3"/>
+	<input type="hidden" name="sc_51818_13" value="646"/>
+	<input type="hidden" name="pr_51818_13" value="1217"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="13"
+		   data-full_price="49"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="47"/>
+	<a id="preview-offer-13" href="javascript:;" class="title js-service-name" >Installation</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">   Service is the part of the loyalty program</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="13"/>
+    <span class="price">
+      		  <i class="discount">$49</i>
+	  $47
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							If you don't want to spend your time installing the template, don't hesitate to order expert assistance.<br>
+The installation will be completed within 3 hours by our Service Center once the access details to your hosting server has been received.
+<br><br>
+Note: Service is valid for one website. Project starts once client provides complete details acceptable by production to avoid delays, not time of actual purchase.<br>
+<span style='color: red;'>Bonus:</span> 1 year of hosting is included for free.
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-394">
+	<input type="hidden" name="p_51818_394" value="4"/>
+	<input type="hidden" name="sc_51818_394" value="646"/>
+	<input type="hidden" name="pr_51818_394" value="12628"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="394"
+		   data-full_price="199"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="199"/>
+	<a id="preview-offer-394" href="javascript:;" class="title js-service-name" >Online Store Integration</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">   Service is the part of the loyalty program</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="394"/>
+    <span class="price">
+      $199
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							Online Store option is powered by template conversion into WordPress and WooCommerce plugin integration. As a result you
+will get a functional online store implemented as Shop button in menu.
+The service is completed within 6 business days.<br><br>
+<span style="color: red;">BONUS: </span> Installation service & 1 month of special facilitation are included.
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-909">
+	<input type="hidden" name="p_51818_909" value="5"/>
+	<input type="hidden" name="sc_51818_909" value="646"/>
+	<input type="hidden" name="pr_51818_909" value="12627"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="909"
+		   data-full_price="79"
+		   data-channel="7"
+		   data-project = "Zemez"
+		   data-product = "51818"
+		   data-price="79"/>
+	<a id="preview-offer-909" href="javascript:;" class="title js-service-name" >GDPR Suite - New EU Privacy Rules</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">   Service is the part of the loyalty program</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="909"/>
+    <span class="price">
+      $79
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							The following important changes will be integrated to your theme to comply with the core GDPR rules:<br /><br />
+- An option for site users to submit a request to access/delete/anonymize their personal data stored on your website (comments and commenter information).<br />
+- An option to opt-out of Google Analytics on this website.<br />
+- An option for site users to delete themselves from the website.<br />
+- Prevent WordPress from recording IP addresses of commenters.<br />
+- Cookies and Privacy policy page (with generic/sample template).<br />
+- Cookies usage banner that notifies website visitors about the usage of cookies on your website.<br />
+- GDPR comment form privacy checkbox.<br />
+- A notification of consent to the storage of data with a link to the Privacy policy page and the checkbox in all:<br />
+   i. built-in theme contact forms;<br />
+   ii. built-in newsletter subscription forms;<br />
+   iii. WordPress registration form;<br />
+   iv. WooCommerce product reviews forms.<br /><br />
+This service is completed within 3-4 business days.<br /><br />
+Please note, compliance to GDPR is risk-based ongoing process that involves your whole business. We are not eligible for any claim or action based on any information or functionality implemented with this offer.<br /><br />
+					</span>
+    </span>
+</li></ul>
+                            </div>
+            <div class="one-click-purchase js-one-click-purchase hidden">
+                <div class="js-cards-progress cards-progress hidden">
+	<div class="progress-text ">Checking for saved payment methods</div>
+	<div class="loading"></div>
+</div>            </div>
+        </form>
+    </div>
+</div>
+					</aside>
+				</div>
+									<div class="print-page">
+						<span id="preview-print-page" class="button btn-trivial js-btn" data-href="https://www.templatemonster.com/printer-friendly/51818/">Print this Page</span>
+					</div>
+				            		</div>
+	<meta itemprop='dateModified' content="2019-02-17T00:01:09-05:00"/>
+            <!-- ================ free-trial-popup =============== -->
+<div class="modal fade js-modal-preview-popup in" id="trial-popup-wrapper" tabindex="-1" role="dialog"
+	 aria-label="trialPopup" aria-hidden="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a href="javascript:;" class="close-popup tm-icon icon-cross" data-dismiss="modal" aria-hidden="true"></a>
+			</div>
+			<div class="modal-body">
+                				<div class="js-form-row">
+					<h2>Almost Done!</h2>
+						<p>Please type email address you want to use for your free trial:</p>
+		<form method="POST" name="free_trial" action="../index.html#x2F;ajax&#x2F;free-trial&#x2F;register.php" id="free-trial-form" class="form-horizontal"><input type="hidden" name="_form" value="free_trial"/>
+	<div id="free-trial-form-errors"></div>
+		<input type="hidden" name="tid" id="free-trial-form-tid" value="51818">
+		<input type="hidden" name="action" id="free-trial-form-action" value="register">
+		<input type="hidden" name="name" id="free-trial-form-name" value="Customer">
+		<input type="hidden" name="phone" id="free-trial-form-phone" value="">
+		<div class="js-form-group form-group" ><div class="col-lg-12 col-md-12 col-sm-12"><input type="email" autocomplete="off" placeholder="Enter&#x20;your&#x20;email" name="email" data-label="your&#x20;email" id="free-trial-form-email" data-constraints="&#x40;NotBlank&#x20;&#x40;HTML5Required&#x20;&#x40;Length&#x28;min&#x3D;&quot;0&quot;,&#x20;max&#x3D;&quot;72&quot;,&#x20;ignoreEmpty&#x3D;&quot;1&quot;,&#x20;message&#x3D;&quot;Please&#x20;specify&#x20;a&#x20;valid&#x20;email&quot;&#x29;&#x20;&#x40;Pattern&#x28;regex&#x3D;&quot;&#x2F;&#x5E;&#x28;.&#x7B;1,64&#x7D;&#x29;&#x5C;&#x40;&#x28;&#x5C;S&#x2B;&#x29;&#x5C;.&#x28;.&#x7B;2,&#x7D;&#x29;&#x2F;&quot;,&#x20;message&#x3D;&quot;Please&#x20;specify&#x20;a&#x20;valid&#x20;email&quot;&#x29;&#x20;&#x40;Email&#x28;message&#x3D;&quot;Please&#x20;specify&#x20;a&#x20;valid&#x20;email&quot;&#x29;&#x20;&#x40;HTML5Email&#x28;message&#x3D;&quot;Please&#x20;specify&#x20;a&#x20;valid&#x20;email&quot;&#x29;" required="required" data-validation-callback="&#x2F;ajax&#x2F;check-email.php" data-validation-callback-key="email" class="&#x20;form-control&#x20;js-placeholder" value=""></div></div>
+		<div class="js-form-group form-group" ><div class="col-lg-12 col-md-12 col-sm-12"><button type="submit" name="submit" id="free-trial-form-submit" class="button&#x20;btn-important&#x20;btn-full-width" value="">Get Link for Demo</button></div></div>
+		</form>
+				</div>
+                				<div class="js-status-row" style="display: none">
+											<div class="js-new-user-message">
+							<h2>Thank You!</h2>
+															<p>Thank you for your interest towards our product. In about 10 minutes you'll get an e-mail with the access details for your trial!</p>
+													</div>
+						<div class="js-existing-user-message">
+							<h2>Please confirm</h2>
+							<p>You are about to change the template you used to have in your trial to the new template #<span class="js-template-number"></span>. Click the button below to confirm this change.</p>
+						</div>
+						<div class="js-confirmation-link confirmation-link">
+															<span class="button btn-main" data-dismiss="modal">OK</span>
+													</div>
+						<div class="js-reject-link reject-link text-center ">
+							<a href="" target="_blank">No, thanks. I'll keep the previous template trial</a>
+						</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ============== end free-trial-popup ============== -->
+		</div>
+	</div>
+			    <time class="PageTimestamp">Last Updated: 17 Feb 19</time>
+    <footer id="footer" class="rd-footer-container">
+	<hr class="divider">
+	<script type="application/javascript">
+		var _gaq = _gaq || [];
+</script>
+<div class="flex-container">
+	<div class="footer-sharing-block flex-row rd-padding-s3_4">
+	<div class="sharing-description svg"></div>
+	<ul class="social-buttons js-share-list" data-type="buttons-large">
+		<li class="facebook"></li>
+		<li class="googlePlus"></li>
+		<li class="twitter"></li>
+		<li class="pinterest"></li>
+	</ul>
+</div>
+</div>	<hr class="divider">
+	<div class="flex-container">
+	<div class="footer-menu-block flex-row rd-padding-s3_4">
+		<div class="flex-item item-with-icon">
+			<div class="block-heading tm-icon icon-products">Products</div>
+			<ul>
+				<li><a href="../wordpress-themes.html" id="footer-wp">WordPress Themes</a></li>
+<li><a id="footer-bootstrap" href="../bootstrap-website-templates.html">Bootstrap Templates</a></li>
+<li><a id="footer-joomla" href="../joomla-templates.html">Joomla Templates</a></li>
+<li><a id="footer-presta" href="../prestashop-themes.html">PrestaShop Themes</a></li>
+<li><a id="footer-woo" href="../woocommerce-themes.html">WooCommerce Themes</a></li>
+<li><a id="footer-moto" href="../moto-cms-3-templates.html">Website Builder</a></li>
+<li><a id="footer-ocart" href="../opencart-templates.html">OpenCart Templates</a></li>
+<li><a id="footer-responsive" href="../properties/features/responsive-design.html">Responsive Templates</a></li>
+<li><a id="footer-shopify" href="../shopify-themes.html">Shopify Themes</a></li>
+<li><a id="footer-powerpoint" href="../powerpoint-templates.html">PowerPoint Templates</a></li>
+<li><a id="footer-powerpoint" href="https://weblium.com/">Weblium Website Builder</a></li>
+			</ul>
+		</div>
+		<div class="flex-item item-with-icon">
+			<div class="block-heading tm-icon icon-palette">Categories</div>
+			<ul>
+				<li><a id="footer-business" href="../category/business.html">Business & Services</a></li>
+<li><a id="footer-fashion" href="../category/fashion-beauty.html">Fashion & Beauty</a></li>
+<li><a id="footer-home" href="../category/home-family.html">Home & Family</a></li>
+<li><a id="footer-design" href="../category/design-photography.html">Design & Photography</a></li>
+<li><a id="footer-restate" href="../category/real-estate.html">Real Estate</a></li>
+<li><a id="footer-cars" href="../category/cars-motorcycles.html">Cars & Motorcycles</a></li>
+<li><a id="footer-med" href="../category/medical.html">Medical</a></li>
+<li><a id="footer-sport" href="../category/sports-outdoors-travel.html">Sports, Outdoors & Travel</a></li>
+<li><a id="footer-food" href="../category/food-restaurant.html">Food & Restaurant</a></li>
+<li><a id="footer-electronics" href="../category/electronics.html">Electronics</a></li>
+			</ul>
+		</div>
+		<div class="flex-item item-with-icon">
+			<div class="block-heading tm-icon icon-company">Company</div>
+			<ul>
+				<li><span id="footer-about" class="js-btn link-click" data-href="https://www.templatemonster.com/about.php">About Us</span></li>
+<li><a id="footer-blog" href="../blog.html">Blog</a></li>
+<li><span id="footer-promocodes" class="js-btn link-click" data-href="https://www.templatemonster.com/promocode.php">Promocodes/Coupons</span></li>
+<li><span id="footer-affiliate" class="js-btn link-click" data-href="https://www.templatemonster.com/affiliate-program.php">Affiliate Program</span></li>
+<li><span id="service" class="js-btn link-click" data-href="../service-center.html">Service Center</span></li>
+<li><span id="partner-coupons" class="js-btn link-click" data-href="https://www.templatemonster.com/coupon-codes-partners/">Partners' Coupon Codes</span></li>
+<li><span id="footer-cert" class="js-btn link-click" data-href="http://certification.templatemonster.com/">Certification Center</span></li>
+<li><span id="footer-web-studio" class="js-btn link-click" data-href="https://www.templatemonster.com/web-developers/all/">Web Studios Catalog</span></li>
+<li><span id="footer-contact-us" class="js-btn link-click" data-href="https://www.templatemonster.com/contact_us.php">Contact Us</span></li>
+<li><span id="footer-team" class="js-btn link-click" data-href="https://www.templatemonster.com/our-team/">Team</span></li>
+<li><span id="footer-press" class="js-btn link-click" data-href="https://www.templatemonster.com/press/">Press</span></li>
+			</ul>
+		</div>
+		<div class="flex-col grow-2">
+			<div class="flex-row">
+				<div class="flex-item item-with-icon">
+					<div class="block-heading tm-icon icon-help">Support</div>
+					<ul>
+						<li><span id="footer-help-center" class="js-btn link-click" data-href="https://helpdesk.templatemonster.com/hc/en-us">Help Center</span></li>
+<li><span id="footer-report-spam" class="js-btn link-click" data-href="https://www.templatemonster.com/report-spam.php">Report Spam</span></li>
+<li><a id="footer-sitemap" href="../sitemap.html">Sitemap</a></li>
+<li><a id="footer-vendor" href="../marketplace.html">Become a vendor</a></li>
+					</ul>
+				</div>
+				<div class="flex-item item-with-icon">
+					<div class="block-heading tm-icon icon-follow">Follow us</div>
+					<ul class="follow-list">
+						<li class="connect-fb"><a id="connect-fb" target="_blank" href="https://www.facebook.com/TemplateMonster"><b class="tm-icon icon-facebook rounded"></b>Be a Fan on Facebook</a></li>
+<li class="connect-gplus"><a id="connect-gplus" target="_blank" href="https://plus.google.com/+TemplateMonster"><b class="tm-icon icon-google rounded"></b>Join TM at Google+</a></li>
+<li class="connect-tweet"><a id="connect-tweet" target="_blank" href="https://twitter.com/templatemonster"><b class="tm-icon icon-twitter rounded"></b>Follow Us on Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rd-footer-subscribe flex-item item-with-icon">
+				<div class="block-heading tm-icon icon-letter block-heading">Subscribe to newsletter</div>
+				<div class="block-content">
+<span class="subcribe-form-text">Get new web templates report and design news.</span>
+<div id="mailchimp_form" class="footer-version">
+    <div id="mc_embed_signup">
+        <form action="../index.html" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form " class="rd-form validate mc-form"
+              target="_blank" data-animate-type="" novalidate>
+            <div id="mc-embedded-subscribe-form-mc_embed_signup_scroll" class="flex-row">
+                <div id="mc-embedded-subscribe-form-errors"></div>
+                <div class="flex-item">
+                    <div class="mc-field-group js-form-group form-group  tm-rd-input tm-rd-input-f1">
+                                                <input type="email" autocomplete="off" value="" name="EMAIL" class="required email rd-field form-control" required
+                               id="mce-EMAIL" placeholder="Email Address"
+                               data-constraints="@NotBlank @HTML5Required @Length(min=&quot;0&quot;, max=&quot;72&quot;, ignoreEmpty=&quot;1&quot;) @Pattern(regex=&quot;/^(.{1,64})\@/&quot;) @Email @HTML5Email">
+                                                                                                    <span class="tm-icon icon-status"></span>
+                    </div>
+                                            <input type="hidden" value="4" name="group[4729][4]" />
+                                    </div>
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_aa8db07a5c8a4dcfbefb09f22_1e248a6cb5" tabindex="-1" value=""></div>
+                <div class="submit-wrap">
+                    <button type="submit"
+                            name="subscribe"
+                            class="button  btn-main btn-full-width cherry-form-btn js_wp_button_overlay"
+                            id="mc-embedded-subscribe"
+                            value="Subscribe">Subscribe</button>
+                </div>
+            </div>
+            <span class="privacy-click-warning">By clicking the button you agree to the <a href="../privacy-policy.html">Privacy Policy</a> and <a href="../terms.html">Terms and Conditions</a>.</span>
+        </form>
+    </div>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	<hr class="divider">
+	<div class="flex-container">
+	<div class="footer-copyright-block flex-row rd-padding-s3_4">
+		<div class="flex-item flex-row vertical-center grow-3">
+			<span class="copyright">&copy; 2019 Info Global Services Ltd. All Rights Reserved</span>
+			<span id="copyright-privacy" class="js-btn link-click" data-href="../privacy-policy.html">Privacy Policy</span>
+<span id="footer-refund-policy" class="js-btn link-click" data-href="https://www.templatemonster.com/refund-policy.php">Refund Policy</span>
+<span id="terms" class="js-btn link-click" data-href="../terms.html">Terms</span>
+		</div>
+		<div class="flex-item flex-row vertical-center grow-2 right">
+			<span>Secure Payment:</span>
+			<ul class="payment-list flex-row">
+				<li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</footer>	</div>
+	<div class="livechat-girl js-livechat-girl js-none">
+    <ul class="livechat-control">
+        <li class="livechat-control__element livechat-control__element_chat">
+            <a href="#live-chat-tab" data-toggle="tab" class="livechat-control__link js-start-chat">
+                <div class="js-girl-holder girl-holder"></div>
+                <i class="tm-icon icon-speech-dots js-hint-tooltip" data-placement="top" data-title="Start Chat"></i>
+            </a>
+        </li>
+        <li class="livechat-control__element livechat-control__element_callback">
+            <a href="#call-back-tab" data-toggle="tab" class="livechat-control__link js-start-callback">
+                <i class="tm-icon icon-handset2 js-hint-tooltip" data-placement="top" data-title="Call Back"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="js-livechat-hint livechat-hint rd-notice rd-notice-tooltip rd-notice-type-success rd-notice-position-left single-line">
+        <div class="popover-content rd-notice-content js-invitation-greeting"> Hey, I’m ready to help you!</div>
+    </div>
+    <div class="animated-circles js-animated-circles">
+        <div class="circle c-1"></div>
+        <div class="circle c-2"></div>
+        <div class="circle c-3"></div>
+    </div>
+</div>
+<div class="live-chat-board js-live-chat-board">
+    <div class="lc-board-header">
+        <div id="lc-board-close"
+             class="js-lc-board-close lc-board-close"
+             data-title="Hide chat"
+             data-placement="bottom"
+             data-color="grey"
+             data-html_class="lc-board-close-tooltip"><i class="tm-icon icon-arrow"></i></div>
+        <div class="lc-board-lang-selector js-lc-board-lang-pick">
+            <div class="rd-form">
+                <div class="chosen-country">
+                    <select title="choose language" class="js-live-chat-lang-switch js-chosen js-country"></select>
+                </div>
+            </div>
+            <div class="busy-operators-message t4 js-busy-operators-message rd-notice rd-notice-tooltip rd-notice-position-top rd-notice-type-default alert rd-closing">
+                <div class="inner">
+                    <div class="rd-notice-content popover-content"></div>
+                    <span id="close-busy-operators-message" class="close js-close-busy-oper-msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="lc-board-caption js-lc-board-caption">
+            <span class="js-lc-board-caption-chat js-lc-board-caption-text">
+                <i class="tm-icon icon-speech-dots"></i>Live Chat
+            </span>
+            <span class="js-lc-board-caption-number js-lc-board-caption-text js-none">
+                Please, enter your phone number
+            </span>
+        </div>
+    </div>
+    <div class="lc-board-body">
+        <div id="live-chat-tab" class="live-chat-tab tab-pane active">
+            <div class="lc-board-type-selector">
+                <div id="lc-board-type-consultant"
+                     class="js-lc-board-consultant lc-board-type js-lc-board-type active"
+                     data-target="js-lc-board-consultant-content"
+                     data-room="consultant">
+                    <h4 class="t1 bold">Consultant</h4>
+                    <p class="t6"> We help you to choose the right product.</p>
+                </div>
+                <div id="lc-board-type-support"
+                     class="js-lc-board-support js-lc-board-type lc-board-type"
+                     data-target="js-lc-board-support-content"
+                     data-room="support">
+                    <h4 class="t1 bold">Support</h4>
+                    <p class="t6">Existing clients free product assistance.</p>
+                </div>
+                <div id="lc-board-type-billing"
+                     class="js-lc-board-billing js-lc-board-type lc-board-type"
+                     data-target="js-lc-board-billing-content"
+                     data-room="billing">
+                    <h4 class="t1 bold">Billing</h4>
+                    <p class="t6">Troubles with checkout? Let us know about it.</p>
+                </div>
+            </div>
+            <div class="lc-board-content-wrapper js-lc-board-content-wrapper">
+                <div id="lc-board-content-consultant" class="js-lc-board-consultant-content js-lc-board-content-item lc-board-consultant-content lc-board-content-item active">
+                    <div class="rd-form">
+                        <div class="block-content js-live_chat_consultant"></div>
+                    </div>
+                </div>
+                <div id="lc-board-content-support" class="js-lc-board-support-content js-lc-board-content-item lc-board-support-content lc-board-content-item">
+                    <div class="rd-form">
+                        <div class="block-content js-live_chat_support"></div>
+                    </div>
+                </div>
+                <div id="lc-board-content-billing" class="js-lc-board-billing-content js-lc-board-content-item lc-board-billing-content lc-board-content-item">
+                    <div class="rd-form">
+                        <div class="block-content js-live_chat_billing"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="call-back-tab" class="call-back-tab js-call-back-tab tab-pane js-none">
+    <div class="lc-board-call-back lc-board-call-back-form">
+        <div class="lc-board-call-back-content">
+            <img src="https://s.tmimgcdn.com/img/svg/call-back.svg?d=900f612" alt="Call Back" title="Call Back" width="120" height="120" />
+            <p class="lc-board-call-back-description">We can call you in 60 seconds, just enter your number below</p>
+        </div>
+        <div class="block-content js-live_chat_call-back"></div>
+    </div>
+    <div class="lc-board-call-back lc-board-call-back-success">
+        <i class="tm-icon icon-success"></i>
+        <div class="success-title bold">We'll get in touch with you!</div>
+        <div class="success-description" data-description>Our Customer Care manager will call you on <strong>%PHONE%</strong> during <strong>one minute:</strong></div>
+        <div class="js-hourly-counter"></div>
+    </div>
+</div>    </div>
+</div>
+<script type="text/javascript" id="zone_18">
+  window.banner_zone = window.banner_zone || [];
+  window.banner_zone.push({
+    id: 18,
+    zone: "<div class='js-revive-banner-container'><ins data-revive-zoneid='18' data-revive-id='5dba4d01a92de7101be5c5e6e1630dfe'></ins></div>"
+  });
+</script>
+		<script>
+	//this function will work cross-browser for loading scripts asynchronously
+	function loadScript(src, isasync, callback) {
+		var s,
+			r,
+			t;
+		r = false;
+		s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = src;
+		s.async = isasync;
+		s.onload = s.onreadystatechange = function () {
+//console.log( this.readyState ); //uncomment this line to see which ready states are called.
+			if (!r && (!this.readyState || this.readyState == 'complete')) {
+				r = true;
+				if ("undefined" != typeof callback) {
+					callback();
+				}
+			}
+		};
+		t = document.getElementsByTagName('script')[0];
+		t.parentNode.insertBefore(s, t);
+	}
+	window.isJsLoaded = false;
+	function loadIncJs() {
+		loadScript("https://s.tmimgcdn.com/js/tm/frontend/indclude-js.min.js?d=abd0f20", false, loadAllJS);
+	}
+	function toLoadJsList(src) {
+		if (typeof window.jsList !== "undefined") {
+			window.jsList.push(src);
+		} else {
+			window.jsList = [src]
+		}
+	}
+	function loadAllJS() {
+		var dependencyLibs = [
+						"https://s.tmimgcdn.com/js/varnish.compiled.application.en.js?d=abd0f20",
+					  'https://s.tmimgcdn.com/js/plasma-pocket-react/monsterbundle.js?d=abd0f20'
+		];
+		if (window.jsList) {
+			dependencyLibs = dependencyLibs.concat(window.jsList);
+		}
+		var indcludeJsLoader = new Tm.IndcludeJs(dependencyLibs, false);
+		indcludeJsLoader.add(function (state) {
+			$(document).trigger("TM_JS_LOADED");
+//			$(document).trigger("ready");
+			$(window).trigger("load");
+            var event;
+			var eventName = 'TM_JS_LOADED_NATIVE';
+			if (typeof(CustomEvent) === 'function') {
+				event = new CustomEvent(eventName);
+			} else {
+				event = document.createEvent('CustomEvent');
+				event.initEvent(eventName, true, true);
+			}
+            document.dispatchEvent(event);
+		});
+	}
+	window.onload = function () {
+		if (!window.isJsLoaded) {
+			window.isJsLoaded = true;
+			loadCSS("https://s.tmimgcdn.com/css/svg-icons.css?d=1a63017");
+			            	loadScript("https://www.templatemonster.com/js/config.js", true, loadIncJs);
+            		}
+	};
+</script>
+<!-- Generated by Revive Adserver v3.1.0 -->
+<script type="text/javascript" id="banner_zone_init">
+	window.banner_zone_init = 'https://r.templatemonster.com/dl/1asyncjs.php'
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"72d7dcce33","applicationID":"68712044,11369496","transactionName":"ZV1TZ0FTVkFVWkwKXlwXckZARldfG3BWB1RKe15dR0BXXlhcSlkLQkpURVpXTw==","queueTime":0,"applicationTime":463,"atts":"SRpEEQlJRR4WWBpZSk9F","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

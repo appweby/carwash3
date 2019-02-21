@@ -1,0 +1,2771 @@
+<!DOCTYPE html>
+<html  lang="es">
+<head>
+	<title>
+        Tema de WordPress #51818 para Sitio de Lavado de autos    </title>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta property="fb:admins" content="720898483" />
+<meta property="fb:admins" content="1129631948" />
+<meta property="fb:admins" content="100001777951090" />
+<link rel="publisher" href="https://plus.google.com/116173187155256042113" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-310x150.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-310x310.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-150x150.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-144x144.png?d=900f612" />
+<meta name="msapplication-TileImage" content="https://s.tmimgcdn.com/img/logo-touch/mstile-70x70.png?d=900f612" />
+<meta name="msapplication-config" content="https://s.tmimgcdn.com/img/logo-touch/browserconfig.xml?d=900f612" />
+<link rel="icon" href="https://s.tmimgcdn.com/img/favicon.ico?d=900f612" type="image/x-icon"/>
+<link rel="shortcut icon" href="https://s.tmimgcdn.com/img/favicon.ico?d=900f612" type="image/x-icon"/>
+<link rel="icon" type="image/png" href="https://s.tmimgcdn.com/img/logo-touch/favicon-16x16.png?d=900f612" sizes="16x16">
+<link rel="icon" type="image/png" href="https://s.tmimgcdn.com/img/logo-touch/favicon-32x32.png?d=900f612" sizes="32x32">
+<link rel="icon" type="image/png" href="https://s.tmimgcdn.com/img/logo-touch/favicon-96x96.png?d=900f612" sizes="96x96">
+<link rel="icon" type="image/png" sizes="36x36" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-36.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="48x48" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-48.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="72x72" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-72.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="96x96" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-96.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="144x144" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-144.png?d=900f612" />
+<link rel="icon" type="image/png" sizes="192x192" href="https://s.tmimgcdn.com/img/logo-touch/android-chrome-192.png?d=900f612" />
+<link rel="mask-icon" href="https://s.tmimgcdn.com/img/logo-touch/safari-pinned-tab.svg?d=900f612">
+<link rel="apple-touch-icon" sizes="180x180" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-precomposed.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-180.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-152.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-144.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-120.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-114.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-76.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-72.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="60x60" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-60.png?d=900f612" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://s.tmimgcdn.com/img/logo-touch/apple-touch-icon-57.png?d=900f612" />
+<meta name="monster_page_type" content="Product" />
+<meta name="monster_product_category" content="Cars &amp; Motorcycles" />
+<meta name="monster_product_subcategory" content="Car Wash Templates" />
+<meta name="monster_product_type" content="WordPress Themes" />
+<meta name="monster_template_id" content="51818" />
+<meta name="monster_template_author" content="WT" />
+<meta name="monster_template_categories" content="Car Wash Templates / Car Templates / Cars &amp; Motorcycles" />
+<meta name="monster_template_download_count" content="78" />
+<meta name="monster_template_price" content="66" />
+<script>
+  !function(){var e=function(e){return!!document.head.querySelector("[name="+e+"]")&&document.head.querySelector("[name="+e+"]").content};window.dataLayer=window.dataLayer||[];var t,o,a,r={pageType:e("monster_page_type")};e("monster_product_type")&&-1===["Product","Demo","SearchNoResult"].indexOf(r.pageType)&&(r.pageType="Portal"),e("monster_product_category")&&-1===["Product","Demo","SearchNoResult"].indexOf(r.pageType)&&(r.pageType="Category"),-1!==["Product","Demo","Portal","Category"].indexOf(r.pageType)&&(r.portalContent=e("monster_product_type")?e("monster_product_type"):"All Themes",r.portalName=e("monster_product_portal")?e("monster_product_portal"):(t=r.portalContent,o={"CMS Templates":["WordPress Themes","Drupal Themes","Joomla Templates","Moto CMS 3 Templates","Moto CMS HTML Templates","Flash CMS Templates"],"Web templates":["Responsive Templates","Landing Page Templates","Bootstrap Themes","HTML5 Site Templates","PSD Templates","Unbounce Templates","Photo Gallery Templates","Newsletter Templates","Muse Templates","Weblium Website Concepts","eBay Templates","Admin Templates"],"E-commerce templates":["Magento Themes","VirtueMart Templates","ZenCart Templates","PrestaShop Themes","OpenCart Templates","Shopify Themes","X-Cart Templates","WooCommerce Themes","MotoCMS Ecommerce"],"Plugins & Assets":["WordPress Plugins","PrestaShop Modules","Magento 2 Extensions","Fonts and Icon Fonts","UI Elements","After Effects Templates","PowerPoint Templates","Keynote Templates","Resume Templates","App Templates","Corporate Design"]},a="All portals",Object.keys(o).forEach(function(e){o[e].forEach(function(o){o.toLowerCase()===t.toLowerCase()&&(a=e)})}),a),r.categoryName=e("monster_product_category")?e("monster_product_category"):"All categories",r.subCategoryName=e("monster_product_subcategory")?e("monster_product_subcategory"):"All categories"),"Product"!==r.pageType&&"Demo"!==r.pageType||(r.vendor=e("monster_template_author"),r.productID=e("monster_template_id"),r.productPrice=e("monster_template_price"),r.productSales=e("monster_template_download_count"),r.productCategory=e("monster_template_categories")),"SearchNoResult"===r.pageType&&(r.pageType="Search"),window.dataLayer.push(r)}();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MS2BNB');</script>
+        		<link rel="canonical" href="https://www.templatemonster.com/es/temas-wordpress-tipo-51818.html" />
+    			<link rel="alternate" hreflang="en" href="../wordpress-themes/51818.html"/>
+			<link rel="alternate" hreflang="de" href="../de/wordpress-themen-tipo-51818.html"/>
+			<link rel="alternate" hreflang="ru" href="../ru/wordpress-themes-type/51818.html"/>
+			<link rel="alternate" hreflang="es" href="https://www.templatemonster.com/es/temas-wordpress-tipo-51818.html"/>
+			<link rel="alternate" hreflang="fr" href="../fr/themes-wordpress-tipo-51818.html"/>
+			<link rel="alternate" hreflang="it" href="../it/temi-wordpress-tipo-51818.html"/>
+			<link rel="alternate" hreflang="pl" href="../pl/szablony-wordpress-51818.html"/>
+			<link rel="alternate" hreflang="tr" href="../tr/wordpress-temalar-51818.html"/>
+			<link rel="alternate" hreflang="pt" href="../pt-br/temas-wordpress/51818.html"/>
+			<link rel="alternate" hreflang="uk" href="../ua/wordpress-templates/51818.html"/>
+			<link rel="alternate" hreflang="zh" href="../cn/wordpress-themes/51818.html"/>
+			<link rel="alternate" hreflang="hu" href="../hu/wordpress-sablonok/51818.html"/>
+			<link rel="alternate" hreflang="cs" href="../cz/wordpress-templates/51818.html"/>
+			<link rel="alternate" hreflang="nl" href="../nl/wordpress-themes/51818.html"/>
+			<link rel="alternate" hreflang="sv" href="../sv/wordpress-themes/51818.html"/>
+    <meta property="og:url" content="https://www.templatemonster.com/es/temas-wordpress-tipo-51818.html" />
+<meta property="og:title" content="Tema de WordPress #51818 para Sitio de Lavado de autos" />
+    <meta property="og:image" content="https://s.tmimgcdn.com/scr/51800/tema-de-wordpress-para-sitio-de-lavado-de-autos_51818-big.jpg" />
+    <meta name="twitter:image" content="https://s.tmimgcdn.com/scr/51800/tema-de-wordpress-para-sitio-de-lavado-de-autos_51818-big.jpg" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:locale:alternate" content="nl_NL" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="cs_CZ" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:type" content="product" />
+<meta property="og:site_name" content="TemplateMonster" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="templatemonster" />
+<meta name="twitter:creator" content="templatemonster" />
+			<script>document.cookie = "callback_notice=closed; expires=03 Jul 2036 21:44:38 GMT; domain=.templatemonster.com; path=/";</script>
+<script>var chosenVariation = 1;</script>
+        <style>:root{content:"Thu Feb 07 2019 10:17:29 GMT-0500 (EST)---itemold"}html:not(.js) body .navigation [class*=sub-menu-],html:not(.js) body .sub-menu__additional{display:none}header,section{display:block}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}b,strong{font-weight:700}img{border:0}button,input{font-size:100%;margin:0;line-height:normal}button{text-transform:none;-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}html{font-size:62.5%;-webkit-tap-highlight-color:transparent}body{font-size:14px;line-height:1.42857143;background-color:#f1f1f1}button,input{font-size:inherit;line-height:inherit;background-image:none}a{color:#2196f3;text-decoration:none}img{vertical-align:middle}p{margin:0 0 10px}.text-right{text-align:right}.text-center{text-align:center}.h2,h1{font-weight:400;line-height:1.1}h1{margin-top:20px;font-size:36px}h1,ul{margin-bottom:10px}ul{margin-top:0}ul ul{margin-bottom:0}.container{margin-right:auto;margin-left:auto;padding-left:10px;padding-right:10px}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}@media (min-width:100px){.container{max-width:1004px}}@media (min-width:1310px){.container{max-width:1080px}}@media (min-width:1600px){.container{max-width:1316px}}.form-control{display:block;width:100%;height:34px;line-height:1.42857143;vertical-align:middle;background-color:#fff;border-radius:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav:after,.nav:before{content:" ";display:table}.nav:after{clear:both}.nav>li,.nav>li>a{position:relative;display:block}.nav>li>a{padding:10px 15px}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}@-ms-viewport{width:device-width}@media screen and (max-width:400px){@-ms-viewport{width:320px}}.hidden{display:none!important;visibility:hidden!important}[class*=icon-]:before{content:attr(data-icon);speak:none;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arrow-right,.icon-arrow-small-down,.icon-cart,.icon-monster_dark,.icon-psd,.icon-zencart{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}.icon-cart:before{content:"\e046"}.icon-arrow-right:before{content:"\e021"}.icon-arrow-small-down:before{content:"\e022"}.tm-icon:before{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:0 0!important}.tm-icon.icon-cart:before{content:"\e901"}.tm-icon.icon-download:before{content:"\e904"}.tm-icon.icon-magic:before{content:"\e907"}.tm-icon.icon-magnifier:before{content:"\e963"}.tm-icon.icon-success:before{content:"\e912"}.tm-icon.icon-arrow:before{content:"\e915"}.tm-icon.icon-heart:before{content:"\e919"}.tm-icon.icon-heart-empty:before{content:"\e924"}.tm-icon.icon-bell:before{content:"\e934"}.tm-icon.icon-help-circle:before{content:"\e937"}.tm-icon.icon-profile-circle:before{content:"\e93a"}.tm-icon.icon-money:before{content:"\e93b"}.tm-icon.icon-logout:before{content:"\e93c"}.tm-icon.icon-arrow-right:before{content:"\e94d"}.tm-icon.icon-home:before{content:"\e979"}.square-icon{width:25px;height:25px;float:left}.flex-row{display:flex!important;flex-flow:row nowrap}.vertical-center{align-items:center}.flex-wrap{flex-wrap:wrap}#header{background:#fff;z-index:11;position:relative;border-bottom:1px solid rgba(36,50,56,.2)}#header .navigation{background:#243238;overflow:hidden}#header>.header{z-index:16}#header>.header,#header>.sub-menu{position:relative}#header>.sub-menu .sub-menu__additional{display:none}.header{padding:20px;display:flex}.logo{height:40px;margin:0}.logo-icon{max-width:inherit;width:248px}.user-menu,.user-menu-element,.user-menu-element .menu-element-inner{display:flex}.user-menu{align-items:center;font-size:14px;position:relative;z-index:13}.user-menu .user-menu-element{align-items:center;height:40px;display:inline-block;position:relative}@media (max-width:1599px){.user-menu .user-menu-element{width:auto}}.user-menu .user-menu-element .account-menu-li{cursor:pointer}.user-menu .user-menu-element .menu-element-inner{cursor:pointer;padding:0 20px;align-items:center;border-radius:3px;color:#243238;height:100%}.user-menu .user-menu-element .menu-element-inner.has-notification .tm-icon{position:relative;display:inline}.user-menu .user-menu-element .menu-element-inner.has-notification .tm-icon:after{content:"";width:10px;height:10px;border-radius:50%;background:#ff6f00;border:1px solid #fff;position:absolute;right:-3px;top:-2px}.user-menu .user-menu-element .tm-icon{font-size:20px;line-height:1;height:20px}.user-menu .user-menu-element .menu-element-text{margin-left:10px}.user-menu .icon-arrow-small-down{font-size:10px;display:inline-block;position:relative;font-weight:400;margin-left:10px}.block-search{display:inline-block;margin-left:40px;margin-right:20px;display:flex;flex-basis:1px;flex-grow:1}.block-search .form-search{width:100%}.block-search .form-search .icon-placeholder{left:20px;top:10px;line-height:1;color:#b0bec5;z-index:15;font-size:20px}.block-search .form-search .keyword-search-field{z-index:14}.block-search .form-search .btn-unique{position:absolute;padding:0 10px;right:0;top:0;z-index:15}.block-search .tm-rd-input{margin-bottom:0!important;display:flex}.rd-dropdown-list{width:100%}.rd-dropdown-list>li:last-child .item-link{border-radius:0 0 3px 3px}.header-notifications{position:relative}.header-notifications .notification-menu{border-radius:0 0 3px 3px;box-shadow:0 5px 10px 0 rgba(35,50,56,.2)}.header-notifications .notification-menu-li .notification{height:auto}.header-notifications .tm-icon{-webkit-transition:all .5s cubic-bezier(.86,0,.07,1)}.notification{align-items:flex-start}.notification__icon{margin-right:20px}.notification__body{width:100%;max-width:calc(100% - 40px)}.account-pick .profile-img-wrap{width:20px;height:20px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}.account-menu,.notification-menu{display:block;width:180px;position:absolute;right:0}.account-menu .account-menu-li:first-child:after,.account-menu .account-menu-li:first-child:before,.notification-menu .notification-menu-li:first-child:after,.notification-menu .notification-menu-li:first-child:before{content:"";width:80px;height:3px;position:absolute;bottom:100%}.account-menu .account-menu-li:first-child:after,.notification-menu .notification-menu-li:first-child:after{border-radius:0 0 3px 0;background:#fff;right:80px}.account-menu .account-menu-li:first-child:before,.notification-menu .notification-menu-li:first-child:before{background:#546e7a;right:3px;width:80px}.account-menu .account-menu-li:first-child .item-link,.notification-menu .notification-menu-li:first-child .notification{border-top:0;border-radius:3px 0 0 0}.account-menu .account-menu-icon,.notification-menu .notification__icon{height:20px!important}.notification-menu{width:300px}.notification-menu .notification-menu-li:first-child:after,.notification-menu .notification-menu-li:first-child:before{width:56px}.notification-menu .notification-menu-li:first-child:after{right:57px}.account-menu,.languages-menu,.notification-menu,.shop-cart .cart-count{display:none}.button{height:40px;line-height:40px;border-radius:3px;padding:0 20px;color:#fff;font-size:14px;font-weight:400!important;position:relative;display:inline-block;vertical-align:top;text-decoration:none!important;text-align:center;border:0;outline:0!important;box-shadow:none!important;cursor:pointer;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.button.btn-important{background:#f4511e;background:linear-gradient(180deg,#f4511e 0,#d84315)}.button.btn-main{background:#42a5f5;background:linear-gradient(180deg,#42a5f5 0,#2196f3)}.button.btn-big-height{height:60px!important;line-height:60px;font-size:16px}.button.btn-full-width{width:100%}.button.btn-unique{width:40px;padding:0}.button.btn-unique.tm-icon:before{margin-right:0}.button.tm-icon:before{width:20px;height:20px;margin-right:10px;display:inline-block;position:relative;top:-2px;font-size:20px;vertical-align:middle}.button:empty:before{margin:0}.rd-notice{opacity:0;position:relative;padding:0;border:0;text-align:left;box-shadow:0 5px 10px 0 rgba(36,50,56,.2)}.rd-notice,.rd-notice .rd-notice-content,.rd-notice:after{background-color:#546e7a}.rd-notice:after{box-shadow:0 5px 10px 0 rgba(36,50,56,.2)}.rd-notice:not(.rd-notice-position-static) .rd-notice-content{color:#fff!important}.rd-notice-tooltip{box-shadow:0 2px 2px rgba(0,0,0,.2);font-size:14px;border-radius:3px;line-height:1.25;position:absolute;z-index:10;opacity:1}.rd-notice-tooltip:after{position:absolute;display:block;content:"";height:20px;width:20px;box-shadow:none;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);border-radius:3px;z-index:7}.rd-notice-tooltip .rd-notice-content{background:0;border-radius:3px;width:100%;color:#fff;position:relative;z-index:8;padding:20px;font-weight:400;line-height:1.45}.rd-notice-tooltip.single-line .rd-notice-content{height:40px;padding:0 20px;line-height:40px;white-space:nowrap}.rd-notice-position-left{margin-left:-20px}.rd-notice-position-left:after{right:-6px;top:50%;margin-top:-10px}.rd-notice-type-success{box-shadow:0 5px 10px 0 rgba(0,96,35,.2)}.rd-notice-type-success,.rd-notice-type-success .rd-notice-content{background-color:#1ab744}.rd-notice-type-success:after{background-color:#1ab744;box-shadow:0 5px 10px 0 rgba(0,96,35,.2)}.highlighted-important{color:#90caf9!important}.without-top-bd-radius{border-top-right-radius:0;border-top-left-radius:0}.cursor-pointer{cursor:pointer}body{min-width:1024px;color:#243238;background:#eceff1;-webkit-font-smoothing:antialiased}body a{color:#2196f3}a{cursor:pointer}.container{position:relative}img{max-width:100%}.hide-price{color:#fff!important}ul{list-style:none;margin:0;padding:0}.overflowed-hidden{overflow:hidden}input[type=text]{width:100%;box-sizing:border-box;padding:5px 0 5px 10px;border:1px solid #90a4ae;outline:0;color:#243238;font-size:14px;line-height:19px;-webkit-appearance:none;border-radius:0;-webkit-transition:all .1s linear}input[type=text]::-ms-clear{display:none}.form-control:-moz-placeholder,.form-control::-moz-placeholder{color:#999}.form-control:-ms-input-placeholder{color:#999}.form-control::-webkit-input-placeholder{color:#999}.form-control:-moz-placeholder,.form-control::-moz-placeholder{color:#90a4ae}.form-control:-ms-input-placeholder{color:#90a4ae}.form-control::-webkit-input-placeholder{color:#90a4ae}.js-none{display:none!important}.link-click{text-decoration:none;color:#2196f3}div.navigation{position:relative;z-index:12}.nav.main-menu{width:100%;position:relative;z-index:1;background:#fff}.nav.main-menu:before{position:absolute;width:101%;height:35px;background:#243238;left:-1px;bottom:0}.nav.main-menu>li{padding-top:0;position:static;border-top:1px solid #243238;border-radius:6px 6px 0 0;background:#243238;flex-basis:1px;flex-grow:1}.nav.main-menu>li>a{padding:9px 10px;border:1px solid transparent;text-align:center;color:#fff;font-size:12px;white-space:nowrap;line-height:1.8;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;border-radius:6px 6px 0 0;height:40px;position:relative;z-index:1}.nav.main-menu>li>a .tm-icon.icon-arrow{width:6px;height:10px;display:inline-block;font-size:10px;transform:rotate(90deg);margin-left:10px;vertical-align:middle;position:relative;top:-1px}.nav.main-menu>li>a .tm-icon.icon-arrow:before{left:0;position:relative;top:-2px}@media screen and (-webkit-min-device-pixel-ratio:0){.nav.main-menu>li>a:after{right:-1px}}.nav.main-menu>li:nth-child(2):after{border-left:3px solid #455a64;left:-3px}.nav.main-menu>li:last-child:after,.nav.main-menu>li:nth-child(2):after{border-top:3px solid #fff;position:absolute;top:0;overflow:hidden;height:0;content:""}.nav.main-menu>li:last-child:after{border-right:3px solid #455a64;right:-3px}.sub-menu-1{background:#fff}.sub-menu-1 ul{overflow:hidden;display:flex;align-items:center}.sub-menu-1 li{float:left;margin:0;width:100%;line-height:14px;padding:0}.sub-menu-1 li a{color:#243238;font-size:13px;line-height:1.5;font-weight:400;min-height:30px;display:flex;align-items:center;padding:10px 20px 10px 0}.sub-menu-1 li a b{width:30px;height:30px;border-radius:3px;overflow:hidden;margin-right:10px;flex-basis:1px;max-width:30px;flex-grow:2}.sub-menu-1 li a span{flex-basis:1px;flex-grow:1}div[class*=sub-menu-] .template-count{width:auto;padding:0 5px;height:18px;border-radius:3px;border:1px solid #2196f3;font-size:12px;line-height:16px;color:#2196f3;vertical-align:middle;margin-left:6px;position:relative;z-index:4}div[class*=sub-menu-] .title_text{display:inline-block;vertical-align:top;max-width:174px;overflow:hidden;position:relative}@media screen and (max-width:1580px){div[class*=sub-menu-] .title_text{max-width:200px}}@media screen and (max-width:1309px){div[class*=sub-menu-] .title_text{max-width:172px}}div[class*=sub-menu-] a.text-faded{position:relative}div[class*=sub-menu-] a.text-faded:after{width:15px;height:50px;content:"";position:absolute;right:70px;top:0;z-index:3;background:linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff)}div[class*=sub-menu-] a.text-faded.item_title:after{right:50px}div[class*=sub-menu-] .title-holder{display:inline-block;vertical-align:top;overflow:hidden;max-width:174px;white-space:nowrap;margin-left:50px}@media screen and (max-width:1580px){div[class*=sub-menu-] .title-holder{max-width:200px}}@media screen and (max-width:1309px){div[class*=sub-menu-] .title-holder{max-width:172px}}div[class*=sub-menu-] b{border-radius:3px;overflow:hidden}.sub-menu-2 .maxheight1{height:auto}.sub-menu-2 .maxheight1 p{min-height:17px;margin:0}.sub-menu-2 li{padding:20px;width:314px;font-size:12px;line-height:16px}.sub-menu-2 li a{color:#243238;overflow:hidden;position:relative;display:inline;vertical-align:middle;margin-bottom:20px;font-size:12px;color:#4b4441;white-space:nowrap}.sub-menu-2 li a.item_title{font-size:16px;line-height:30px;font-weight:700;margin-bottom:20px;padding-left:50px;display:block;position:relative}.sub-menu-2 li a b{display:inline-block;position:absolute;left:0;top:0;width:30px;height:30px}.sub-menu-2 li a .template-count{width:auto;padding:0 5px;height:18px;border-radius:3px;border:1px solid #2196f3;font-size:12px;line-height:16px;color:#2196f3;vertical-align:middle;margin-left:6px;position:relative;z-index:4}@media (max-width:1580px){.sub-menu-2 ul li{width:340px}}@media (max-width:1309px){.sub-menu-2 ul li{width:313px}}body #content{padding-top:40px}#product-preview .slides .slides-item{position:relative}#product-preview .slides .slides-item .magnifier{display:inline-block;max-height:600px;overflow:hidden;border:1px solid #d7d7d7;width:100%;max-width:100%}#product-preview .slides .slides-item .magnifier img{height:auto;width:100%}#product-preview .slides .slides-item .magnifier span{opacity:0}@media (max-width:1599px){#product-preview .slides .slides-item .magnifier{max-height:403px}}.owl-slides:not(.owl-theme) .slides-item{visibility:hidden}.owl-slides:not(.owl-theme) .slides-item:first-child{visibility:visible}#product-preview{text-align:center}.rating-stars-block{position:relative}.rating-stars-block .stars{color:#fff;width:96px;height:20px;content:"";float:left;margin:0 7px 0 0}.rating-stars-block .stars [class*=star]{display:inline-block!important;width:15px;height:15px}.rating-stars-block .stars [class*=star]:before{display:block;content:"";width:100%;height:100%;background-size:contain}.heart-wrapper .tm-icon.icon-heart-empty{font-size:20px;position:absolute;top:20px;right:20px;margin-right:0;cursor:pointer;width:20px;padding-left:0;z-index:9;overflow:visible;position:relative;right:auto;left:auto;bottom:auto;top:2px;padding:0}.heart-wrapper .tm-icon.icon-heart-empty:before{-webkit-transition:color .5s ease;-moz-transition:color .5s ease;-ms-transition:color .5s ease;-o-transition:color .5s ease;color:#90a4ae}.heart-wrapper .tm-icon.icon-heart-empty span{font-size:13px;color:#90a4ae;font-weight:400;display:inline-block;vertical-align:top;padding-top:0;margin-left:7px;margin-top:-1px}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.magnifier{position:relative;display:block;height:auto}.magnifier span{width:100%;height:100%;opacity:0;z-index:2;background:#243238;position:absolute;top:0;left:0;display:block}.header-collection-link{position:relative;-webkit-transition:all .5s cubic-bezier(.86,0,.07,1)}.header-collection-link .icon-heart-empty.favorite-btn:before{content:"\e919"}.header-collection-link .favorite-btn{position:relative}.header-collection-link .favorite-btn:before{content:"\e919";color:#243238;-webkit-transition:all .5s cubic-bezier(.86,0,.07,1)}.header-collection-link .favorite-btn:after{position:absolute;display:block;content:"";width:10px;height:10px;background-color:#ff6f00;border:1px solid #fff;top:-3px;right:-3px;border-radius:50%;opacity:0}.blurred{-webkit-filter:blur(20px);-moz-filter:blur(20px)}.link-click{cursor:pointer}.bold{font-weight:700}.h2{font-size:30px;line-height:39px}.h2,.t3,.t6{color:#243238}.t3{font-size:14px;line-height:21px}.t6{font-size:11px;line-height:16px}.iti-flag{width:43px;height:32px;background-image:none;background-repeat:no-repeat;display:block}.language-pick .iti-flag{margin:-1px -10px 0 0;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 50%;transform-origin:0 50%}.iti-flag.br{background-position:-181px -69px}.iti-flag.cn{background-position:-361px -103px}.iti-flag.cz{background-position:-136px -137px}.iti-flag.de{background-position:-181px -137px}.iti-flag.es{background-position:-91px -171px}.iti-flag.fr{background-position:-406px -171px}.iti-flag.hu{background-position:-361px -239px}.iti-flag.it{background-position:-226px -273px}.iti-flag.nl{background-position:-406px -409px}.iti-flag.pl{background-position:-406px -443px}.iti-flag.ru{background-position:-361px -477px}.iti-flag.se{background-position:-46px -511px}.iti-flag.tr{background-position:-136px -579px}.iti-flag.ua{background-position:-361px -579px}.iti-flag.us{background-position:-496px -579px}.rd-form{position:relative}.rd-form .icon-placeholder{pointer-events:none}.tm-rd-input [type=text]{background:#eceff1;box-shadow:inset 0 1px 0 0 #cfd8dc;font-weight:400;font-size:16px;line-height:1.25;color:#243238;box-sizing:border-box;border:1px solid transparent;border-top-width:0;border-radius:3px;-webkit-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease;-moz-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease;-ms-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease;-o-transition:background .25s ease,box-shadow-color .25s ease,border-color .75s ease}.tm-rd-input [type=text]::-ms-clear{display:none}.tm-rd-input .icon-placeholder{position:absolute;z-index:5;left:20px;top:9px;font-size:18px;color:#b0bec5}.tm-rd-input-f2{margin-bottom:20px!important}.tm-rd-input-f2 [type=text]{height:40px;padding:0 45px 0 20px;font-size:14px}.tm-rd-input-f2 [type=text]::-webkit-input-placeholder{line-height:1.39}.tm-rd-input-f2 [type=text]{padding-left:50px}.livechat-girl{position:fixed;bottom:0;right:40px;opacity:0;z-index:17;transform:translateY(0);-webkit-transform:translateY(0);-ms-transform:translateY(0);cursor:pointer;-webkit-transition:all 1s cubic-bezier(.86,0,.07,1)}.livechat-girl .livechat-control{border-radius:50px 50px;background-color:hsla(0,0%,100%,.85);box-shadow:0 5px 10px 0 rgba(35,50,56,.3);font-size:0}.livechat-girl .livechat-control__element{cursor:pointer;height:100%;vertical-align:top}.livechat-girl .livechat-control__element .tm-icon{padding:0;margin-top:10px;width:40px;height:40px;border-radius:50%;border:0;outline:0;color:#fff;font-size:20px;text-align:center;-webkit-transition:all .3s cubic-bezier(.86,0,.07,1)}.livechat-girl .livechat-control__element .tm-icon:before{line-height:40px}.livechat-girl .livechat-control__element_chat{display:inline-block}.livechat-girl .livechat-control__element_chat:after{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background-image:linear-gradient(180deg,#38dc79,#1ab744);position:absolute;left:46px;top:1px;z-index:7}.livechat-girl .livechat-control__element_chat .tm-icon{display:none;margin-left:20px;background-color:#1ab744}.livechat-girl .livechat-control__element_callback{display:none}.livechat-girl .livechat-control__element_callback .tm-icon{display:inline-block;margin-right:20px;margin-bottom:10px;background-color:#2196f3}.livechat-girl .livechat-control__link{display:inline-block}.livechat-girl .livechat-control .girl-holder{position:relative;display:inline-block;width:60px;height:60px;vertical-align:top;z-index:7}.livechat-girl .animated-circles{position:absolute;top:0}.livechat-girl .animated-circles .circle{background:rgba(26,183,68,.25);width:60px;height:60px;border-radius:50%;position:absolute;z-index:6;transform:scale(1);-webkit-transform:scale(1)}.livechat-girl .livechat-hint{position:absolute;right:40px;top:50%;margin-top:-20px;opacity:0;z-index:0;-webkit-transition:all .3s cubic-bezier(.86,0,.07,1)}.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:1296px!important}.livechat-girl .livechat-hint.rd-notice-tooltip .rd-notice-content{width:auto;overflow:hidden;text-overflow:ellipsis}@media only screen and (max-width:1599px){.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:1060px!important}}@media only screen and (max-width:1309px){.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:984px!important}}@media only screen and (max-width:1124px){.livechat-girl .livechat-hint.rd-notice-tooltip{max-width:600px!important}}.live-chat-board .lc-board-body .tab-pane{flex:1 1 auto;display:inline-block}.live-chat-board .lc-board-body .tab-pane:after{position:absolute;content:"";display:block;bottom:-7px;right:40px;width:20px;height:20px;border-radius:3px;-webkit-transform:rotate(45deg);transform:rotate(45deg);z-index:3;background:#fff}.live-chat-board .lc-board-body .tab-pane.call-back-tab{white-space:nowrap;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.live-chat-board .lc-board-body .tab-pane:not(.active){-webkit-transform:translateX(1000%);transform:translateX(1000%);visibility:hidden}.live-chat-board .lc-board-body .tab-pane:not(.active) .lc-board-call-back{display:none}.live-chat-board .lc-board-call-back{display:inline-block;padding:20px 40px 0;position:relative;width:480px;vertical-align:top;white-space:normal;-webkit-transition:all .3s cubic-bezier(.86,0,.07,1)}.live-chat-board .lc-board-call-back-success{opacity:0;text-align:center;-webkit-transform:scale(.8);transform:scale(.8)}.live-chat-board .lc-board-call-back-success .icon-success{font-size:80px;color:#1ab744}.live-chat-board .lc-board-call-back-success .success-title{font-size:30px;color:#1ab744}.live-chat-board .lc-board-call-back-success .success-description{margin-top:20px}.live-chat-board .lc-board-call-back-content{text-align:center;margin-bottom:40px;padding-top:20px}.live-chat-board .lc-board-call-back-description{margin-top:20px}button::-moz-focus-inner{padding:0;border:0}html:not(.js) body{font-family:Helvetica,Arial,sans-serif}html:not(.js) body .nav.main-menu>li>a{letter-spacing:-.4px}.sub-menu-1 li a b{background-color:#f0f0f0}.sub-menu-1 li:first-child a b{background-color:#1a1e23}.sub-menu-1 li:nth-child(2) a b{background-color:#dce1e6}.sub-menu-1 li:nth-child(3) a b{background-color:#ef9145}.sub-menu-1 li:nth-child(4) a b{background-color:#aad8e5}.sub-menu-1 li:nth-child(5) a b{background-color:#e06f40}.sub-menu-1 li:nth-child(6) a b{background-color:#9b6896}.sub-menu-1 li:nth-child(7) a b{background-color:#665387}</style>
+<script>
+    !function(e){"use strict"
+        var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+            return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+                setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s};
+        "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+    function isLocalStorageExists() {
+        try {
+            localStorage.setItem('t*',1);
+            localStorage.removeItem('t*');
+            return true;
+        } catch(e) {
+            return false;
+        }
+    }
+</script>
+<script>
+        loadCSS("https://s.tmimgcdn.com/css/varnish.application.minified.css?d=1a63017");
+    </script>    	<script type="text/javascript">
+	window.template = {'id':51818 , 'price':1}
+</script>
+	<link rel="prefetch" href="https://s.tmimgcdn.com/js/varnish.compiled.application.es.js?d=abd0f20">
+<link rel="prefetch" href="https://s.tmimgcdn.com/css/varnish.application.minified.css?d=1a63017">
+<link rel="prefetch" href="https://s.tmimgcdn.com/img/line-bg.gif?d=900f612">
+<link rel="prefetch" href="https://s.tmimgcdn.com/img/sprite.svg?d=900f612"></head>
+<body itemscope itemtype="http://schema.org/WebPage"  id="preview-page"	  class="js-frontend ">
+<noscript><iframe src="../index.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="Page js-page-wrapper">
+	<!--============================== HEADER =================================-->
+	<header id="header">
+														    <script type="text/javascript" id="zone_14">
+  window.banner_zone = window.banner_zone || [];
+  window.banner_zone.push({
+    id: 14,
+    zone: "<div class='js-revive-banner-container'><ins data-revive-zoneid='14' data-revive-id='5dba4d01a92de7101be5c5e6e1630dfe'></ins></div>"
+  });
+</script>
+<div class="container header">
+	<!-- Logo -->
+	<a id="logo-brand" class="logo" href="../es.html" title="Plantillas y Temas de Páginas Web">
+	<img class="logo-icon svg" alt="Plantillas y Temas de Páginas Web" src="../s-tmimgcdn-com/wp-content/uploads/2016/05/logo_tm_new.svg">
+</a>
+	<!-- Search form -->
+			<div class="block-search" >
+                    <form id="js-searchForm" name="searchForm" class="form-search rd-form" action="../es/plantillas.html" >
+            <div class="input-append control-group tm-rd-input tm-rd-input-f2">
+                                <input name="keywords" type="text"                        placeholder="¿Qué desea encontrar?"
+                       class="js-typeahead2 keyword-search-field js-placeholder rd-field form-control"
+                       value=""/>
+                <span class="tm-icon icon-placeholder icon-magnifier"></span>
+                <span id="searchFormSubmit" class="button btn-unique btn-important tm-icon icon-magnifier hidden js-hint-tooltip"
+                      data-title="Buscar"
+                      data-placement="bottom"
+                      data-html-class="header-search-btn"
+                ></span>
+            </div>
+        </form>
+    </div>
+	<ul class="user-menu">
+		<!-- Language picker -->
+		<li class="user-menu-element language-pick user-menu-dropdown">
+    <span class="menu-element-inner"><i class="iti-flag es"></i>
+		ES<b class="icon-arrow-small-down"></b>
+	</span>
+    <ul class="languages-menu rd-dropdown-list js-languages-menu">
+	    		    <li>
+			    <a id="menu-US-locale" href="../wordpress-themes/51818.html"						title="Templatemonster - TemplateMonster US"
+						class="item-link us-language">
+					<i class="iti-flag us"></i>
+					<span class="lang-name">US</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-RU-locale" href="../ru/wordpress-themes-type/51818.html"						title="TemplateMonster Russia: создать сайт так просто"
+						class="item-link ru-language">
+					<i class="iti-flag ru"></i>
+					<span class="lang-name">RU</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-DE-locale" href="../de/wordpress-themen-tipo-51818.html"						title="TemplateMonster auf Deutsch"
+						class="item-link de-language">
+					<i class="iti-flag de"></i>
+					<span class="lang-name">DE</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-PL-locale" href="../pl/szablony-wordpress-51818.html"						title="TemplateMonster Polska"
+						class="item-link pl-language">
+					<i class="iti-flag pl"></i>
+					<span class="lang-name">PL</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-IT-locale" href="../it/temi-wordpress-tipo-51818.html"						title=""
+						class="item-link it-language">
+					<i class="iti-flag it"></i>
+					<span class="lang-name">IT</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-TR-locale" href="../tr/wordpress-temalar-51818.html"						title=""
+						class="item-link tr-language">
+					<i class="iti-flag tr"></i>
+					<span class="lang-name">TR</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-FR-locale" href="../fr/themes-wordpress-tipo-51818.html"						title=""
+						class="item-link fr-language">
+					<i class="iti-flag fr"></i>
+					<span class="lang-name">FR</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-BR-locale" href="../pt-br/temas-wordpress/51818.html"						title=""
+						class="item-link br-language">
+					<i class="iti-flag br"></i>
+					<span class="lang-name">BR</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-NL-locale" href="../nl/wordpress-themes/51818.html"						title=""
+						class="item-link nl-language">
+					<i class="iti-flag nl"></i>
+					<span class="lang-name">NL</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-CN-locale" href="../cn/wordpress-themes/51818.html"						title=""
+						class="item-link cn-language">
+					<i class="iti-flag cn"></i>
+					<span class="lang-name">CN</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-CZ-locale" href="../cz/wordpress-templates/51818.html"						title=""
+						class="item-link cz-language">
+					<i class="iti-flag cz"></i>
+					<span class="lang-name">CZ</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-UA-locale" href="../ua/wordpress-templates/51818.html"						title=""
+						class="item-link ua-language">
+					<i class="iti-flag ua"></i>
+					<span class="lang-name">UA</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-HU-locale" href="../hu/wordpress-sablonok/51818.html"						title=""
+						class="item-link hu-language">
+					<i class="iti-flag hu"></i>
+					<span class="lang-name">HU</span>
+			    </a>
+		    </li>
+	    		    <li>
+			    <a id="menu-SE-locale" href="../sv/wordpress-themes/51818.html"						title=""
+						class="item-link sv-language">
+					<i class="iti-flag se"></i>
+					<span class="lang-name">SE</span>
+			    </a>
+		    </li>
+	        </ul>
+</li>
+		<!-- Help -->
+		<li class="user-menu-element">
+			<span
+					id="menu-hlp-center"
+					data-target="_blank"
+					data-href="https://helpdesk.templatemonster.com/hc/es"
+					class="js-btn menu-element-inner  js-hint-tooltip"
+					data-title="Help"
+					data-placement="bottom"
+					data-html-class="header-tooltip"
+			>
+				<span class="tm-icon icon-help-circle"></span>
+			</span>
+		</li>
+		<!-- Favorites -->
+		<li class="user-menu-element">
+			<span id="menu-favorites" data-href="https://www.templatemonster.com/es/collection/"
+				  class="js-collection-url js-none header-collection-link js-btn menu-element-inner js-hint-tooltip"
+				  data-title="Ver Colección"
+				  data-placement="bottom"
+				  data-html-class="header-tooltip"
+			>
+				<b class="tm-icon icon-heart-empty favorite-btn js-url-favorite"></b>
+			</span>
+		</li>
+		<!-- Notifications -->
+<li class="user-menu-element header-notifications user-menu-dropdown js-notifications">
+	<span id="menu-notification"  class="menu-element-inner has-notification js-hint-tooltip js-menu-notification"
+		  data-title="Ver Notificaciones"
+		  data-placement="bottom"
+		  data-html-class="header-tooltip"
+	>
+		<span class="tm-icon icon-bell"></span>
+	</span>
+	<div class="notification-menu overflowed-hidden">
+		<ul class="rd-dropdown-list js-dropdown">
+			<li class="notification-menu-li">
+				<div class="notification">
+					<span class="notification__icon tm-icon icon-pencil"></span>
+					<div class="notification__body">
+						<div class="notification__content">
+						<span id="notification-signup-link" data-href="https://account.templatemonster.com/auth/" data-target="_blank" class="js-btn bold cursor-pointer">
+																					Por favor, <span class="t3 highlighted-important bold">Suscríbase</span>
+						</span>
+							<br>
+							¡Facilite sus compras!
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<button id="notification-load-btn" class="button btn-main btn-full-width without-top-bd-radius js-notification-load-btn hidden">Más</button>
+	</div>
+</li>
+		<!-- Account -->
+				<li id="menu-signin-block" class="user-menu-element js-signin-menu">
+			<div
+					id="header-signin-link"
+					data-target="_blank"
+					class="menu-element-inner js-btn link-click js-hint-tooltip"
+					data-href="https://account.templatemonster.com/auth/"
+					data-title="Cuenta"
+					data-placement="bottom"
+					data-html-class="header-tooltip"
+			>
+				<span class="tm-icon icon-profile-circle"></span>
+			</div>
+		</li>
+<li id="menu-account-block" class="user-menu-element account-pick js-account-dropdown user-menu-dropdown hidden">
+	<span class="menu-element-inner">
+		<span id='user-avatar' class="profile-img-wrap js-avatar" >
+			<span class="tm-icon icon-profile-circle"></span>
+		</span>
+		<b class="icon-arrow-small-down"></b>
+	</span>
+	<ul class="account-menu rd-dropdown-list">
+					<li class="account-menu-li">
+				<span id="header-downloads-link" data-href="https://account.templatemonster.com/?lang=es#/downloads" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-download"></i>
+					<span>Descargas</span>
+				</span>
+			</li>
+					<li class="account-menu-li">
+				<span id="header-collection-link" data-href="https://www.templatemonster.com/es/collection/" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-heart"></i>
+					<span>Colección</span>
+				</span>
+			</li>
+					<li class="account-menu-li">
+				<span id="header-billing-link" data-href="https://account.templatemonster.com/?lang=es#/billing" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-money"></i>
+					<span>Facturación</span>
+				</span>
+			</li>
+					<li class="account-menu-li">
+				<span id="header-profile-link" data-href="https://account.templatemonster.com/?lang=es#/profile" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-profile-circle"></i>
+					<span>Perfil de usuario</span>
+				</span>
+			</li>
+					<li class="account-menu-li js-signout-link">
+				<span id="header-signOut-link" data-href="" class="item-link js-btn">
+					<i class="tm-icon account-menu-icon icon-logout"></i>
+					<span>Cerrar Sesión</span>
+				</span>
+			</li>
+			</ul>
+</li>
+		<script type="application/javascript">
+			(function () {
+				function isLocalStorageExists() {
+					try {
+						localStorage.setItem('t*',1);
+						localStorage.removeItem('t*');
+						return true;
+					} catch(e) {
+						return false;
+					}
+				}
+				function getCookie(key) {
+					var ca = document.cookie.match( '(^|;) ?'+key+'=([^;]*)(;|$)' );
+					var c=null;
+					if ( ca ) {if (typeof(ca[2]) != "undefined") { c=ca[2];}}
+					return c;
+				}
+				if (!getCookie('access_token')) {
+                    document.querySelector('.js-notifications').style.display='none';
+				}
+				if (isLocalStorageExists()) {
+					var avatarData = JSON.parse( localStorage.getItem('avatar') );
+					if (avatarData && avatarData.cid === getCookie('cid') && getCookie('access_token')) {
+						var avatar = avatarData.html,
+								signinMenu = document.getElementById('menu-signin-block'),
+								accountMenu = document.getElementById('menu-account-block'),
+								avatarElement = document.getElementById('user-avatar');
+						if (signinMenu && accountMenu) {
+							if (avatarElement && avatar) {
+								avatarElement.outerHTML = avatar;
+							}
+							accountMenu.className = accountMenu.className.replace('hidden', '');
+							signinMenu.className = signinMenu.className + ' hidden';
+						}
+					} else {
+                        localStorage.removeItem('avatar');
+					}
+				}
+			})();
+		</script>
+				<!-- Cart -->
+		<li class="user-menu-element">
+			<span id="shp-cart" data-target="_blank" data-href="../es/carrito.html" class="shop-cart menu-element-inner js-btn link-click">
+				<span class="tm-icon icon-cart"></span>
+				<span class="menu-element-text">Carrito</span>
+				<span class="cart-count js-cart-count" id="cart-count">
+					<span></span>
+				</span>
+			</span>
+		</li>
+			</ul>
+</div>
+				<!-- Main menu -->
+	<div class="navigation">
+		<div class="container">
+				<ul class="nav main-menu flex-row flex-wrap">
+																																																		<li class="sub-menu">
+	<a href="../landings/saas-websites/es.html" id="nm-websites"><span>SITIOS WEB</span>
+        </a>
+    </li>
+																									<li class="sub-menu">
+	<a href="../es/plantillas-cms-blogs.html" id="nm-cms"><span>CMS</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../es/temas-wordpress-tipo.html"  id="nm-cms-temas-wordpress-tipo">
+						<b class="icon-wordpress svg square-icon"></b><span class="title-holder">Temas <br>WordPress</span>
+						<span  class="template-count">2141</span>
+																					<p class="sub-menu-padding" >Tres razones para elegir WordPress: toma poco tiempo, no requiere habilidades especiales, no causa dolor de cabeza</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/elementor-marketplace.html"  id="nm-cms-elementor-marketplace">
+						<b class="icon-elementor svg square-icon"></b><span class="title-holder">Elementor Marketplace</span>
+						<span  class="template-count">608</span>
+																					<p class="sub-menu-padding" >Encuentre plantillas, complementos y temas para verdaderos aficionados de Elementor</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-joomla-tipo.html"  id="nm-cms-plantillas-joomla-tipo">
+						<b class="icon-joomla svg square-icon"></b><span class="title-holder">Plantillas <br>Joomla</span>
+						<span  class="template-count">1165</span>
+																					<p class="sub-menu-padding" >La mejor solución para usuarios con experiencia!</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/moto-cms-3-templates-tipo.html"  id="nm-cms-moto-cms-3-templates-tipo">
+						<b class="icon-moto3 svg square-icon"></b><span class="title-holder">Plantillas <br>Moto CMS 3</span>
+						<span  class="template-count">804</span>
+																					<p class="sub-menu-padding" >Plantillas con CMS fácil de usar que permiten crear rápidamente sitios web atractivos y adaptativos.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-drupal-tipo.html"  id="nm-cms-plantillas-drupal-tipo">
+						<b class="icon-drupal svg square-icon"></b><span class="title-holder">Temas <br>Drupal</span>
+						<span  class="template-count">357</span>
+																					<p class="sub-menu-padding" >En manos de profesionales, tema Drupal es un guante que se ajusta a cualquier tamaño.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-moto-cms-html-tipo.html"  id="nm-cms-plantillas-moto-cms-html-tipo">
+						<b class="icon-moto svg square-icon"></b><span class="title-holder">Plantillas <br>Moto CMS HTML</span>
+						<span  class="template-count">1771</span>
+																					<p class="sub-menu-padding" >Plantillas con herramientas de edición de múltiples funciones para usuarios con poca experiencia técnica</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../es/plantillas-web.html" id="nm-web"><span>Plantillas Web</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../es/caracteristicas/opciones/diseno-responsive.html"  id="nm-web-diseno-responsive">
+						<b class="icon-responsive svg square-icon"></b><span class="title-holder">Plantillas <br>Responsive</span>
+						<span  class="template-count">10499</span>
+																					<p class="sub-menu-padding" >Cree una página web que se adapta completamente a todos los dispositivos y a todas las resoluciones de pantalla! Diseños adaptables e inolvidables le esperan...</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/paginas-de-aterrizaje-tipo.html"  id="nm-web-paginas-de-aterrizaje-tipo">
+						<b class="icon-landing svg square-icon"></b><span class="title-holder">Plantillas para <br>Páginas de Aterrizaje</span>
+						<span  class="template-count">638</span>
+																					<p class="sub-menu-padding" >Convierta sus visitantes en clientes potenciales con la ayuda del contenido personalizado que hablará directamente a sus visitantes!</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-bootstrap.html"  id="nm-web-plantillas-bootstrap">
+						<b class="icon-bootstrap svg square-icon"></b><span class="title-holder">Temas <br>Bootstrap</span>
+																					<p class="sub-menu-padding" >Solución 'todo-en-una' para ser un competidor potente: funcionalidad de Bootstrap, diseño adaptativo y complementos únicos</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-web-tipo.html"  id="nm-web-plantillas-web-tipo">
+						<b class="icon-html5-2 svg square-icon"></b><span class="title-holder">Plantillas <br>HTML5</span>
+						<span  class="template-count">2506</span>
+																					<p class="sub-menu-padding" >Temas super-personalizables con códigos y diseños limpios creados a base de HTML5 inteligente</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-unbounce-tipo.html"  id="nm-web-plantillas-unbounce-tipo">
+						<b class="icon-unbounce svg square-icon"></b><span class="title-holder">Plantillas <br>Unbounce</span>
+						<span  class="template-count">44</span>
+																					<p class="sub-menu-padding" >Plantillas Unbounce para sus campañas de marketing online</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-para-galerias-de-fotos-flash-tipo.html"  id="nm-web-plantillas-para-galerias-de-fotos-flash-tipo">
+						<b class="icon-moto3 svg square-icon"></b><span class="title-holder">Plantillas de <br>Fotogalerías</span>
+						<span  class="template-count">217</span>
+																					<p class="sub-menu-padding" >Combinación perfecta del constructor 'arrastrar y soltar' con la catalogación de fotos y con las opciones numerosas de personalización de MotoCMS</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-para-boletines-tipo.html"  id="nm-web-plantillas-para-boletines-tipo">
+						<b class="icon-email svg square-icon"></b><span class="title-holder">Plantillas para Boletines de Noticias</span>
+						<span  class="template-count">203</span>
+																					<p class="sub-menu-padding" >Plantillas adaptativas con diseños modernos que atraerán a más suscriptores a su boletín de noticias </p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-muse-tipo.html"  id="nm-web-plantillas-muse-tipo">
+						<b class="icon-muse svg square-icon"></b><span class="title-holder">Plantillas <br>Muse</span>
+						<span  class="template-count">172</span>
+																					<p class="sub-menu-padding" >Cree sitios funcionales y compatibles con todos los navegadores web a base de nuestras nuevas plantillas Adobe que no requieren habilidades de codificación</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/specialty-pages.html"  id="nm-web-specialty-pages">
+						<b class="icon-specialty-page svg square-icon"></b><span class="title-holder">Páginas especiales</span>
+						<span  class="template-count">21</span>
+																					<p class="sub-menu-padding" >¡Mejores páginas especiales en TemplateMonster! Ahora no tiene que contratar a desarrolladores profesionales para diseñar y crear páginas especiales como 404, próximamente, etc.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-ebay-tipo.html"  id="nm-web-plantillas-ebay-tipo">
+						<b class="icon-ebay svg square-icon"></b><span class="title-holder">Plantillas eBay</span>
+						<span  class="template-count">7</span>
+																					<p class="sub-menu-padding" >Encuentre las mejores plantillas eBay que van a estimular el crecimiento de su tienda en línea basada en eBay.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-para-panel-de-administracion-tipo.html"  id="nm-web-plantillas-para-panel-de-administracion-tipo">
+						<b class="icon-admin svg square-icon"></b><span class="title-holder">Plantillas para<br>Panel de Administración</span>
+						<span  class="template-count">56</span>
+																					<p class="sub-menu-padding" >Back-end no debe ser necesariamente feo, utilice una plantilla Bootstrap elegante para su panel de administración.</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../es/ecommerce-plantillas.html" id="nm-ecommerce"><span>E-commerce</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../es/temas-woocommerce-tipo.html"  id="nm-ecommerce-temas-woocommerce-tipo">
+						<b class="icon-woo svg square-icon"></b><span class="title-holder">Temas <br>WooCommerce</span>
+						<span  class="template-count">610</span>
+																					<p class="sub-menu-padding" >Plantillas prediseñadas para manejar una tienda online en su sitio web a base de WordPress</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/temas-shopify-tipo.html"  id="nm-ecommerce-temas-shopify-tipo">
+						<b class="icon-shopify svg square-icon"></b><span class="title-holder">Temas <br>Shopify</span>
+						<span  class="template-count">609</span>
+																					<p class="sub-menu-padding" >Plataforma de comercio electrónico ideal para empresarios que necesitan una tienda alojada</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/temas-prestashop-tipo.html"  id="nm-ecommerce-temas-prestashop-tipo">
+						<b class="icon-prestashop svg square-icon"></b><span class="title-holder">Temas <br>PrestaShop</span>
+						<span  class="template-count">690</span>
+																					<p class="sub-menu-padding" >Plataforma fácil de usar que se instala y se gestiona sin esfuerzos</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/temas-magento-tipo.html"  id="nm-ecommerce-temas-magento-tipo">
+						<b class="icon-magento svg square-icon"></b><span class="title-holder">Temas <br>Magento</span>
+						<span  class="template-count">494</span>
+																					<p class="sub-menu-padding" >Carrito de compras escalable con múltiples opciones para desarrolladores web expertos en tecnología</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-opencart-tipo.html"  id="nm-ecommerce-plantillas-opencart-tipo">
+						<b class="icon-opencart svg square-icon"></b><span class="title-holder">Plantillas <br>OpenCart</span>
+						<span  class="template-count">746</span>
+																					<p class="sub-menu-padding" >Para empresas pequeñas y medianas que necesitan una plataforma simple y altamente extensible</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-motocms-para-comercio-electronico-tipo.html"  id="nm-ecommerce-plantillas-motocms-para-comercio-electronico-tipo">
+						<b class="icon-moto-3-ecommerce svg square-icon"></b><span class="title-holder">MotoCMS <br>para eCommerce</span>
+						<span  class="template-count">129</span>
+																					<p class="sub-menu-padding" >Plantillas adaptativas con el CMS 'Arrastrar y Soltar' que permiten construir tiendas en línea rápidas y funcionales.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/bigcommerce-themes.html"  id="nm-ecommerce-bigcommerce-themes">
+						<b class="icon-bigcommerce svg square-icon"></b><span class="title-holder">Temas de BigCommerce</span>
+						<span  class="template-count">8</span>
+																					<p class="sub-menu-padding" >Obtenga plantillas BigCommerce premium para una plataforma de comercio electrónico instantáneo. ¡Disfrute del rendimiento alto y plantillas flexibles!</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-virtuemart-tipo.html"  id="nm-ecommerce-plantillas-virtuemart-tipo">
+						<b class="icon-virtuemart svg square-icon"></b><span class="title-holder">Plantillas <br>VirtueMart </span>
+						<span  class="template-count">220</span>
+																					<p class="sub-menu-padding" >Flexible plugin de comercio electrónico para Joomla que es una solución óptima para pequeñas y medianas tiendas</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-zencart-tipo.html"  id="nm-ecommerce-plantillas-zencart-tipo">
+						<b class="icon-zencart svg square-icon"></b><span class="title-holder">Plantillas <br>ZenCart</span>
+						<span  class="template-count">224</span>
+																					<p class="sub-menu-padding" >Carrito de compras con múltiples características para tiendas virtuales grandes</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-x-cart-tipo.html"  id="nm-ecommerce-plantillas-x-cart-tipo">
+						<b class="icon-x-cart svg square-icon"></b><span class="title-holder">Plantillas X-Cart</span>
+						<span  class="template-count">17</span>
+																					<p class="sub-menu-padding" >¡Adquiera Plantillas X-Cart premium para crear proyectos eCommerce sólidos, rápidos y fáciles de usar! Disfrute del diseño 100% adaptativo + plantillas de alto rendimiento</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../es/categoria.html" id="nm-cat"><span>Categorías</span><i class="tm-icon icon-arrow"></i></a>
+	<div class="sub-menu-2  clearfix">
+		<ul class="flex-row flex-wrap">
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/arte-cultura.html" id="nm-cat-arte-cultura">
+						<b class="svg icon-art-culture"></b>
+						<span class="title_text">Arte y Cultura</span>
+						<span class="template-count">590</span>					</a>
+					<p>
+											<a href="../es/categoria/arte-plantillas.html" id="nm-cat-arte-cultura-arte-plantillas">Arte</a>,											<a href="../es/categoria/musica-plantillas.html" id="nm-cat-arte-cultura-musica-plantillas">Música</a>,											<a href="../es/categoria/museo-plantillas.html" id="nm-cat-arte-cultura-museo-plantillas">Museo</a>,											<a href="../es/categoria/cine-plantillas.html" id="nm-cat-arte-cultura-cine-plantillas">Cine</a>,											<a href="../es/categoria/teatro-plantillas.html" id="nm-cat-arte-cultura-teatro-plantillas">Teatro</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/animales-mascotas-plantillas.html" id="nm-cat-animales-mascotas-plantillas">
+						<b class="svg icon-animal-pets"></b>
+						<span class="title_text">Animales y Mascotas</span>
+						<span class="template-count">345</span>					</a>
+					<p>
+											<a href="../es/categoria/animales-mascotas-plantillas.html" id="nm-cat-animales-mascotas-plantillas-animales-mascotas-plantillas">Mascotas</a>,											<a href="../es/categoria/silvestre-plantillas.html" id="nm-cat-animales-mascotas-plantillas-silvestre-plantillas">Fauna Silvestre</a>,											<a href="../es/categoria/zoo-plantillas.html" id="nm-cat-animales-mascotas-plantillas-zoo-plantillas">Zoo</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/diseno-fotografia.html" id="nm-cat-diseno-fotografia">
+						<b class="svg icon-design-photography"></b>
+						<span class="title_text">Diseño y Fotografía</span>
+						<span class="template-count">2861</span>					</a>
+					<p>
+											<a href="../es/categoria/diseno-plantillas.html" id="nm-cat-diseno-fotografia-diseno-plantillas">Diseño</a>,											<a href="../es/categoria/arte-fotografia-plantillas.html" id="nm-cat-diseno-fotografia-arte-fotografia-plantillas">Fotografía</a>,											<a href="../es/categoria/arquitectura-plantillas.html" id="nm-cat-diseno-fotografia-arquitectura-plantillas">Arquitectura</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/electronica.html" id="nm-cat-electronica">
+						<b class="svg icon-electronics"></b>
+						<span class="title_text">Electrónica</span>
+						<span class="template-count">507</span>					</a>
+					<p>
+											<a href="../es/categoria/plantillas-para-tiendas-de-moviles.html" id="nm-cat-electronica-plantillas-para-tiendas-de-moviles">Tienda de Móviles</a>,											<a href="../es/categoria/plantillas-para-tiendas-de-electronica.html" id="nm-cat-electronica-plantillas-para-tiendas-de-electronica">Tienda de Electrónica</a>,											<a href="../es/categoria/plantillas-para-tiendas-de-camaras.html" id="nm-cat-electronica-plantillas-para-tiendas-de-camaras">Tienda de Cámaras</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/fiestas-regalos-flores.html" id="nm-cat-fiestas-regalos-flores">
+						<b class="svg icon-holidays-gifts-flowers"></b>
+						<span class="title_text">Fiestas, Regalos y Flores</span>
+						<span class="template-count">298</span>					</a>
+					<p>
+											<a href="../es/categoria/flores-plantillas.html" id="nm-cat-fiestas-regalos-flores-flores-plantillas">Flores</a>,											<a href="../es/categoria/fiestas-plantillas.html" id="nm-cat-fiestas-regalos-flores-fiestas-plantillas">Fiestas</a>,											<a href="../es/categoria/regalos-plantillas.html" id="nm-cat-fiestas-regalos-flores-regalos-plantillas">Regalos</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/educacion-libros.html" id="nm-cat-educacion-libros">
+						<b class="svg icon-education-books"></b>
+						<span class="title_text">Educación y Libros</span>
+						<span class="template-count">730</span>					</a>
+					<p>
+											<a href="../es/categoria/libros-plantillas.html" id="nm-cat-educacion-libros-libros-plantillas">Libros</a>,											<a href="../es/categoria/educacion-plantillas.html" id="nm-cat-educacion-libros-educacion-plantillas">Educación</a>,											<a href="../es/categoria/ciencia-plantillas.html" id="nm-cat-educacion-libros-ciencia-plantillas">Ciencia</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/negocio-plantillas.html" id="nm-cat-negocio-plantillas">
+						<b class="svg icon-business-services"></b>
+						<span class="title_text">Negocio y Servicios</span>
+						<span class="template-count">6301</span>					</a>
+					<p>
+											<a href="../es/categoria/consultorias-plantillas.html" id="nm-cat-negocio-plantillas-consultorias-plantillas">Consulorías</a>,											<a href="../es/categoria/industria-plantillas.html" id="nm-cat-negocio-plantillas-industria-plantillas">Industria</a>,											<a href="../es/categoria/derecho-plantillas.html" id="nm-cat-negocio-plantillas-derecho-plantillas">Derecho</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/coches-motos.html" id="nm-cat-coches-motos">
+						<b class="svg icon-cars-motorcycles"></b>
+						<span class="title_text">Coches y Motos</span>
+						<span class="template-count">643</span>					</a>
+					<p>
+											<a href="../es/categoria/coches-plantillas.html" id="nm-cat-coches-motos-coches-plantillas">Coches</a>,											<a href="../es/categoria/motos-plantillas.html" id="nm-cat-coches-motos-motos-plantillas">Motos</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/deportes-viajes.html" id="nm-cat-deportes-viajes">
+						<b class="svg icon-sports-outdoors-travel"></b>
+						<span class="title_text">Deportes y Viajes</span>
+						<span class="template-count">1826</span>					</a>
+					<p>
+											<a href="../es/categoria/deportes-plantillas.html" id="nm-cat-deportes-viajes-deportes-plantillas">Deportes</a>,											<a href="../es/categoria/viajes-plantillas.html" id="nm-cat-deportes-viajes-viajes-plantillas">Viajes</a>,											<a href="../es/categoria/hoteles-plantillas.html" id="nm-cat-deportes-viajes-hoteles-plantillas">Hoteles</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/moda-belleza.html" id="nm-cat-moda-belleza">
+						<b class="svg icon-fashion-beauty"></b>
+						<span class="title_text">Moda y Belleza</span>
+						<span class="template-count">2531</span>					</a>
+					<p>
+											<a href="../es/categoria/moda-plantillas.html" id="nm-cat-moda-belleza-moda-plantillas">Moda</a>,											<a href="../es/categoria/joyeria-plantillas.html" id="nm-cat-moda-belleza-joyeria-plantillas">Joyería</a>,											<a href="../es/categoria/belleza-plantillas.html" id="nm-cat-moda-belleza-belleza-plantillas">Belleza</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/computadoras-internet.html" id="nm-cat-computadoras-internet">
+						<b class="svg icon-computers-internet"></b>
+						<span class="title_text">Computadoras e Internet</span>
+						<span class="template-count">998</span>					</a>
+					<p>
+											<a href="../es/categoria/hosting-plantillas.html" id="nm-cat-computadoras-internet-hosting-plantillas">Hosting</a>,											<a href="../es/categoria/software-plantillas.html" id="nm-cat-computadoras-internet-software-plantillas">Software</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/comida-restaurante.html" id="nm-cat-comida-restaurante">
+						<b class="svg icon-food-restaurant"></b>
+						<span class="title_text">Alimentos y Restaurantes</span>
+						<span class="template-count">1324</span>					</a>
+					<p>
+											<a href="../es/categoria/cafes-restaurantes-plantillas.html" id="nm-cat-comida-restaurante-cafes-restaurantes-plantillas">Restaurantes</a>,											<a href="../es/categoria/comida-bebida-plantillas.html" id="nm-cat-comida-restaurante-comida-bebida-plantillas">Comida y Bebida</a>,											<a href="../es/categoria/cafeterias-plantillas.html" id="nm-cat-comida-restaurante-cafeterias-plantillas">Cafeterías</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/sociedad-gente.html" id="nm-cat-sociedad-gente">
+						<b class="svg icon-society-people"></b>
+						<span class="title_text">Sociedad y Gente</span>
+						<span class="template-count">1270</span>					</a>
+					<p>
+											<a href="../es/categoria/paginas-personales-plantillas.html" id="nm-cat-sociedad-gente-paginas-personales-plantillas">Páginas Personales</a>,											<a href="../es/categoria/busqueda-pareja-plantillas.html" id="nm-cat-sociedad-gente-busqueda-pareja-plantillas">Búsqueda de Pareja</a>,											<a href="../es/categoria/religion-plantillas.html" id="nm-cat-sociedad-gente-religion-plantillas">Religión</a>,											<a href="../es/categoria/caridad-plantillas.html" id="nm-cat-sociedad-gente-caridad-plantillas">Caridad</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/hogar-familia.html" id="nm-cat-hogar-familia">
+						<b class="svg icon-home-family"></b>
+						<span class="title_text">Hogar y Familia</span>
+						<span class="template-count">1947</span>					</a>
+					<p>
+											<a href="../es/categoria/boda-plantillas.html" id="nm-cat-hogar-familia-boda-plantillas">Boda</a>,											<a href="../es/categoria/interior-muebles-plantillas.html" id="nm-cat-hogar-familia-interior-muebles-plantillas">Interior y Muebles</a>,											<a href="../es/categoria/ninos-plantillas.html" id="nm-cat-hogar-familia-ninos-plantillas">Niños</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/entretenimiento-juegos-discotecas.html" id="nm-cat-entretenimiento-juegos-discotecas">
+						<b class="svg icon-entertainment-games-nightlife"></b>
+						<span class="title_text">Entretenimiento, Juegos y Vida Nocturna</span>
+						<span class="template-count">727</span>					</a>
+					<p>
+											<a href="../es/categoria/juegos-plantillas.html" id="nm-cat-entretenimiento-juegos-discotecas-juegos-plantillas">Juegos</a>,											<a href="../es/categoria/discotecas-plantillas.html" id="nm-cat-entretenimiento-juegos-discotecas-discotecas-plantillas">Discotecas</a>,											<a href="../es/categoria/casino-online-plantillas.html" id="nm-cat-entretenimiento-juegos-discotecas-casino-online-plantillas">Casino en Línea</a>,											<a href="../es/categoria/radio-plantillas.html" id="nm-cat-entretenimiento-juegos-discotecas-radio-plantillas">Radio</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/inmueble.html" id="nm-cat-inmueble">
+						<b class="svg icon-real-estate"></b>
+						<span class="title_text">Inmueble</span>
+						<span class="template-count">392</span>					</a>
+					<p>
+											<a href="../es/categoria/agencia-inmobiliaria-plantillas.html" id="nm-cat-inmueble-agencia-inmobiliaria-plantillas">Agencia Inmobiliaria</a>,											<a href="../es/categoria/hipoteca-plantillas.html" id="nm-cat-inmueble-hipoteca-plantillas">Hipoteca</a>,											<a href="../es/categoria/land-broker-plantillas.html" id="nm-cat-inmueble-land-broker-plantillas">Land Broker</a>										</p>
+				</li>
+				<li class="maxheight1">
+					<a class="item_title text-faded" href="../es/categoria/medicina.html" id="nm-cat-medicina">
+						<b class="svg icon-medical"></b>
+						<span class="title_text">Medicina (Salud)</span>
+						<span class="template-count">695</span>					</a>
+					<p>
+											<a href="../es/categoria/farmacia-plantillas.html" id="nm-cat-medicina-farmacia-plantillas">Farmacia</a>,											<a href="../es/categoria/odontologia-plantillas.html" id="nm-cat-medicina-odontologia-plantillas">Odontología</a>,											<a href="../es/categoria/herbolaria-plantillas.html" id="nm-cat-medicina-herbolaria-plantillas">Medicina Herbolaria</a>										</p>
+				</li>
+				</ul>
+	</div>
+</li>
+																									<li class="sub-menu">
+	<a href="../es/plugins-extensiones.html" id="nm-plugins"><span>Plugins</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../es/plugins-de-wordpress-tipo.html"  id="nm-plugins-plugins-de-wordpress-tipo">
+						<b class="icon-wordpress svg square-icon"></b><span class="title-holder">Plugins para <br>WordPress</span>
+						<span  class="template-count">40</span>
+																					<p class="sub-menu-padding" >Una manera a prueba de balas para hacer su sitio WordPress mucho más grandioso.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/extensiones-para-prestashop-tipo.html"  id="nm-plugins-extensiones-para-prestashop-tipo">
+						<b class="icon-prestashop svg square-icon"></b><span class="title-holder">Extensiones de <br>PrestaShop</span>
+						<span  class="template-count">30</span>
+																					<p class="sub-menu-padding" >Mejore el rendimiento de su tienda con extensiones efectivas y amigables de Prestashop.</p>
+																		</a>
+				</li>
+															<li class="maxheight2">
+					<a class="text-faded"  href="../es/javascript.html"  id="nm-plugins-javascript">
+						<b class="icon-js svg square-icon"></b><span class="title-holder">JavaScript</span>
+						<span  class="template-count">3</span>
+																					<p class="sub-menu-padding" >Los mejores plugins de JavaScript y jQuery en TemplateMonster. Haga que su sitio web sea más interactivo por medio de complementos adicionales.</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../es/graphics.html" id="nm-flash"><span>Graphics</span>
+        <i class="tm-icon icon-arrow"></i></a>
+    	<div class="sub-menu-3  clearfix">
+		<ul class="flex-row flex-wrap">
+											<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-powerpoint-tipo.html"  id="nm-flash-plantillas-powerpoint-tipo">
+						<b class="icon-powerpoint svg square-icon"></b><span class="title-holder">Plantillas <br>PowerPoint</span>
+						<span  class="template-count">1219</span>
+																					<p class="sub-menu-padding" >Plantillas cautivantes que combinan imágenes de primera calidad con mensajes claros</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-keynote.html"  id="nm-flash-plantillas-keynote">
+						<b class="icon-keynote svg square-icon"></b><span class="title-holder">Plantillas<br> Keynote</span>
+						<span  class="template-count">302</span>
+																					<p class="sub-menu-padding" >Plantillas Keynote son plantillas profesionalmente diseñadas en las que se pueden basar sus presentaciones.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-de-logotipo-tipo.html"  id="nm-flash-plantillas-de-logotipo-tipo">
+						<b class="icon-icons svg square-icon"></b><span class="title-holder">Plantillas de Logotipos</span>
+						<span  class="template-count">3366</span>
+																					<p class="sub-menu-padding" >Plantillas de Logotipos son diseños de logotipos que Usted puede editar por medio de Adobe Photoshop, Adobe Illustrator o Corel Draw</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-psd-tipo.html"  id="nm-flash-plantillas-psd-tipo">
+						<b class="icon-psd svg square-icon"></b><span class="title-holder">Plantillas <br>PSD</span>
+						<span  class="template-count">3309</span>
+																					<p class="sub-menu-padding" >Temas multipropósitos que contienen sólo los archivos de origen del diseño, muy flexibles y con una variedad de opciones de personalización</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/plantillas-para-curriculum-vitae.html"  id="nm-flash-plantillas-para-curriculum-vitae">
+						<b class="icon-resume svg square-icon"></b><span class="title-holder">Plantillas <br>de CV</span>
+						<span  class="template-count">563</span>
+																					<p class="sub-menu-padding" >¡Las mejores plantillas imprimibles del curriculum vitae en TemplateMonster! ¡Cree un CV único que le ayudará a alcanzar sus objetivos y tener una carrera exitosa!</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/certificate-templates.html"  id="nm-flash-certificate-templates">
+						<b class="icon-certificate svg square-icon"></b><span class="title-holder">Plantillas de certificados</span>
+						<span  class="template-count">81</span>
+																					<p class="sub-menu-padding" >Las mejores plantillas de certificados en TemplateMonster. Aquí encontrará muchos diseños de certificados para cualquier nicho.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/illustrations.html"  id="nm-flash-illustrations">
+						<b class="icon-illustrations svg square-icon"></b><span class="title-holder">Ilustraciones</span>
+						<span  class="template-count">431</span>
+																					<p class="sub-menu-padding" >Las mejores ilustraciones de diferentes artistas. Mejore su proyecto, sitio web, tarjetas de visita, documentos, etc. con estos paquetes de ilustraciones.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/infographic-elements.html"  id="nm-flash-infographic-elements">
+						<b class="icon-infographics svg square-icon"></b><span class="title-holder">Elementos de infografías</span>
+						<span  class="template-count">22</span>
+																					<p class="sub-menu-padding" >Los mejores elementos de infografía en el sitio web de TemplateMonster. Haga que su proyecto, estadísticas, publicaciones de blog, etc. tengan aspectos más agradables por medio de nuestros elementos de infografías.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/tipos-de-letras-tipo.html"  id="nm-flash-tipos-de-letras-tipo">
+						<b class="icon-fonts svg square-icon"></b><span class="title-holder">Tipos de letras y fuentes de iconos</span>
+						<span  class="template-count">315</span>
+																					<p class="sub-menu-padding" >Paquetes de fuentes de letras y tipos de fuentes para todos los gustos.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/product-mockups.html"  id="nm-flash-product-mockups">
+						<b class="icon-product-mockup svg square-icon"></b><span class="title-holder">Maquetas de productos</span>
+						<span  class="template-count">79</span>
+																					<p class="sub-menu-padding" >Las mejores maquetas de productos por TemplateMonster. Hay una gran cantidad de maquetas de diferentes dispositivos, prendas de ropa, muebles, marcas, etc. que están listas para usar y que le ayudan a crear diseños de tiendas, sitios web, materiales promocionales y recursos en redes sociales.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/bundles.html"  id="nm-flash-bundles">
+						<b class="icon-bundles svg square-icon"></b><span class="title-holder">Paquetes</span>
+						<span  class="template-count">130</span>
+																					<p class="sub-menu-padding" >Los mejores paquetes de diferentes diseñadores en TemplateMonster. Esta es la categoría más esperada del sitio. Se le permite elegir entre plantillas, imágenes, archivos psd, iconos, fuentes, productos empaquetados para redes sociales, etc.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/elementos-de-interfaz-de-usuario-tipo.html"  id="nm-flash-elementos-de-interfaz-de-usuario-tipo">
+						<b class="icon-ui svg square-icon"></b><span class="title-holder">Elementos de IU</span>
+						<span  class="template-count">25</span>
+																					<p class="sub-menu-padding" >Compre kits de interfaz de usuario en TemplateMonster para mejorar su sitio web.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/social-media.html"  id="nm-flash-social-media">
+						<b class="icon-social svg square-icon"></b><span class="title-holder">Medios de comunicación social</span>
+						<span  class="template-count">84</span>
+																					<p class="sub-menu-padding" >Los mejores paquetes de materiales para diferentes medios de comunicación en TemplateMonster. Aquí encontrará un montón de plantillas para publicaciones en Instagram, portadas de Facebook, canales de YouTube, Pinterest y mucho más.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/video-plantillas.html"  id="nm-flash-video-plantillas">
+						<b class="icon-ae svg square-icon"></b><span class="title-holder">Plantillas <br>After Effects</span>
+						<span  class="template-count">240</span>
+																					<p class="sub-menu-padding" >Productos de vídeo del nivel de Hollywood y gráficos animados digitales para todos los gustos</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/animated-banners.html"  id="nm-flash-animated-banners">
+						<b class="icon-anim-bnr svg square-icon"></b><span class="title-holder">Banners animados</span>
+						<span  class="template-count">61</span>
+																					<p class="sub-menu-padding" >Los mejores banners animados en TemplateMonster. Promocione su sitio web o gane dinero con la publicidad. Elija los más adecuados de nuestra colección</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/identidad-corporativa-no-unica-tipo.html"  id="nm-flash-identidad-corporativa-no-unica-tipo">
+						<b class="icon-corporate svg square-icon"></b><span class="title-holder">Paquetes de Identidad Corporativa</span>
+						<span  class="template-count">1177</span>
+																					<p class="sub-menu-padding" >Paquete de identidad corporativa incluye diseños para un logotipo, un membrete y una tarjeta de visita.</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/conjuntos-de-iconos-tipo.html"  id="nm-flash-conjuntos-de-iconos-tipo">
+						<b class="icon-monster_dark svg square-icon"></b><span class="title-holder">Conjunto de Iconos</span>
+						<span  class="template-count">170</span>
+																					<p class="sub-menu-padding" >Conjunto de iconos es un conjunto de 10 iconos diseñados y unidos por el mismo tema. Los iconos se editan por medio de Adobe Photoshop, Adobe Illustrator o Corel Draw</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/tipo/patrones.html"  id="nm-flash-patrones">
+						<b class="icon-product-mockup svg square-icon"></b><span class="title-holder">Patrones</span>
+						<span  class="template-count">53</span>
+																					<p class="sub-menu-padding" >La mejor colección de patrones sólo en TemplateMonster</p>
+																		</a>
+				</li>
+								<li class="maxheight2">
+					<a class="text-faded"  href="../es/sketch-templates.html"  id="nm-flash-sketch-templates">
+						<b class="icon-sketch svg square-icon"></b><span class="title-holder">Plantillas Sketch</span>
+																					<p class="sub-menu-padding" >¡Obtenga plantillas Sketch premium solo en TemplateMonster!</p>
+																		</a>
+				</li>
+									</ul>
+			<ul class="sub-menu-3-bottom clearfix">
+							</ul>
+	</div>
+    </li>
+																									<li class="sub-menu">
+	<a href="../service-center.html" id="nm-service-hub"><span>Servicios</span>
+        </a>
+    </li>
+													</ul>
+		</div>
+	</div>
+	<div class="sub-menu container">
+	<div class="sub-menu-1 js-sub-menu-1 sub-menu-1_dropdown">
+		<ul>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/temas-wordpress-tipo.html" id="nm-top-temas-wordpress-tipo">
+						<b class="icon-wordpress svg square-icon "></b>
+						<span>WordPress</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/superventas-plantillas-wordpress.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/los-mas-valorados-temas-wordpress.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/plugins-de-wordpress-tipo.html"
+									   class="item-link" >
+										Plugins para WordPress
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/negocio-temas-wordpress.html"
+									   class="item-link" >
+										Negocio y Servicios
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/inmuebles-temas-wordpress.html"
+									   class="item-link" >
+										Inmueble
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/diseno-fotografia-temas-wordpress.html"
+									   class="item-link" >
+										Diseño y Fotografía
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/coches-motos-temas-wordpress.html"
+									   class="item-link" >
+										Coches y Motos
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/medicina-temas-wordpress.html"
+									   class="item-link" >
+										Medicina
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/alimentacion-restaurantes-temas-wordpress.html"
+									   class="item-link" >
+										Comida y Restaurante
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/portal-noticias-temas-wordpress.html"
+									   class="item-link" >
+										De Medios
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/viajes-temas-wordpress.html"
+									   class="item-link" >
+										Viajes
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/educacion-temas-wordpress.html"
+									   class="item-link" >
+										Educación
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/consultorias-temas-wordpress.html"
+									   class="item-link" >
+										Servicios Comerciales
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/deportes-temas-wordpress.html"
+									   class="item-link" >
+										Deportes
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/ti-temas-wordpress.html"
+									   class="item-link" >
+										Tecnología de la información
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/compania-construccion-temas-wordpress.html"
+									   class="item-link" >
+										Empresas de Construcción
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/cine-temas-wordpress.html"
+									   class="item-link" >
+										Cine
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/moda-temas-wordpress.html"
+									   class="item-link" >
+										Moda
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/finanzas-temas-wordpress.html"
+									   class="item-link" >
+										Finanzas
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/caridad-temas-wordpress.html"
+									   class="item-link" >
+										Caridad
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/bodas-temas-wordpress.html"
+									   class="item-link" >
+										Bodas
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/plantillas-web-tipo.html" id="nm-top-plantillas-web-tipo">
+						<b class="icon-html5-2 svg square-icon "></b>
+						<span>HTML</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-web-superventas.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-para-panel-de-administracion-tipo.html"
+									   class="item-link" >
+										Plantillas de paneles de control
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-web-mas-valoradas.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/negocio-plantillas-html.html"
+									   class="item-link" >
+										Negocio y Servicios
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/diseno-fotografia-plantillas-web.html"
+									   class="item-link" >
+										Diseño y Fotografía
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/medicina-plantillas-web.html"
+									   class="item-link" >
+										Medicina
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/inmuebles-plantillas-web.html"
+									   class="item-link" >
+										Inmueble
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/computadoras-internet-plantillas-web.html"
+									   class="item-link" >
+										Computadoras e Internet
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/temas-shopify-tipo.html" id="nm-top-temas-shopify-tipo">
+						<b class="icon-shopify2 svg square-icon "></b>
+						<span>Shopify</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/temas-shopify-superventas.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/temas-shopify-mas-valorados.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/moda-belleza-temas-shopify.html"
+									   class="item-link" >
+										Moda y Belleza
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/coches-motos-temas-shopify.html"
+									   class="item-link" >
+										Coches y Motos
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/category/food-restaurant-shopify-themes.html"
+									   class="item-link" >
+										Comida y Restaurante
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/category/sports-outdoors-travel-shopify-themes.html"
+									   class="item-link" >
+										Deportes y Viajes
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../index.html"
+									   class="item-link" >
+										Electrónica
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/interior-muebles-temas-shopify.html"
+									   class="item-link" >
+										Interior y Muebles
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/category/medical-shopify-themes.html"
+									   class="item-link" >
+										Medicina
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/temas-woocommerce-tipo.html" id="nm-top-temas-woocommerce-tipo">
+						<b class="icon-woo svg square-icon "></b>
+						<span>WooCommerce</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-woocommerce-superventas.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/temas-woocommerce-mas-valorados.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/alimentos-restaurantes-temas-woocommerce.html"
+									   class="item-link" >
+										Comida y Restaurantes
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/coches-motos-temas-woocommerce.html"
+									   class="item-link" >
+										Coches y Motos
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/electronica-temas-woocommerce.html"
+									   class="item-link" >
+										Electrónica
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/moda-belleza-temas-woocommerce.html"
+									   class="item-link" >
+										Moda y Belleza
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/computadoras-internet-temas-woocommerce.html"
+									   class="item-link" >
+										Computadoras e Internet
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/temas-prestashop-tipo.html" id="nm-top-temas-prestashop-tipo">
+						<b class="icon-prestashop svg square-icon "></b>
+						<span>PrestaShop</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/temas-prestashop-superventas.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/temas-prestashop-mas-valorados.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/extensiones-para-prestashop-tipo.html"
+									   class="item-link" >
+										Extensiones para PrestaShop
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/moda-belleza-temas-prestashop.html"
+									   class="item-link" >
+										Moda y Belleza
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/diseno-fotografia-temas-prestashop.html"
+									   class="item-link" >
+										Diseño y Fotografía
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/hogar-familia-temas-prestashop.html"
+									   class="item-link" >
+										Hogar y Familia
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/negocio-temas-prestashop.html"
+									   class="item-link" >
+										Negocio y Servicios
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/electronicos-temas-prestashop.html"
+									   class="item-link" >
+										Electrónica
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/temas-magento-tipo.html" id="nm-top-temas-magento-tipo">
+						<b class="icon-magento svg square-icon "></b>
+						<span>Magento</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/temas-magento-superventas.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/temas-magento-mas-valorados.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/moda-belleza-temas-magento.html"
+									   class="item-link" >
+										Moda y Belleza
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/electronica-temas-magento.html"
+									   class="item-link" >
+										Electrónica
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/negocio-temas-magento.html"
+									   class="item-link" >
+										Negocio y Servicios
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/diseno-fotografia-temas-magento.html"
+									   class="item-link" >
+										Diseño y Fotografía
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/hogar-familia-temas-magento.html"
+									   class="item-link" >
+										Hogar y Familia
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/computadoras-internet-temas-magento.html"
+									   class="item-link" >
+										Computadoras e Internet
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/plantillas-joomla-tipo.html" id="nm-top-plantillas-joomla-tipo">
+						<b class="icon-joomla svg square-icon "></b>
+						<span>Joomla</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-joomla-superventas.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-joomla-mejor-valoradas.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-virtuemart-tipo.html"
+									   class="item-link" >
+										Virtuemart
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/negocio-plantillas-joomla.html"
+									   class="item-link" >
+										Negocio y Servicios
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/diseno-fotografia-plantillas-joomla.html"
+									   class="item-link" >
+										Diseño y Fotografía
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/educacion-libros-plantillas-joomla.html"
+									   class="item-link" >
+										Educación y Libros
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/inmuebles-plantillas-joomla.html"
+									   class="item-link" >
+										Inmueble
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/coches-motos-plantillas-joomla.html"
+									   class="item-link" >
+										Coches y Motos
+									</a>
+								</li>
+													</ul>
+									</li>
+							<li class="sub-menu-1__item js-submenu-item ">
+					<a href="../es/moto-cms-3-templates-tipo.html" id="nm-top-moto-cms-3-templates-tipo">
+						<b class="icon-moto3 svg square-icon "></b>
+						<span>MotoCMS</span>
+					</a>
+											<span class='sub-menu-1__line'></span>
+						<ul class="js-dropdown-firstmenu rd-dropdown-list sub-menu__additional">
+															<li class="rd-dropdown-item">
+									<a href="../es/plantillas-moto-cms-30-mejor-valoradas.html"
+									   class="item-link" >
+										Populares
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/negocio-plantillas-moto-cms-30.html"
+									   class="item-link" >
+										Destacados
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/diseno-fotografia-plantillas-moto-cms-30.html"
+									   class="item-link" >
+										Negocio y Servicios
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/diseno-fotografia-plantillas-moto-cms-30.html"
+									   class="item-link" >
+										Diseño y Fotografía
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/educacion-libos-plantillas-moto-cms-30.html"
+									   class="item-link" >
+										Educación y Libros
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../es/categoria/inmueble-plantillas-moto-cms-30.html"
+									   class="item-link" >
+										Inmueble
+									</a>
+								</li>
+															<li class="rd-dropdown-item">
+									<a href="../category/cars-motorcycles-moto-cms-30-templates.html"
+									   class="item-link" >
+										Coches y Motos
+									</a>
+								</li>
+													</ul>
+									</li>
+					</ul>
+	</div>
+</div>
+				<script type="text/javascript" id="zone_20">
+  window.banner_zone = window.banner_zone || [];
+  window.banner_zone.push({
+    id: 20,
+    zone: "<div class='js-revive-banner-container'><ins data-revive-zoneid='20' data-revive-id='5dba4d01a92de7101be5c5e6e1630dfe'></ins></div>"
+  });
+</script>
+	</header>
+	<!--============================== CONTENT =================================-->
+	<div id="content">
+		<div class="container" style="min-height: inherit;">
+												<div id="breadcrumbs">
+  <ul class="breadcrumbs br-new">
+    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="../es.html" itemprop="url" id ="br-home">
+			<span itemprop="title">Inicio</span>
+		</a>
+		<span class="divider"></span>
+	</li>
+    					<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../es/plantillas-cms-blogs.html" itemprop="url" id="br-plantillas-cms-blogs"><span itemprop="title">Plantillas para CMS y Blogs</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../es/temas-wordpress-tipo.html" itemprop="url" id="br-temas-wordpress-tipo"><span itemprop="title">Temas de WordPress</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../es/categoria/coches-motos-temas-wordpress.html" itemprop="url" id="br-coches-motos-temas-wordpress"><span itemprop="title">Plantillas para Sitios de Coches y Motos</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../es/categoria/coches-temas-wordpress.html" itemprop="url" id="br-coches-temas-wordpress"><span itemprop="title">Plantillas para Sitios de Coches</span></a><span class="divider"></span>
+									</li>
+						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+														<a href="../es/categoria/lavado-autos-temas-wordpress.html" itemprop="url" id="br-lavado-autos-temas-wordpress"><span itemprop="title">Plantillas para Sitios de Lavado de autos</span></a><span class="divider"></span>
+									</li>
+						<li>
+										<span class="br-last">Tema de WordPress para Sitio de Lavado de autos</span><span class="divider"></span>
+						</li>
+	  </ul>
+</div>
+					<!-- Search Listing -->
+		<div class="page preview-page js-template-id" itemscope="itemscope" itemtype="http://schema.org/Product"
+			 data-template_id="51818" data-brand="de WordPress"
+			 data-template_author="WT"
+			 data-property-type-id="50125"
+			 data-categories="Plantillas para Sitios de Coches y Motos / Plantillas para Sitios de Coches / Plantillas para Sitios de Lavado de autos"
+			 data-variant="premium"
+			 			 data-trial-popup="motocms"
+			 			 data-product_name="Temas de WordPress"
+			 data-template_name="Car Wash"
+			 data-experimental=""
+			 data-experimental=""
+			 data-download-count="78"
+					>
+			<div class="page-heading">
+                <h1 class="preview-heading overflowed-hidden" itemprop="name">Tema de WordPress para Sitio de Lavado de autos</h1>
+                    <!-- Item Info -->
+				<ul class="list-item-info clearfix">
+					<li class="list-item-rating">
+						<div class="rating-stars-block" >
+                            <ul class="stars rating-style_0">
+                    <li class="svg icon-star-empty star" data-number="1"></li>
+                    <li class="svg icon-star-empty star" data-number="2"></li>
+                    <li class="svg icon-star-empty star" data-number="3"></li>
+                    <li class="svg icon-star-empty star" data-number="4"></li>
+                    <li class="svg icon-star-empty star" data-number="5"></li>
+</ul>                                                                                                                                                						</div>
+					</li>
+                    <li class="template-brand">Tipo: <strong>de WordPress</strong></li>
+					<li>Número del producto: <strong itemprop="productID" content="sku:51818">51818</strong> </li>
+					<li>Autor: <strong><span id="preview-vendor-link"></span></strong> </li>
+					<li> Descargas: <strong>78</strong> </li>
+					<li class="list-item-share">
+						<span class="list-item-label">Compartir:</span>
+						<ul class="share-list js-share-list" data-type="square-icons">
+							<li class="facebook"></li>
+							<li class="twitter"></li>
+							<li class="googlePlus" data-custom-icon="icon-google-plus"></li>
+					    </ul>
+					</li>
+											<li class="heart-wrapper">
+							<b id="preview-favourite-51818" class="tm-icon icon-heart-empty js-favorite js-favorite-btn favorite-btn js-none"
+								data-tid="51818" data-item_name="template-51818"
+								data-added="En su Colección"
+								data-not-added="Añadir a Colección"><span>Añadir a Colección</span>
+							</b>
+						</li>
+				</ul>
+			</div>
+            				<div class="row">
+					<div class="col-lg-9 col-mb-8 col-sm-8">
+                        <!-- Product preview slider -->
+<div id="product-preview" class="clearfix">
+            <div class="slides slides_single">
+                                                            <div class="slides-item">
+<!-- Slides for carousel in Product preview slider -->
+<a
+            id="magnifier-livedemo-51818"
+        class="js-magnifier magnifier"
+        href="../es/demo/51818.html"
+        target="_blank"
+            title="Tema de WordPress para Sitio de Lavado de autos New Screenshots BIG" >
+    <img class="slides-item__single js-preview-scr blurred"
+         itemprop="image"
+         src="../s-tmimgcdn-com/scr/51800/tema-de-wordpress-para-sitio-de-lavado-de-autos_51818-big.jpeg"
+         data-original="https://s.tmimgcdn.com/scr/51800/tema-de-wordpress-para-sitio-de-lavado-de-autos_51818-big.jpg?width=965&height=598"
+         data-crop="https://s.tmimgcdn.com/scr/51800/tema-de-wordpress-para-sitio-de-lavado-de-autos_51818-big.jpg?width=965&height=598"
+         alt="Tema de WordPress para Sitio de Lavado de autos New Screenshots BIG"
+         title="Car Wash Bootstrap Tema de WordPress Captura de Pantalla Grande"
+         width="965"
+         height="598"
+                      data-full="../s-tmimgcdn-com/scr/51800/tema-de-wordpress-para-sitio-de-lavado-de-autos_51818-original.jpg"
+             data-original-width="965"
+             data-original-height="1690"
+                  />
+    <span class="js-view-product"          id="demo_screenshot-51818"
+          data-tid="51818">
+    </span>
+    </a>
+    <div class="flex-wrapper js-button-wrapper">
+        <div class="buttons-wrapper flex-row-wrap">
+            <a id="magnifier-livedemo-button-51818"
+               onclick="return false;"
+               href="../s-tmimgcdn-com/scr/51800/tema-de-wordpress-para-sitio-de-lavado-de-autos_51818-original.jpg"
+               title="Tema de WordPress para Sitio de Lavado de autos"
+               class="button view btn-trivial tm-icon icon-zoom-in">Acercar
+            </a>
+                            <a href="../es/demo/51818.html"
+                    target="_blank"
+                    class="button btn-main tm-icon icon-magic js-view-product"
+                    data-tid="51818"
+                    id="demo_overlay-51818">Demo</a>
+                            			<span class="button btn-trivial "
+			  data-tid="51818"
+			  id="trial_overlay"
+			  data-toggle="modal"
+			  data-target="#rd-trial-popup-wrapper"
+			  data-demo-url="">
+										Control Panel Demo
+					</span>
+                    </div>
+    </div>                        </div>
+                                                                                                                                                            </div>
+    </div>
+                        <!-- Live demo link -->
+                                                    <div class="live-demo-link live-demo-link-bottom">
+                                			<span class="button btn-trivial btn-big-height"
+			  data-tid="51818"
+			  id="trial_bottom"
+			  data-toggle="modal"
+			  data-target="#rd-trial-popup-wrapper"
+			  data-demo-url="">
+										Control Panel Demo
+					</span>
+                                    <button type="button"
+            role="link"
+            data-href="../es/demo/51818.html"
+            data-target="_blank"
+            class="button btn-main tm-icon icon-magic js-view-product js-btn link-click btn-big-height"
+            id="demo_bottom"
+            data-tid="51818"
+            data-demourl="https://livedemo00.template-help.com/wordpress_51818"    >Demo</button>
+                            </div>
+                        <!-- Tabs -->
+<div class="preview-tabs">
+    <ul class="nav nav-tabs tab-nav" id="previewTab">
+        			<li><span data-href="#tab-overview" id="link-tab-overview" data-toggle="tab">Información general</span></li>
+                <li><span data-href="#tab-reviews" id="link-tab-reviews" data-toggle="tab">
+                Opiniones <span class="js-count-reviews count-reviews"></span>
+            </span>
+        </li>
+					<li><span data-href="#tab-details" id="link-tab-details" data-toggle="tab" data-template-id="51818">Detalles</span></li>
+				<li><span data-href="#tab-questions" id="link-tab-questions" data-toggle="tab">
+                Comentarios <span class="js-count-comments count-reviews"></span>
+            </span></li>
+                <li><span data-href="#tab-support" id="link-tab-support" data-toggle="tab">Atención al cliente</span></li>
+        <li><span data-href="#tab-changelog" id="link-tab-changelog" data-toggle="tab">Historial de cambios</span></li>
+            </ul>
+    <div class="tab-content">
+                <!-- Overview tab -->
+        <div class="tab-pane" id="tab-overview">
+			<div class="container">
+                                                    <div class="list-features row">
+	        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="wr_feature row">
+                <div class="col-lg-3 col-md-4 col-sm-4 icon-holder clearfix">
+                    <i class="icon-trust-one trust-icon svg"></i>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 clearfix">
+                    <div class="feature-description">
+                        <div class="Previews__description">Soporte 24/7 Gratis</div>
+                        <p>Un agente de nuestro equipo de soporte responderá en breve a su pregunta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="wr_feature row">
+                <div class="col-lg-3 col-md-4 col-sm-4 icon-holder clearfix">
+                    <i class="icon-trust-three trust-icon svg"></i>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 clearfix">
+                    <div class="feature-description">
+                        <div class="Previews__description">Fotos Stock Incluidas</div>
+                        <p>Usted obtiene 7-15 imágenes o fotos stock de alta resolución para el uso por tiempo ilimitado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="wr_feature row">
+                <div class="col-lg-3 col-md-4 col-sm-4 icon-holder clearfix">
+                    <i class="icon-trust-two trust-icon svg"></i>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 clearfix">
+                    <div class="feature-description">
+                        <div class="Previews__description">Garantía de Satisfacción 100%</div>
+                        <p>Usted estará completamente satisfecho con nuestros productos y servicios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+                                                                                                                                        <span class="key-feature overflowed-hidden">
+            <img class="preview-image js-preview-lazy lazy blurred" data-original="../s-tmimgcdn-com/scr/51800/51818-responsive-layout.jpeg" src="../s-tmimgcdn-com/scr/51800/51818-responsive-layout.jpeg" alt=""/>
+    </span>                                                                                                                                                <span class="key-feature overflowed-hidden">
+            <img class="preview-image js-preview-lazy lazy blurred" data-original="../s-tmimgcdn-com/images/library/cherry-features.jpeg" src="../s-tmimgcdn-com/images/library/cherry-features.jpeg" alt=""/>
+    </span>                                                                                                                                                <span class="key-feature overflowed-hidden">
+            <img class="js-preview-lazy lazy blurred" data-original="https://s.tmimgcdn.com/images/library/parallax-features.jpg?width=100" src="" alt=""/>
+    </span>                                                                                                            
+            </div><!-- .container -->
+        </div><!-- #tab-overview -->
+        <!-- Review tabs -->
+        <div class="tab-pane" id="tab-reviews">
+            <h2>Opiniones</h2>
+            <div id="review-item-page">
+</div>
+        </div>
+                <!-- Tech details tab -->
+        <div class="tab-pane" id="tab-details" data-tab-type="type_details">
+            <h2>Detalles</h2>
+            <div class="tab-inner-indent">
+                <dl class="tech-details">
+		<!-- Features -->
+		<dt class="features">Características</dt>
+		<dd>
+			<table class="table table-features">
+				<tbody>
+					<tr>
+						<td class="DocumentationLinkOld__wrap" colspan="2">
+							<div id="documentation-link-old"></div>
+						</td>
+					</tr>
+											<tr>
+							<th>Cherry Framework Version:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=118128-50125"
+          id="preview-feature-pr-118128-50125"                    class="js-btn link-click "
+    >3.1.4</span>            </td>
+						</tr>
+											<tr>
+							<th>WordPress Compatibility:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=152891-50125"
+          id="preview-feature-pr-152891-50125"                    class="js-btn link-click "
+    >3.6.x-4.0.x</span>            </td>
+						</tr>
+											<tr>
+							<th>WordPress Engine:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=94653-50125"
+          id="preview-feature-pr-94653-50125"                    class="js-btn link-click "
+    >3.9.x</span>            </td>
+						</tr>
+											<tr>
+							<th>Additional Features:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=45701-50125"
+          id="preview-feature-pr-45701-50125"                    class="js-btn link-click "
+    >Opciones Avanzadas de Tema</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33857-50125"
+          id="preview-feature-pr-33857-50125"          title="Template package includes sliced source PSD files. Number of available PSD files may vary depending on initial design concept and type of a template."          class="js-btn link-click "
+    >Sliced PSD</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33858-50125"
+          id="preview-feature-pr-33858-50125"          title="Templates that have &#039;Back To Top&#039; button design incorporated."          class="js-btn link-click "
+    >Botón Ir Arriba</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=46829-50125"
+          id="preview-feature-pr-46829-50125"          title="Crossbrowser compatibility - at the time of template production!"          class="js-btn link-click "
+    >Compatibilidad con Todos los Navegadores Web</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=45702-50125"
+          id="preview-feature-pr-45702-50125"                    class="js-btn link-click "
+    >Plantillas Personalizadas de Página</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33862-50125"
+          id="preview-feature-pr-33862-50125"          title="Templates with Favicon design included"          class="js-btn link-click "
+    >Favicon</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33863-50125"
+          id="preview-feature-pr-33863-50125"          title="Templates with a slot designed for Google map"          class="js-btn link-click "
+    >Mapa Google</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33864-50125"
+          id="preview-feature-pr-33864-50125"          title="Templates that utilize Google Web Fonts to display fonts."          class="js-btn link-click "
+    >Google Web Fonts</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33868-50125"
+          id="preview-feature-pr-33868-50125"          title="Templates that include tabbed menus or tabbed layout elements."          class="js-btn link-click "
+    >Pestañas</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33869-50125"
+          id="preview-feature-pr-33869-50125"          title="Templates that include design for Tag Cloud"          class="js-btn link-click "
+    >Nube de etiquetas</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33870-50125"
+          id="preview-feature-pr-33870-50125"          title="Templates that include design for Tooltips"          class="js-btn link-click "
+    >Tooltips</span>            </td>
+						</tr>
+											<tr>
+							<th>Animation:</th>
+							<td>	                    <a
+        id="preview-feature-temas-wordpress-html-javascript"        href="../es/temas-wordpress-html-javascript.html"                title="Some elements of these templates - such as header or menu buttons - are animated by the means of JS scripts."    >HTML plus JS</a>,                                <a
+        id="preview-feature-temas-wordpress-con-parallax"        href="../es/temas-wordpress-con-parallax.html"                title="Algunos elementos de estas plantillas contienen animaciones de parallax effect."    >Parallax</a>            </td>
+						</tr>
+											<tr>
+							<th>Bootstrap Version:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=49691-50125"
+          id="preview-feature-pr-49691-50125"                    class="js-btn link-click "
+    >2.3.1</span>            </td>
+						</tr>
+											<tr>
+							<th>Coding:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33761-50125"
+          id="preview-feature-pr-33761-50125"          title="Templates that utilize CSS3 standard or some elements of it."          class="js-btn link-click "
+    >CSS 3</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33762-50125"
+          id="preview-feature-pr-33762-50125"          title="Templates coded according to the newest HTML5 standards."          class="js-btn link-click "
+    >HTML 5</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33763-50125"
+          id="preview-feature-pr-33763-50125"          title="Templates that utilize jQuery - a cross-browser JavaScript library designed to simplify the client-side scripting of HTML"          class="js-btn link-click "
+    >JQuery</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=45563-50125"
+          id="preview-feature-pr-45563-50125"          title="These are templates for which LESS was used as the dynamic stylesheet language. LESS runs on both the server-side (with Node.js and Rhino) or client-side (modern browsers only)."          class="js-btn link-click "
+    >LESS</span>            </td>
+						</tr>
+											<tr>
+							<th>Features:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33741-50125"
+          id="preview-feature-pr-33741-50125"          title="Plantillas que le permiten administrar el contenido a través del panel de administración."          class="js-btn link-click "
+    >Panel de administración</span>,                                <a
+        id="preview-feature-temas-wordpress-bootstrap"        href="../es/temas-wordpress-bootstrap.html"                title="Framework elegante y intuitivo para desarrollo web más rápido y más fácil."    >Bootstrap</a>,                                <a
+        id="preview-feature-cherry-temas-wordpress"        href="../es/cherry-temas-wordpress.html"                    >Cherry Framework</a>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=239729-50125"
+          id="preview-feature-pr-239729-50125"                    class="js-btn link-click "
+    >Ecwid Ready</span>,                                <a
+        id="preview-feature-responsive-temas-wordpress"        href="../es/responsive-temas-wordpress.html"                    >Responsivo</a>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33866-50125"
+          id="preview-feature-pr-33866-50125"          title="CMS or Ecommerce Templates that give the user an option to optimize titles and page meta data, generate a sitemap, etc."          class="js-btn link-click "
+    >Optimizado/a para Motores de Búsqueda</span>,                                <a
+        id="preview-feature-temas-wordpress-wpml-ready"        href="../es/temas-wordpress-wpml-ready.html"                    >WPML ready</a>            </td>
+						</tr>
+											<tr>
+							<th>Functionality:</th>
+							<td>	                    <a
+        id="preview-feature-blog-wordpress-temas"        href="../es/blog-wordpress-temas.html"                    >blog</a>,                                <a
+        id="preview-feature-temas-wordpress-portafolio"        href="../es/temas-wordpress-portafolio.html"                title="Plantillas que contienen una página con un diseño especial que le permite presentar obras de artista, fotógrafo etc."    >Cartera</a>            </td>
+						</tr>
+											<tr>
+							<th>Gallery Script:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33753-50125"
+          id="preview-feature-pr-33753-50125"          title="Templates that utilize JS scripts or plugin to display content or images on panels that expand or collapse on a click event."          class="js-btn link-click "
+    >Accordion/Acordeón</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33754-50125"
+          id="preview-feature-pr-33754-50125"          title="Templates that utilize Flash, JS scripts or plugins to display a list of items in a specific manner that is called &#039;carousel&#039; and allows user to easily browse through the list."          class="js-btn link-click "
+    >Carousel/Carrusel</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=45693-50125"
+          id="preview-feature-pr-45693-50125"                    class="js-btn link-click "
+    >Isotope</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33756-50125"
+          id="preview-feature-pr-33756-50125"          title="Templates that utilize Flash, JS scripts or plugins to display content or images in a slider."          class="js-btn link-click "
+    >Slider</span>            </td>
+						</tr>
+											<tr>
+							<th>Installation:</th>
+							<td>	                    <span  >Las instrucciones de instalación y configuración están adjuntos (examine la carpeta de documentación)</span>            </td>
+						</tr>
+											<tr>
+							<th>Layout:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=2-50125"
+          id="preview-feature-pr-2-50125"                    class="js-btn link-click "
+    >2 columnas</span>            </td>
+						</tr>
+											<tr>
+							<th>Media:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33757-50125"
+          id="preview-feature-pr-33757-50125"          title="Usually a non-CMS template that comes with a built-in audio player - best for music band, night club or singer&#039;s websites."          class="js-btn link-click "
+    >Reproductor de Audio</span>,                                <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33758-50125"
+          id="preview-feature-pr-33758-50125"          title="Templates designed to flawlessly integrate video content from Youtube and other online video libraries."          class="js-btn link-click "
+    >Integración de Vídeo</span>            </td>
+						</tr>
+											<tr>
+							<th>Web Forms:</th>
+							<td>	                    <span data-href="https://www.templatemonster.com/es/plantillas/?pr=33765-50125"
+          id="preview-feature-pr-33765-50125"          title="Templates that include design for contact form - either scripted or not."          class="js-btn link-click "
+    >Formulario de Contacto</span>            </td>
+						</tr>
+									</tbody>
+			</table>
+		</dd>
+	<!-- Sources available -->
+			<dt>Fuentes Disponibles</dt>
+		<dd>
+												<span class="btn btn-blue btn-sm">PSD</span>
+									<span class="btn btn-blue btn-sm">PHP</span>
+														<span class="sourcef-file-text">
+											Este tema contiene widgets.									</span>
+					</dd>
+	<!-- Hosting requirements -->
+			<dt>Requerimientos de hosting</dt>
+		<dd>
+			<ul class="requirements">
+									<li><i class="icon-success svg square-icon"></i>MySQL 5.0+</li>
+									<li><i class="icon-success svg square-icon"></i>The mod_rewrite Apache module</li>
+									<li><i class="icon-success svg square-icon"></i>PHP 5.3+</li>
+							</ul>
+		</dd>
+	</dl>
+    <!-- Technical Details -->
+        <!-- Technical Details links -->
+        <div class="technical-details-links">
+	    		<a id="preview-help-center" class="details_overview" target="_blank" href="../help/quick-start-guide/wordpress-themes/master/index_es.html"><b class="icon-arrow-small-right"></b>Temas de WordPress Help Center</a>
+	                        </div>
+        <!-- end Technical Details -->
+	<!-- Software required -->
+	<dl class="tech-details">
+		<dt>Software Necesario</dt>
+		<dd>
+			<ul class="requirements">
+									<li><i class="icon-success svg square-icon"></i>Adobe Photoshop CS+</li>
+									<li><i class="icon-success svg square-icon"></i>Para descomprimir un paquete ZIP de plantilla: WinZip 9+ (Windows); Stuffit Expander 10+ (Mac)</li>
+									<li><i class="icon-success svg square-icon"></i>Servidor Apache</li>
+									<li><i class="icon-success svg square-icon"></i>WordPress 3.9.x</li>
+							</ul>
+		</dd>
+</dl>
+	            </div>
+                    </div>
+        <!-- Questions tab -->
+        <div class="tab-pane" id="tab-questions">
+            <h2>Preguntas</h2>
+            <div id="comments-item-page">
+            </div>
+        </div>
+        <!-- Support tab -->
+        <div class="tab-pane" id="tab-support">
+          <section id="vendor-info-item-old"></section>
+        </div>
+                <!-- Changelog tab -->
+        <div class="tab-pane" id="tab-changelog" data-tab-type="type_changelog">
+            <dl class="tech-details tech-changelog">
+                <!-- Latest Update -->
+                <dt class="features">Latest Update</dt>
+                <dd>
+                    <table class="table table-features">
+                        <tbody>
+                                                    <tr>
+                                <th>Changelog:</th>
+                                <td>	                    <span  ><ul>
+<li>- 3 minor CSS issues fixed</li>
+<li>- 2 minor font bugs fixed</li>
+<li>- 2 minor database bugs fixed</li>
+<li>- 2 front-end issues fixed</li>
+<li>- 1 minor styles bugs fixed</li>
+</ul></span>            </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </dd>
+            </dl>
+        </div>
+            </div>
+</div>
+                        <!-- Also Avaliable As -->
+                        <!-- Similar categories -->
+                                                    <div class="block similar-categories">
+    <h3 class="block-heading">¿Busca plantillas similares? Examine Estas Categorías:</h3>
+    <div class="block-content">
+        <ul class="list">
+                                                            <li><a href="../es/categoria/lavado-autos-plantillas.html" id="preview-similar-topic-lavado-autos-plantillas">Plantillas para Sitios de Lavado de autos</a></li>
+                                                            <li><a href="../es/categoria/coches-plantillas.html" id="preview-similar-topic-coches-plantillas">Plantillas para Sitios de Coches</a></li>
+                                                            <li><a href="../es/categoria/coches-motos.html" id="preview-similar-topic-coches-motos">Plantillas para Sitios de Coches y Motos</a></li>
+                    </ul>
+    </div>
+</div>
+                        <!-- Similar templates -->
+                        <script>
+    var previewEngineSearchParams = {'similar-to':51818};
+</script>
+<div class="block similar-templates block-style-2" id="similar-block">
+    <div class="block-heading">Ver Plantillas Similares</div>
+    <div class="block-content">
+        <div id="similar_templates" class="js_product_slides">
+            <ul id="similar-templates" class="slides thumbnails" data-list="similar templates">
+                <li class="thumbnail"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+					</div>
+					<aside class="col-lg-3 col-mb-4 col-sm-4">
+                        <!-- Purchase options -->
+<div class="block purchase-options">
+    <div class="block-content">
+        <form action="../es/carrito.html" method="post" class="form_services clearfix js-form_services">
+            <input type="hidden" name="add" value="51818"/>
+            <input type="hidden" name="channel" value="preview"/>
+            <input type="hidden" name="price_variant" value="regular"/>
+            <div class="panel-group count-down-anchor js-count-down-anchor" id="purchase_options">
+                                    <!--========accordion-group ========-->
+                    <div class="panel panel-default js-preview-accordion-panel js-preview-price-block active"
+    		data-default-variant="regular"
+    	 data-variant="regular"
+	 data-template_id="51818">
+	<div class="panel-heading js-panel-heading" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+			<a id="preview-license-regular" class="panel-title" data-toggle="collapse" data-parent="#purchase_options" href="#collapse0" >
+				<span class="Single__license">Licencia de un solo uso</span>
+				<span class="price js-price hide-price"
+                      						  itemprop="price"
+						  content="66"
+					  					  data-price="66"
+					  data-full_price="66"
+				>
+					66 €
+				</span>
+                					<meta itemprop="priceCurrency" content="EUR" />
+								<span data-placement='left' class="question-icon svg icon-question">
+				<span class="question-content">Licencia de un Solo Uso le permite utilizar una plantilla comprada sólo en 1 dominio o para 1 proyecto. </span>
+			  </span>
+			</a>
+	</div>
+	<div id="collapse0" class="panel-collapse collapse  expanded in" style="height: auto;">
+        <div class="services-container"></div>
+		<div class="subtotal-price clearfix">
+			<div class="price-block discount hide-price">
+				<div class="template-price js-template-price"><span class="dollar-icon">66 €</span>
+									</div>
+				<div class="price-corner-right"></div>
+				<div class="price-corner-left">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+						<polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "/>
+					</svg>
+				</div>
+			</div>
+			<span >Precio Subtotal:</span>
+		</div>
+			<div class="add-to-cart">
+				<button id="preview-add-to-cart-goto-checkout-regular-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-wallet js-add-to-cart-goto-checkout btn-full-width"
+						data-href=" https://www.templatemonster.com/es/checkout.php"
+						>¡Obtengalo ahora, le encantará!</button>
+				<button id="preview-add-to-cart-delayed-regular-51818"
+						class="js-none button btn-trivial tm-icon icon-cart js-add-to-cart-delayed btn-full-width"
+						>Agregar al carrito y comprar más tarde</button>
+				<button id="preview-add-to-cart-regular-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-cart js-button-add-to-cart btn-full-width"
+						data-toggle="modal" data-target="#cart-popup">añadir al carrito</button>
+			</div>
+            				<div class="LoyaltyPictogram"><i class="tm-icon icon-loyalty-program"></i>El producto es una parte del
+                      <a class="LoyaltyProgramLink" href="../es/cashback.html" target="_blank"> programa de lealtad.</a>				</div>
+							<div class="trial-link js-trial-link js-none">
+					<a href="#" data-toggle="modal" data-target="#trial-popup-wrapper">Lanzar versión de prueba de 7 días GRATIS!</a>
+				</div>
+			<div class="payment-methods">
+				<ul class="payment-list flex-row">
+                    <li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+				</ul>
+			</div>
+			</div>
+</div>
+                                    <!--========accordion-group ========-->
+                    <div class="panel panel-default js-preview-accordion-panel js-preview-price-block "
+    	 data-variant="installation"
+	 data-template_id="51818">
+	<div class="panel-heading js-panel-heading" >
+			<a id="preview-license-installation" class="panel-title" data-toggle="collapse" data-parent="#purchase_options" href="#collapse1" >
+				<span class="Single__license">Licencia de Desarrolladores</span>
+				<span class="price js-price hide-price"
+                      					  data-price="127"
+					  data-full_price="127"
+				>
+					127 €
+				</span>
+                				<span data-placement='left' class="question-icon svg icon-question">
+				<span class="question-content">Si Usted compra una plantilla al precio de la licencia de desarrolladores, obtendrá un permiso no exclusivo a utilizar la plantilla en hasta 5 dominios.</span>
+			  </span>
+			</a>
+	</div>
+	<div id="collapse1" class="panel-collapse collapse " style="height: 0px;">
+        <div class="services-container"></div>
+		<div class="subtotal-price clearfix">
+			<div class="price-block discount hide-price">
+				<div class="template-price js-template-price"><span class="dollar-icon">127 €</span>
+									</div>
+				<div class="price-corner-right"></div>
+				<div class="price-corner-left">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+						<polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "/>
+					</svg>
+				</div>
+			</div>
+			<span >Precio Subtotal:</span>
+		</div>
+			<div class="add-to-cart">
+				<button id="preview-add-to-cart-goto-checkout-installation-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-wallet js-add-to-cart-goto-checkout btn-full-width"
+						data-href=" https://www.templatemonster.com/es/checkout.php"
+						>¡Obtengalo ahora, le encantará!</button>
+				<button id="preview-add-to-cart-delayed-installation-51818"
+						class="js-none button btn-trivial tm-icon icon-cart js-add-to-cart-delayed btn-full-width"
+						>Agregar al carrito y comprar más tarde</button>
+				<button id="preview-add-to-cart-installation-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-cart js-button-add-to-cart btn-full-width"
+						data-toggle="modal" data-target="#cart-popup">añadir al carrito</button>
+			</div>
+            				<div class="LoyaltyPictogram"><i class="tm-icon icon-loyalty-program"></i>El producto es una parte del
+                      <a class="LoyaltyProgramLink" href="../es/cashback.html" target="_blank"> programa de lealtad.</a>				</div>
+							<div class="trial-link js-trial-link js-none">
+					<a href="#" data-toggle="modal" data-target="#trial-popup-wrapper">Lanzar versión de prueba de 7 días GRATIS!</a>
+				</div>
+			<div class="payment-methods">
+				<ul class="payment-list flex-row">
+                    <li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+				</ul>
+			</div>
+			</div>
+</div>
+                                    <!--========accordion-group ========-->
+                    <div class="panel panel-default js-preview-accordion-panel js-preview-price-block "
+    	 data-variant="exclusive"
+	 data-template_id="51818">
+	<div class="panel-heading js-panel-heading" >
+			<a id="preview-license-exclusive" class="panel-title" data-toggle="collapse" data-parent="#purchase_options" href="#collapse2" >
+				<span class="Single__license">Precio exclusivo</span>
+				<span class="price js-price hide-price"
+                      					  data-price="3972"
+					  data-full_price="3972"
+				>
+					3.972 €
+				</span>
+                				<span data-placement='left' class="question-icon svg icon-question">
+				<span class="question-content">Licencia de Compra Única garantiza que Usted es el último comprador/propietario de la plantilla. Se le concede un permiso no exclusivo e intransferible para usar la plantilla en múltiples dominios.</span>
+			  </span>
+			</a>
+	</div>
+	<div id="collapse2" class="panel-collapse collapse " style="height: 0px;">
+        <div class="services-container"></div>
+		<div class="subtotal-price clearfix">
+			<div class="price-block discount hide-price">
+				<div class="template-price js-template-price"><span class="dollar-icon">3.972 €</span>
+									</div>
+				<div class="price-corner-right"></div>
+				<div class="price-corner-left">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+						<polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "/>
+					</svg>
+				</div>
+			</div>
+			<span >Precio Subtotal:</span>
+		</div>
+			<div class="add-to-cart">
+				<button id="preview-add-to-cart-goto-checkout-exclusive-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-wallet js-add-to-cart-goto-checkout btn-full-width"
+						data-href=" https://www.templatemonster.com/es/checkout.php"
+						>¡Obtengalo ahora, le encantará!</button>
+				<button id="preview-add-to-cart-delayed-exclusive-51818"
+						class="js-none button btn-trivial tm-icon icon-cart js-add-to-cart-delayed btn-full-width"
+						>Agregar al carrito y comprar más tarde</button>
+				<button id="preview-add-to-cart-exclusive-51818"
+						class="js-none button btn-important btn-big-height tm-icon icon-cart js-button-add-to-cart btn-full-width"
+						data-toggle="modal" data-target="#cart-popup">añadir al carrito</button>
+			</div>
+            				<div class="LoyaltyPictogram"><i class="tm-icon icon-loyalty-program"></i>El producto es una parte del
+                      <a class="LoyaltyProgramLink" href="../es/cashback.html" target="_blank"> programa de lealtad.</a>				</div>
+							<div class="trial-link js-trial-link js-none">
+					<a href="#" data-toggle="modal" data-target="#trial-popup-wrapper">Lanzar versión de prueba de 7 días GRATIS!</a>
+				</div>
+			<div class="payment-methods">
+				<ul class="payment-list flex-row">
+                    <li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+				</ul>
+			</div>
+			</div>
+</div>
+                                <!--========end accordion-group ========-->
+            </div>
+            <div class="recommended-services js-recommended-services hidden">
+<div class="RecommendedServices">Servicios Recomendados:</div>
+<ul class="checkbox-list">
+	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-362">
+	<input type="hidden" name="p_51818_362" value="1"/>
+	<input type="hidden" name="sc_51818_362" value="646"/>
+	<input type="hidden" name="pr_51818_362" value="4626"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="362"
+		   data-full_price="70"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="70"/>
+	<a id="preview-offer-362" href="javascript:;" class="title js-service-name" >Plugins Esenciales</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">El servicio es una parte del programa de lealtad.</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="362"/>
+    <span class="price">
+      70 €
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							<strong>Plugins esenciales para su página web</strong>
+<br><br>
+1) Onpage SEO ayuda con la optimización SEO de las páginas. <br />
+2) Google Analytics permite hacer el seguimiento de los visitantes. <br />
+3) El editor avanzado facilita la edición de las entradas y páginas.<br />
+4) Image Optimizer reduce el tamaño de las imágenes sin perder su calidad. <br />
+5) Sitemap (mapa del sitio) va a generar sitemap.xml para su sitio web y actualizarlo automáticamente después de cualquier cambio que realice (es importante para los motores de búsqueda). <br />
+6) Plugin para cambiar el URL de la página de inicio de sesión y, de esta manera, protegerla contra los ataques de piratas informáticos. <br />
+7) Plugin de personalización del panel de control.
+ <br><br>
+<span style='color: red;'>Nota:</span> La instalación de la plantilla no está incluida en este paquete.
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-888">
+	<input type="hidden" name="p_51818_888" value="2"/>
+	<input type="hidden" name="sc_51818_888" value="646"/>
+	<input type="hidden" name="pr_51818_888" value="11494"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="888"
+		   data-full_price="176"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="176"/>
+	<a id="preview-offer-888" href="javascript:;" class="title js-service-name" >Sitio web listo-para-usar premium</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">El servicio es una parte del programa de lealtad.</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="888"/>
+    <span class="price">
+      176 €
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							¡Oferta por tiempo limitado! ¡Obtenga su <strong>sitio web completamente funcional dentro de los 5 días hábiles</strong> a un precio increíble!
+<br><br>
+Sólo el paquete de Edición Deluxe incluye todo lo que necesita:<br>
+- Nombre de dominio exclusivo para su nuevo sitio web<br>
+- Alojamiento web rápido y estable del líder de la industria<br>
+- Servicio de instalación<br>
+- Certificado SSL para seguridad en línea avanzada<br>
+- Cambios de logotipo y colores<br>
+- Reemplazo de imágenes y textos en las páginas básicas de su plantilla<br>
+- Activación del formulario de contacto
+<br><br>
+Construiremos un nuevo y hermoso sitio web de acuerdo con sus deseos. Las imágenes y los textos se reemplazarán por los suyos en hasta 5 páginas y 10 entradas de la plantilla. 
+<br><br>
+Para ayudarnos a crear un sitio web perfecto, por favor, envíenos los textos, las mejores imágenes que tiene y las instrucciones claras en cuanto a los cambios necesarios. <br>
+Si todavía no tiene un plan de alojamiento, le proporcionaremos un plan de alojamiento web de 1 año de nuestro socio InMotionHosting.com absolutamente gratis. Su plantilla se ejecutará de manera rápida y estable en este hosting. Un nuevo nombre de dominio también es gratuito. Su código promocional de alojamiento web y las instrucciones sobre cómo aplicarlo se enviarán según su petición.
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-13">
+	<input type="hidden" name="p_51818_13" value="3"/>
+	<input type="hidden" name="sc_51818_13" value="646"/>
+	<input type="hidden" name="pr_51818_13" value="2334"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="13"
+		   data-full_price="43"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="41"/>
+	<a id="preview-offer-13" href="javascript:;" class="title js-service-name" >Instalación</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">El servicio es una parte del programa de lealtad.</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="13"/>
+    <span class="price">
+      		  <i class="discount">43 €</i>
+	  41 €
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							Si Usted no quiere gastar su tiempo en la instalación de la plantilla, no dude en pedir ayuda de un experto. <br>
+La plantilla será instalada dentro de las 3 horas, después de que nuestro Centro de Servicio recibe los datos de acceso a su servidor de hosting. Soporte en inglés.
+<br><br>
+Nota: el proyecto se inicia tan pronto como un cliente proporciona todos los detalles necesarios para la producción, en otras palabras, no se inicia justo después de la compra real.
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-394">
+	<input type="hidden" name="p_51818_394" value="4"/>
+	<input type="hidden" name="sc_51818_394" value="646"/>
+	<input type="hidden" name="pr_51818_394" value="13350"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="394"
+		   data-full_price="176"
+		   data-channel="7"
+		   data-project = "TT"
+		   data-product = "51818"
+		   data-price="176"/>
+	<a id="preview-offer-394" href="javascript:;" class="title js-service-name" >Intergación de tienda online</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">El servicio es una parte del programa de lealtad.</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="394"/>
+    <span class="price">
+      176 €
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							La opción de adición de tienda en línea implica una integración del componente VirtueMart 3. De esta manera, Usted obtendrá una tienda en línea funcional implementada como el botón 'Shop'
+en el menú. Por lo general, la realización de esta implementación toma 4 días hábiles.<br><br>
+<span style="color: red;">EXTRA: </span> Servicio de instalación y 1 mes de soporte premium (Soporte en inglés).
+					</span>
+    </span>
+</li>	<li class="OldPageOffer js-preview-offer clearfix js-preview-offer-909">
+	<input type="hidden" name="p_51818_909" value="5"/>
+	<input type="hidden" name="sc_51818_909" value="646"/>
+	<input type="hidden" name="pr_51818_909" value="13338"/>
+	<input class="js-preview-offer-checkbox"
+		   type="checkbox"
+		   name="offers[]"
+		   value="909"
+		   data-full_price="70"
+		   data-channel="7"
+		   data-project = "Zemez"
+		   data-product = "51818"
+		   data-price="70"/>
+	<a id="preview-offer-909" href="javascript:;" class="title js-service-name" >GDPR Suite - Nuevas reglas de privacidad de la UE</a>
+            <div class="LoyaltyProgramPictogram">
+    <span class="tm-icon icon-loyalty-program LoyaltyPictogramWrap LoyaltyPictogram--icon"></span>
+    <div class="LoyaltyPictogram--tooltip">
+        <div class="LoyaltyPictogram__description">El servicio es una parte del programa de lealtad.</div>
+    </div>
+</div>    
+	<input type="hidden" name="oids[]" value="909"/>
+    <span class="price">
+      70 €
+    </span>
+	<span data-placement='left' class="question-icon svg icon-question">
+		<span class="question-content">
+							Los siguientes cambios importantes se aplicarán a su plantilla para que cumpla con las reglas básicas de GDPR:<br /><br />
+- Una opción para que los usuarios del sitio puedan enviar una solicitud para obtener acceso / eliminar / anonimizar sus datos personales almacenados en su sitio web (comentarios e información del comentarista).<br />
+- Una opción para darse de baja de Google Analytics en este sitio web.<br />
+- Una opción para que los usuarios del sitio se eliminen del sitio.<br />
+- Hacer que WordPress no guarde las direcciones IP de los comentaristas.<br />
+- Una página de cookies y política de privacidad (con plantilla genérica / muestra).<br />
+- Un banner que notifica a los visitantes del sitio web sobre el uso de cookies en su sitio web.<br />
+- Una casilla de verificación de GDPR del formulario de comentarios.<br />
+- Una notificación de consentimiento para el almacenamiento de datos con un enlace a la página de Política de privacidad y la casilla de verificación en todos los:<br />
+   i. formularios de contacto incorporados en el tema;<br />
+   ii. formularios de suscripción al boletín informativo;<br />
+   iii. formulario de registro en WordPress;<br />
+   iv. formularios de opiniones sobre poductos en WooCommerce.<br /><br />
+Este servicio se presta dentro de 3-4 días hábiles.<br /><br />
+Tenga en cuenta, por favor, que el cumplimiento con los principios de GDPR es un proceso continuo basado en el riesgo que pueda afectar toda su empresa. No somos responsables por ningún reclamo o acción que se basa en cualquier información o funcionalidad implementada con esta oferta.
+<br /><br />
+					</span>
+    </span>
+</li></ul>
+                            </div>
+            <div class="one-click-purchase js-one-click-purchase hidden">
+                <div class="js-cards-progress cards-progress hidden">
+	<div class="progress-text ">Revisando métodos de pago ya guardados</div>
+	<div class="loading"></div>
+</div>            </div>
+        </form>
+    </div>
+</div>
+					</aside>
+				</div>
+									<div class="print-page">
+						<span id="preview-print-page" class="button btn-trivial js-btn" data-href="https://www.templatemonster.com/printer-friendly/51818/">Imprimir esta página</span>
+					</div>
+				            		</div>
+	<meta itemprop='dateModified' content="2019-02-17T00:01:09-05:00"/>
+            <!-- ================ free-trial-popup =============== -->
+<div class="modal fade js-modal-preview-popup in" id="trial-popup-wrapper" tabindex="-1" role="dialog"
+	 aria-label="trialPopup" aria-hidden="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a href="javascript:;" class="close-popup tm-icon icon-cross" data-dismiss="modal" aria-hidden="true"></a>
+			</div>
+			<div class="modal-body">
+                				<div class="js-form-row">
+					<h2>Está casi hecho!</h2>
+						<p>Por favor, escriba una dirección de correo electrónico para recibir su versión de prueba gratuita.:</p>
+		<form method="POST" name="free_trial" action="../index.html#x2F;es&#x2F;ajax&#x2F;free-trial&#x2F;register.php" id="free-trial-form" class="form-horizontal"><input type="hidden" name="_form" value="free_trial"/>
+	<div id="free-trial-form-errors"></div>
+		<input type="hidden" name="tid" id="free-trial-form-tid" value="51818">
+		<input type="hidden" name="action" id="free-trial-form-action" value="register">
+		<input type="hidden" name="name" id="free-trial-form-name" value="Customer">
+		<input type="hidden" name="phone" id="free-trial-form-phone" value="">
+		<div class="js-form-group form-group" ><div class="col-lg-12 col-md-12 col-sm-12"><input type="email" autocomplete="off" placeholder="Escriba&#x20;su&#x20;email" name="email" data-label="your&#x20;email" id="free-trial-form-email" data-constraints="&#x40;NotBlank&#x20;&#x40;HTML5Required&#x20;&#x40;Length&#x28;min&#x3D;&quot;0&quot;,&#x20;max&#x3D;&quot;72&quot;,&#x20;ignoreEmpty&#x3D;&quot;1&quot;,&#x20;message&#x3D;&quot;Por&#x20;favor,&#x20;indique&#x20;un&#x20;email&#x20;v&#xE1;lido&quot;&#x29;&#x20;&#x40;Pattern&#x28;regex&#x3D;&quot;&#x2F;&#x5E;&#x28;.&#x7B;1,64&#x7D;&#x29;&#x5C;&#x40;&#x28;&#x5C;S&#x2B;&#x29;&#x5C;.&#x28;.&#x7B;2,&#x7D;&#x29;&#x2F;&quot;,&#x20;message&#x3D;&quot;Por&#x20;favor,&#x20;indique&#x20;un&#x20;email&#x20;v&#xE1;lido&quot;&#x29;&#x20;&#x40;Email&#x28;message&#x3D;&quot;Por&#x20;favor,&#x20;indique&#x20;un&#x20;email&#x20;v&#xE1;lido&quot;&#x29;&#x20;&#x40;HTML5Email&#x28;message&#x3D;&quot;Por&#x20;favor,&#x20;indique&#x20;un&#x20;email&#x20;v&#xE1;lido&quot;&#x29;" required="required" data-validation-callback="&#x2F;ajax&#x2F;check-email.php" data-validation-callback-key="email" class="&#x20;form-control&#x20;js-placeholder" value=""></div></div>
+		<div class="js-form-group form-group" ><div class="col-lg-12 col-md-12 col-sm-12"><button type="submit" name="submit" id="free-trial-form-submit" class="button&#x20;btn-important&#x20;btn-full-width" value="">Enlace a Demo</button></div></div>
+		</form>
+				</div>
+                				<div class="js-status-row" style="display: none">
+											<div class="js-new-user-message">
+							<h2>Gracias!</h2>
+															<p>Gracias por su interés en nuestro producto. En 10 minutos Usted obtendrá un e-mail con los datos de acceso a su a versión de prueba!</p>
+													</div>
+						<div class="js-existing-user-message">
+							<h2>Por favor, confirme</h2>
+							<p>Usted está a punto de reemplazar la plantilla que se utiliza ahora por una nueva #<span class="js-template-number"></span>. Pulse este botón para confirmar el cambio.</p>
+						</div>
+						<div class="js-confirmation-link confirmation-link">
+															<span class="button btn-main" data-dismiss="modal">OK</span>
+													</div>
+						<div class="js-reject-link reject-link text-center ">
+							<a href="" target="_blank">No, gracias. Quiero seguir utilizando la plantilla anterior.</a>
+						</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ============== end free-trial-popup ============== -->
+		</div>
+	</div>
+			    <time class="PageTimestamp">Última actualización: 17 feb 19</time>
+    <footer id="footer" class="rd-footer-container">
+	<hr class="divider">
+	<script type="application/javascript">
+		var _gaq = _gaq || [];
+</script>
+<div class="flex-container">
+	<div class="footer-sharing-block flex-row rd-padding-s3_4">
+	<div class="sharing-description svg"></div>
+	<ul class="social-buttons js-share-list" data-type="buttons-large">
+		<li class="facebook"></li>
+		<li class="googlePlus"></li>
+		<li class="twitter"></li>
+		<li class="pinterest"></li>
+	</ul>
+</div>
+</div>	<hr class="divider">
+	<div class="flex-container">
+	<div class="footer-menu-block flex-row rd-padding-s3_4">
+		<div class="flex-item item-with-icon">
+			<div class="block-heading tm-icon icon-products">Productos</div>
+			<ul>
+				<li><a href="../es/temas-wordpress-tipo.html" id="footer-wp">Temas WordPress</a></li>
+<li><a href="../es/plantillas-web-tipo.html" id="footer-web">Plantillas HTML</a></li>
+<li><a id="footer-magento" href="../es/temas-magento-tipo.html">Temas Magento</a></li>
+<li><a id="footer-joomla" href="../es/plantillas-joomla-tipo.html">Plantillas Joomla</a></li>
+<li><a id="footer-presta" href="../es/temas-prestashop-tipo.html">Plantillas Prestashop</a></li>
+<li><a id="footer-woo" href="../es/temas-woocommerce-tipo.html">Temas WooCommerce</a></li>
+<li><a id="footer-moto" href="../es/moto-cms-3-templates-tipo.html">Plantillas MotoCMS 3.0</a></li>
+<li><a id="footer-ocart" href="../es/plantillas-opencart-tipo.html">Plantillas OpenCart</a></li>
+<li><a id="footer-drupal" href="../es/caracteristicas/opciones/diseno-responsive.html">Plantillas Responsive</a></li>
+<li><a id="footer-bootstrap" href="../es/plantillas-bootstrap.html">Plantillas Bootstrap</a></li>
+<li><a id="footer-powerpoint" href="../es/plantillas-powerpoint-tipo.html">Plantillas PowerPoint</a></li>
+<li><a id="footer-powerpoint" href="../landings/saas-websites/es.html">SaaS Website Builder</a></li>
+			</ul>
+		</div>
+		<div class="flex-item item-with-icon">
+			<div class="block-heading tm-icon icon-palette">Categorías</div>
+			<ul>
+				<li><a id="footer-business" href="../es/categoria/negocio-plantillas.html">Negocios y Servicios</a></li>
+<li><a id="footer-fashion" href="../es/categoria/moda-belleza.html">Moda y Belleza</a></li>
+<li><a id="footer-home" href="../es/categoria/hogar-familia.html">Hogar y Familia</a></li>
+<li><a id="footer-design" href="../es/categoria/diseno-fotografia.html">Diseño y Fotografía</a></li>
+<li><a id="footer-restate" href="../es/categoria/inmueble.html">Inmueble</a></li>
+<li><a id="footer-cars" href="../es/categoria/coches-motos.html">Coches y Motos</a></li>
+<li><a id="footer-med" href="../es/categoria/medicina.html">Medicina</a></li>
+<li><a id="footer-sport" href="../es/categoria/deportes-viajes.html">Deportes y Viajes</a></li>
+<li><a id="footer-food" href="../es/categoria/comida-restaurante.html">Alimentos y Restaurantes</a></li>
+<li><a id="footer-electronics" href="../es/categoria/electronica.html">Electrónica</a></li>
+			</ul>
+		</div>
+		<div class="flex-item item-with-icon">
+			<div class="block-heading tm-icon icon-company">Empresa</div>
+			<ul>
+				<li><span id="footer-about" class="js-btn link-click" data-href="https://www.templatemonster.com/es/sobre-nosotros.html">Sobre Nosotros</span></li>
+<li><a id="footer-blog" href="../es/blog.html">Blog</a></li> 
+<li><span id="footer-affiliate" class="js-btn link-click" data-href="https://www.templatemonster.com/es/programa-de-afiliados.html">Programa de afiliados</span></li>
+<li><a id="footer-websitemake" href="../es/hacer-pagina-web.html">Crear página web</a></li>
+<li><a id="footer-blogmake" href="../es/como-crear-un-blog.html">Crear un blog</a></li>
+<li><a id="footer-eshopmake" href="../es/crear-tienda-online.html">Crear tienda online</a></li> 
+<li><span id="footer-cert" class="js-btn link-click" data-href="http://certification.templatemonster.com/es/">Centro de Certificación</span></li>
+<li><span id="footer-web-studio" class="js-btn link-click" data-href="https://www.templatemonster.com/web-developers/all/">Catálogo de estudios de diseño web</span></li>
+<li><span id="footer-contact-us" class="js-btn link-click" data-href="https://www.templatemonster.com/es/contacto.html">Contacte con nosotros</span></li>
+			</ul>
+		</div>
+		<div class="flex-col grow-2">
+			<div class="flex-row">
+				<div class="flex-item item-with-icon">
+					<div class="block-heading tm-icon icon-help">Atención al cliente</div>
+					<ul>
+						<li><a id="footer-help-center" href="../help/es.html">Centro de Ayuda</a></li>
+<li><span id="footer-report-spam" class="js-btn link-click" data-href="https://www.templatemonster.com/es/informar-spam.html">Informar sobre Spam</span></li>
+<li><a id="footer-vendor" href="../es/marketplace.html">Convertirse en vendedor</a></li>
+					</ul>
+				</div>
+				<div class="flex-item item-with-icon">
+					<div class="block-heading tm-icon icon-follow">¡Síganos!</div>
+					<ul class="follow-list">
+						<li class="connect-fb"><a id="connect-fb" target="_blank" href="https://www.facebook.com/TemplateMonsterEspana"><b class="tm-icon icon-facebook rounded"></b>Síganos en Facebook </a></li>
+<li class="connect-tweet"><a id="connect-tweet" target="_blank" href="https://twitter.com/TMonster_ES"><b class="tm-icon icon-twitter rounded"></b>Síganos en Twitter </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rd-footer-subscribe flex-item item-with-icon">
+				<div class="block-heading tm-icon icon-letter block-heading">Suscribirse al boletín</div>
+				<div class="block-content">
+<span class="subcribe-form-text">Obtener informes de nuevas plantillas web y noticias de diseño.</span>
+<div id="mailchimp_form" class="footer-version">
+    <div id="mc_embed_signup">
+        <form action="../index.html" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form " class="rd-form validate mc-form"
+              target="_blank" data-animate-type="" novalidate>
+            <div id="mc-embedded-subscribe-form-mc_embed_signup_scroll" class="flex-row">
+                <div id="mc-embedded-subscribe-form-errors"></div>
+                <div class="flex-item">
+                    <div class="mc-field-group js-form-group form-group  tm-rd-input tm-rd-input-f1">
+                                                <input type="email" autocomplete="off" value="" name="EMAIL" class="required email rd-field form-control" required
+                               id="mce-EMAIL" placeholder="Email"
+                               data-constraints="@NotBlank @HTML5Required @Length(min=&quot;0&quot;, max=&quot;72&quot;, ignoreEmpty=&quot;1&quot;) @Pattern(regex=&quot;/^(.{1,64})\@/&quot;) @Email @HTML5Email">
+                                                                                                    <span class="tm-icon icon-status"></span>
+                    </div>
+                                            <input type="hidden" value="2" name="group[5][2]" />
+                                    </div>
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_3bc1e714b0df279c78546cb08_7f82d8cc3f" tabindex="-1" value=""></div>
+                <div class="submit-wrap">
+                    <button type="submit"
+                            name="subscribe"
+                            class="button  btn-main btn-full-width cherry-form-btn js_wp_button_overlay"
+                            id="mc-embedded-subscribe"
+                            value="Subscribe">Subscribe</button>
+                </div>
+            </div>
+            <span class="privacy-click-warning">Al hacer clic en el botón, acepta nuestra <a href="../es/politica-de-privacidad.html">Política de privacidad</a> y <a href = "../es/terminos.html">Términos y condiciones</a>.</span>
+        </form>
+    </div>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	<hr class="divider">
+	<div class="flex-container">
+	<div class="footer-copyright-block flex-row rd-padding-s3_4">
+		<div class="flex-item flex-row vertical-center grow-3">
+			<span class="copyright">&copy; 2019 Info Global Services Ltd. Todos los derechos reservados</span>
+			<span id="copyright-privacy" class="js-btn link-click" data-href="../es/politica-de-privacidad.html">Política de Privacidad</span>
+<span id="footer-refund-policy" class="js-btn link-click" data-href="https://www.templatemonster.com/es/reembolsos-devoluciones.html">Devolución de productos y Reembolsos</span>
+<span id="terms" class="js-btn link-click" data-href="../es/terminos.html">Términos</span>
+		</div>
+		<div class="flex-item flex-row vertical-center grow-2 right">
+			<span>Pago seguro:</span>
+			<ul class="payment-list flex-row">
+				<li class="payment-list-item svg icon-payment-paypal"></li>
+<li class="payment-list-item svg icon-payment-visa"></li>
+<li class="payment-list-item svg icon-payment-mastercard"></li>
+<li class="payment-list-item svg icon-payment-discover"></li>
+<li class="payment-list-item svg icon-payment-american-express"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</footer>	</div>
+	<div class="livechat-girl js-livechat-girl js-none">
+    <ul class="livechat-control">
+        <li class="livechat-control__element livechat-control__element_chat">
+            <a href="#live-chat-tab" data-toggle="tab" class="livechat-control__link js-start-chat">
+                <div class="js-girl-holder girl-holder"></div>
+                <i class="tm-icon icon-speech-dots js-hint-tooltip" data-placement="top" data-title="Iniciar un chat"></i>
+            </a>
+        </li>
+        <li class="livechat-control__element livechat-control__element_callback">
+            <a href="#call-back-tab" data-toggle="tab" class="livechat-control__link js-start-callback">
+                <i class="tm-icon icon-handset2 js-hint-tooltip" data-placement="top" data-title="Llamada de vuelta"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="js-livechat-hint livechat-hint rd-notice rd-notice-tooltip rd-notice-type-success rd-notice-position-left single-line">
+        <div class="popover-content rd-notice-content js-invitation-greeting">¡Hola! Estoy lista para ayudarle.</div>
+    </div>
+    <div class="animated-circles js-animated-circles">
+        <div class="circle c-1"></div>
+        <div class="circle c-2"></div>
+        <div class="circle c-3"></div>
+    </div>
+</div>
+<div class="live-chat-board js-live-chat-board">
+    <div class="lc-board-header">
+        <div id="lc-board-close"
+             class="js-lc-board-close lc-board-close"
+             data-title="Ocultar chat"
+             data-placement="bottom"
+             data-color="grey"
+             data-html_class="lc-board-close-tooltip"><i class="tm-icon icon-arrow"></i></div>
+        <div class="lc-board-lang-selector js-lc-board-lang-pick">
+            <div class="rd-form">
+                <div class="chosen-country">
+                    <select title="choose language" class="js-live-chat-lang-switch js-chosen js-country"></select>
+                </div>
+            </div>
+            <div class="busy-operators-message t4 js-busy-operators-message rd-notice rd-notice-tooltip rd-notice-position-top rd-notice-type-default alert rd-closing">
+                <div class="inner">
+                    <div class="rd-notice-content popover-content"></div>
+                    <span id="close-busy-operators-message" class="close js-close-busy-oper-msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="lc-board-caption js-lc-board-caption">
+            <span class="js-lc-board-caption-chat js-lc-board-caption-text">
+                <i class="tm-icon icon-speech-dots"></i>Chat en Vivo
+            </span>
+            <span class="js-lc-board-caption-number js-lc-board-caption-text js-none">
+                Por favor, introduzca su número de teléfono
+            </span>
+        </div>
+    </div>
+    <div class="lc-board-body">
+        <div id="live-chat-tab" class="live-chat-tab tab-pane active">
+            <div class="lc-board-type-selector">
+                <div id="lc-board-type-consultant"
+                     class="js-lc-board-consultant lc-board-type js-lc-board-type active"
+                     data-target="js-lc-board-consultant-content"
+                     data-room="consultant">
+                    <h4 class="t1 bold">Agente</h4>
+                    <p class="t6">Le ayudamos a encontrar el producto más adecuado.</p>
+                </div>
+                <div id="lc-board-type-support"
+                     class="js-lc-board-support js-lc-board-type lc-board-type"
+                     data-target="js-lc-board-support-content"
+                     data-room="support">
+                    <h4 class="t1 bold">Atención al cliente</h4>
+                    <p class="t6">Asistencia gratuita para los clientes existentes.</p>
+                </div>
+                <div id="lc-board-type-billing"
+                     class="js-lc-board-billing js-lc-board-type lc-board-type"
+                     data-target="js-lc-board-billing-content"
+                     data-room="billing">
+                    <h4 class="t1 bold">Facturación</h4>
+                    <p class="t6">¿Problemas con la compra? ¡Cuéntenoslo!</p>
+                </div>
+            </div>
+            <div class="lc-board-content-wrapper js-lc-board-content-wrapper">
+                <div id="lc-board-content-consultant" class="js-lc-board-consultant-content js-lc-board-content-item lc-board-consultant-content lc-board-content-item active">
+                    <div class="rd-form">
+                        <div class="block-content js-live_chat_consultant"></div>
+                    </div>
+                </div>
+                <div id="lc-board-content-support" class="js-lc-board-support-content js-lc-board-content-item lc-board-support-content lc-board-content-item">
+                    <div class="rd-form">
+                        <div class="block-content js-live_chat_support"></div>
+                    </div>
+                </div>
+                <div id="lc-board-content-billing" class="js-lc-board-billing-content js-lc-board-content-item lc-board-billing-content lc-board-content-item">
+                    <div class="rd-form">
+                        <div class="block-content js-live_chat_billing"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="call-back-tab" class="call-back-tab js-call-back-tab tab-pane js-none">
+    <div class="lc-board-call-back lc-board-call-back-form">
+        <div class="lc-board-call-back-content">
+            <img src="https://s.tmimgcdn.com/img/svg/call-back.svg?d=900f612" alt="Call Back" title="Call Back" width="120" height="120" />
+            <p class="lc-board-call-back-description">Vamos a llamarle en 60 segundos, simplemente introduzca su número de teléfono</p>
+        </div>
+        <div class="block-content js-live_chat_call-back"></div>
+    </div>
+    <div class="lc-board-call-back lc-board-call-back-success">
+        <i class="tm-icon icon-success"></i>
+        <div class="success-title bold">¡Nos pondremos en contacto con Usted!</div>
+        <div class="success-description" data-description>Nuestro agente del equipo de atención al cliente le llamará a <strong>%PHONE%</strong> en <strong>un minuto:</strong></div>
+        <div class="js-hourly-counter"></div>
+    </div>
+</div>    </div>
+</div>
+<script type="text/javascript" id="zone_18">
+  window.banner_zone = window.banner_zone || [];
+  window.banner_zone.push({
+    id: 18,
+    zone: "<div class='js-revive-banner-container'><ins data-revive-zoneid='18' data-revive-id='5dba4d01a92de7101be5c5e6e1630dfe'></ins></div>"
+  });
+</script>
+		<script>
+	//this function will work cross-browser for loading scripts asynchronously
+	function loadScript(src, isasync, callback) {
+		var s,
+			r,
+			t;
+		r = false;
+		s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = src;
+		s.async = isasync;
+		s.onload = s.onreadystatechange = function () {
+//console.log( this.readyState ); //uncomment this line to see which ready states are called.
+			if (!r && (!this.readyState || this.readyState == 'complete')) {
+				r = true;
+				if ("undefined" != typeof callback) {
+					callback();
+				}
+			}
+		};
+		t = document.getElementsByTagName('script')[0];
+		t.parentNode.insertBefore(s, t);
+	}
+	window.isJsLoaded = false;
+	function loadIncJs() {
+		loadScript("https://s.tmimgcdn.com/js/tm/frontend/indclude-js.min.js?d=abd0f20", false, loadAllJS);
+	}
+	function toLoadJsList(src) {
+		if (typeof window.jsList !== "undefined") {
+			window.jsList.push(src);
+		} else {
+			window.jsList = [src]
+		}
+	}
+	function loadAllJS() {
+		var dependencyLibs = [
+						"https://s.tmimgcdn.com/js/varnish.compiled.application.es.js?d=abd0f20",
+					  'https://s.tmimgcdn.com/js/plasma-pocket-react/monsterbundle.js?d=abd0f20'
+		];
+		if (window.jsList) {
+			dependencyLibs = dependencyLibs.concat(window.jsList);
+		}
+		var indcludeJsLoader = new Tm.IndcludeJs(dependencyLibs, false);
+		indcludeJsLoader.add(function (state) {
+			$(document).trigger("TM_JS_LOADED");
+//			$(document).trigger("ready");
+			$(window).trigger("load");
+            var event;
+			var eventName = 'TM_JS_LOADED_NATIVE';
+			if (typeof(CustomEvent) === 'function') {
+				event = new CustomEvent(eventName);
+			} else {
+				event = document.createEvent('CustomEvent');
+				event.initEvent(eventName, true, true);
+			}
+            document.dispatchEvent(event);
+		});
+	}
+	window.onload = function () {
+		if (!window.isJsLoaded) {
+			window.isJsLoaded = true;
+			loadCSS("https://s.tmimgcdn.com/css/svg-icons.css?d=1a63017");
+			            	loadScript("https://www.templatemonster.com/es/js/config.js", true, loadIncJs);
+					}
+	};
+</script>
+<!-- Generated by Revive Adserver v3.1.0 -->
+<script type="text/javascript" id="banner_zone_init">
+	window.banner_zone_init = 'https://r.templatemonster.com/dl/1asyncjs.php'
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"72d7dcce33","applicationID":"68712044,11369496","transactionName":"ZV1TZ0FTVkFVWkwKXlwXckZARldfG3BWB1RKe15dR0BXXlhcSlkLQkpURVpXTw==","queueTime":0,"applicationTime":1994,"atts":"SRpEEQlJRR4WWBpZSk9F","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
